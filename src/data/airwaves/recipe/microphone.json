@@ -1,0 +1,26 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "misc",
+ "pattern": [
+  " K ",
+  " A ",
+  "SWS"
+ ],
+ "key": {
+  "K": {
+   "item": "airwaves:mic_capsule"
+  },
+  "A": {
+   "item": "airwaves:audio_board"
+  },
+  "S": {
+   "tag": "c:plates/iron"
+  },
+  "W": {
+   "item": "airwaves:copper_wire"
+  }
+ },
+ "result": {
+  "id": "airwaves:microphone"
+ }
+}

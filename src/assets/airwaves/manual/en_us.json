@@ -1,0 +1,616 @@
+[
+ {
+  "group": "Start here",
+  "title": "Welcome to Airwaves",
+  "short": "Welcome",
+  "icons": [
+   "airwaves:field_manual",
+   "airwaves:radio",
+   "airwaves:transmitter_small",
+   "airwaves:microphone"
+  ],
+  "text": [
+   "Airwaves adds real radio to your Create world. Talk into a microphone, your voice travels through cables to a transmitter, and anyone with a radio on the same frequency hears you, with static that grows with distance and weather.",
+   "> **New here?** Read the 6 steps below, then pick any section on the left. Everything is one click away.",
+   "## Your first station in 6 steps",
+   "1. Put a **Small Antenna** on a **block of copper**, at least 4 tall.",
+   "2. Place a **Small Transmitter** with its back against the copper.",
+   "3. Right-click the transmitter with an **Amethyst Shard**.",
+   "4. Power it: run a Create **shaft** into its side (16 RPM or more). With Create: Power Grid you can use **electricity** instead.",
+   "5. Cable a **Microphone** to it with Copper Wire, or just stand right next to the transmitter.",
+   "6. Tune a **Radio** to the same frequency in the Tuning Table, place it somewhere else and talk!",
+   "The red lamp on the transmitter lights up while you are on the air."
+  ]
+ },
+ {
+  "group": "Start here",
+  "title": "Frequencies and tuning",
+  "short": "Frequencies",
+  "icons": [
+   "airwaves:tuning_table",
+   "airwaves:frequency_card",
+   "airwaves:radio"
+  ],
+  "text": [
+   "Every radio, transmitter, receiver and relay has a frequency. A radio only hears a transmitter on **exactly** the same band and frequency.",
+   "- **AM:** 530 to 1700 kHz",
+   "- **FM:** 87.5 to 108 MHz",
+   "## Tuning Table",
+   "Right-click it, put a tunable item in the slot, pick AM or FM and step the frequency. The spectrum view shows every station you can hear from where you stand. The item keeps its frequency when you place it.",
+   "- **Frequency Card:** sneak-click a radio block to copy its frequency, then click other blocks to paste it.",
+   "- **Retune** a placed device by right-clicking it with a tuned item.",
+   "- **Name your station:** rename the item in an anvil before placing it.",
+   "## AM or FM?",
+   "- **FM** is clean until almost out of range, then drops fast. It needs line of sight: hills hurt it.",
+   "- **AM** always hisses a little, fades slowly, bends over hills and reaches up to 1.6 times farther at night.",
+   "@fig:wave:7"
+  ]
+ },
+ {
+  "group": "Start here",
+  "title": "Engineer's Goggles and Ponder",
+  "short": "Goggles & Ponder",
+  "icons": [
+   "create:goggles",
+   "airwaves:transmitter_small"
+  ],
+  "text": [
+   "Wear Create's **Engineer's Goggles** and look at any Airwaves block. Transmitters and towers show their frequency, range, power and what is missing; receivers and radios show the station and the signal.",
+   "Hold **Shift** over an item for a short summary. Hold **W** over any Airwaves item to **Ponder** it: animated scenes show how to build a station, cable a microphone, set up a receiver, run lines and more.",
+   "> The **Multimeter** (in Tools) gives the same readout without goggles."
+  ]
+ },
+ {
+  "group": "Start here",
+  "title": "Troubleshooting",
+  "short": "Troubleshooting",
+  "icons": [
+   "minecraft:redstone_torch",
+   "minecraft:barrier"
+  ],
+  "text": [
+   "> Look at the block with **Engineer's Goggles** first: it says what is missing.",
+   "## The transmitter is not on the air",
+   "- Amethyst in its dome?",
+   "- A copper block right behind it, with an antenna of the **same size** on it, 4 or more tall?",
+   "- Power: a shaft at 16 RPM or more (not overstressed), or electricity?",
+   "- No redstone signal on it?",
+   "## The receiver stays dark",
+   "- Amethyst in its dome, and an antenna of its own size on top or on a copper block behind it.",
+   "## I hear nothing",
+   "Radios are silent between transmissions. Check the band and frequency match exactly (sneak-click a radio to seek). The Multimeter shows the signal quality.",
+   "## A cable will not connect",
+   "Too long for its type, a connector that does not take that cable, a full connector, or two devices that need an insulator in between."
+  ]
+ },
+ {
+  "group": "Listening",
+  "title": "Radio and portable radio",
+  "short": "Radios",
+  "icons": [
+   "airwaves:radio",
+   "airwaves:portable_radio"
+  ],
+  "text": [
+   "- **Radio:** right-click to switch it on or off. **Sneak-click to seek:** it jumps to the next station you can hear.",
+   "- **Portable Radio:** keep it in your hotbar or off-hand. Use it to switch on and off; **sneak-use to seek**. The station plays in your own ears wherever you walk.",
+   "Radios are silent while nobody talks. When a station speaks you hear the voice, with static depending on distance, hills, rain and lightning.",
+   "## Walkie-talkie",
+   "Hold a switched-on Portable Radio **in your hand** and talk: your voice goes out on its frequency, no station needed. Every portable radio, Radio and Receiver on the same frequency hears you, about **320 blocks** on FM and **480** on AM, with static that grows with distance.",
+   "> Pick a frequency nobody broadcasts on, and your crew has its own channel."
+  ]
+ },
+ {
+  "group": "Listening",
+  "title": "Receivers",
+  "short": "Receivers",
+  "icons": [
+   "airwaves:receiver_small",
+   "airwaves:receiver_medium",
+   "airwaves:receiver_large",
+   "airwaves:receiver_giant"
+  ],
+  "text": [
+   "Receivers pick up a station and play it out loud. Four sizes, each with the antenna of its own size.",
+   "- **Amethyst** in the dome (a block gives 15% more gain).",
+   "- **Antenna** on top of it, or on a copper block behind it (copper adds 25%).",
+   "- **No power needed:** like a crystal set, the radio waves run it.",
+   "With no speakers cabled it plays through its own little speaker. Cable Speakers to it to fill a room. It also gives a **redstone signal**: the stronger the station, the stronger the signal.",
+   "> A Yagi antenna on a receiver mast hears much further in the direction it points."
+  ]
+ },
+ {
+  "group": "Listening",
+  "title": "Speakers and the PA horn",
+  "short": "Speakers",
+  "icons": [
+   "airwaves:speaker",
+   "airwaves:horn_speaker"
+  ],
+  "text": [
+   "The **Speaker** plays whatever its receiver hears. Cable several to one receiver to cover a hall; each one sounds from where it stands.",
+   "The **PA Horn** is an outdoor loudspeaker for walls and poles. It works exactly like a Speaker."
+  ]
+ },
+ {
+  "group": "Broadcasting",
+  "title": "Microphones and voice chat",
+  "short": "Mics & voice",
+  "icons": [
+   "airwaves:microphone",
+   "minecraft:note_block"
+  ],
+  "text": [
+   "Airwaves has built-in proximity voice chat: players within 48 blocks hear you, quieter the farther away they are.",
+   "Press **V** for the Voice menu: mute, deafen, push-to-talk (Caps Lock), microphone, gain, volume and sensitivity. Green bars mean you are being sent.",
+   "## Going on the air",
+   "- Stand within **3.5 blocks** of a Microphone cabled to a running transmitter.",
+   "- Or, with no microphone cabled, talk within **2.5 blocks** of the transmitter itself.",
+   "A glowing pulse runs along every cable your voice travels through.",
+   "> **Nobody hears you?** Open V and talk. No bars: pick another device or raise the gain. On macOS, allow the microphone for Minecraft in System Settings."
+  ]
+ },
+ {
+  "group": "Broadcasting",
+  "title": "Transmitters",
+  "short": "Transmitters",
+  "icons": [
+   "airwaves:transmitter_small",
+   "airwaves:transmitter_medium",
+   "airwaves:transmitter_large",
+   "airwaves:transmitter_giant"
+  ],
+  "text": [
+   "Four sizes: Small, Medium, Large and Giant. Each only works with the antenna of the **same size**.",
+   "## What it needs",
+   "1. **Amethyst** in the dome (a block gives a 10% cleaner signal). Sneak-click empty-handed to take it out.",
+   "2. A **copper block** right behind it (any kind, also waxed or weathered).",
+   "3. Its **antenna** on that copper block, 4 or more tall.",
+   "4. **Power:** a shaft into its left or right side, or electricity (see Power).",
+   "A redstone signal puts it in standby.",
+   "## Range (FM, clear weather, full power)",
+   "- Small: 600 blocks (4 tall), 1700 (10 tall), 3700 (20 tall)",
+   "- Medium 8000, Big 15000, Giant 27500",
+   "AM reaches about 30% farther, and up to 60% more at night.",
+   "@fig:range:7"
+  ]
+ },
+ {
+  "group": "Broadcasting",
+  "title": "Antennas",
+  "short": "Antennas",
+  "icons": [
+   "airwaves:antenna",
+   "airwaves:antenna_medium",
+   "airwaves:antenna_big",
+   "airwaves:antenna_giant"
+  ],
+  "text": [
+   "Antennas are lattice masts placed one layer at a time: keep placing the same antenna on top to grow it.",
+   "- **Small:** 1x1, up to 20 tall",
+   "- **Medium:** 2x2, up to 40 tall",
+   "- **Big:** 4x4, then narrows to 2x2 (64 tall)",
+   "- **Giant:** 8x8, 4x4, then 2x2 (96 tall)",
+   "The crown appears on the top layer. Breaking a block removes its whole layer and gives the item back. You can climb antennas like ladders.",
+   "> **Taller is better:** more height means more range and a cleaner signal."
+  ]
+ },
+ {
+  "group": "Broadcasting",
+  "title": "Yagi antennas",
+  "short": "Yagi",
+  "icons": [
+   "airwaves:yagi_antenna",
+   "airwaves:antenna"
+  ],
+  "text": [
+   "A **Yagi Antenna** clamps on top of any antenna mast and turns it into a **beam**. It points the way you face when you place it (the red cap is the front).",
+   "- **Ahead:** the station reaches **1.9 times** as far.",
+   "- **To the sides:** about a third.",
+   "- **Right behind:** barely an eighth. That is a real blind spot.",
+   "On a receiver's mast it listens the same way: far better in front, almost deaf behind. Point two Yagis at each other for a long, private link that the stations around you do not hear.",
+   "@fig:yagi:7",
+   "> Engineer's Goggles on the transmitter show which way its beam points."
+  ]
+ },
+ {
+  "group": "Broadcasting",
+  "title": "Propagation",
+  "short": "Propagation",
+  "icons": [
+   "minecraft:compass",
+   "minecraft:clock",
+   "minecraft:lightning_rod"
+  ],
+  "text": [
+   "How well you hear a station depends on:",
+   "- **Distance** compared to the transmitter's range",
+   "- **Terrain:** hills between the antennas block FM; AM barely cares",
+   "- **Time:** AM reaches farther at night",
+   "- **Weather:** rain and thunder add static; lightning crackles on every radio nearby",
+   "- **Jammers** within 48 blocks of the receiver, or of the straight line from the station to it",
+   "- **Cables:** every block of wire adds a little noise",
+   "@fig:falloff:7",
+   "## Two stations, one frequency",
+   "If two stations on the same frequency talk **at the same time**, they step on each other: you hear both voices mashed together in static, and the weaker one is lost. Stations carrying the **same voice** (one microphone cabled to both) do not clash."
+  ]
+ },
+ {
+  "group": "Broadcasting",
+  "title": "Signal Jammer",
+  "short": "Signal Jammer",
+  "icons": [
+   "airwaves:jammer"
+  ],
+  "text": [
+   "A rugged field case with four whip antennas. Give it **power** and a **redstone signal**: every station within **48 blocks** breaks up into static.",
+   "## A wall of static",
+   "A jammer also works as a **barrier**. Any signal whose path passes within 48 blocks of it is jammed on the way through, even when the station and the radio are both far away.",
+   "- Put one between an enemy tower and their base, and their radios go quiet.",
+   "- The closer the path runs to the jammer, the worse the static.",
+   "@fig:jammer:7"
+  ]
+ },
+ {
+  "group": "Wiring",
+  "title": "Cables and wiring",
+  "short": "Cables",
+  "icons": [
+   "airwaves:copper_wire",
+   "airwaves:gold_wire",
+   "airwaves:silver_wire",
+   "airwaves:fiber_cable",
+   "airwaves:insulator"
+  ],
+  "text": [
+   "Cables carry **audio**: from a microphone to a transmitter, and from a receiver to its speakers. With Create: Power Grid installed, the metal ones carry its **electricity** too.",
+   "## Stringing a cable",
+   "1. Right-click a connector, then another. The connector nearest to where you click is used.",
+   "2. The ghost line is **green** when it will connect, **red** when it cannot.",
+   "- **Sneak-click** a connector to take its cables down (you get them back).",
+   "- **Shortcut:** sneak-click a transmitter or receiver with Copper Wire to cable every free microphone or speaker within 12 blocks.",
+   "## Cable types",
+   "- **Copper:** 16 blocks, some loss",
+   "- **Gold:** 24 blocks, half the loss",
+   "- **Silver:** 32 blocks, almost no loss",
+   "- **Fiber Optic:** 64 blocks, no loss, never carries electricity",
+   "Every cable joins every other: a copper run can carry on as fiber at an insulator.",
+   "@fig:cables:8"
+  ]
+ },
+ {
+  "group": "Wiring",
+  "title": "Insulators",
+  "short": "Insulators",
+  "icons": [
+   "airwaves:insulator",
+   "airwaves:copper_wire",
+   "airwaves:fiber_cable"
+  ],
+  "text": [
+   "The **Glass Insulator** holds up to 4 cables of any type and passes the signal between them, so a line can go further than one cable reaches, or split to several places.",
+   "Put insulators on walls, fences or posts of your own to run a line along a street or up a tower.",
+   "> Power Grid and Electro Energetics wires work as audio cables between Airwaves blocks too."
+  ]
+ },
+ {
+  "group": "Power",
+  "title": "Powering your machines",
+  "short": "Rotation",
+  "icons": [
+   "create:shaft",
+   "create:cogwheel",
+   "create:water_wheel",
+   "create:steam_engine"
+  ],
+  "text": [
+   "Transmitters, relay towers, the radio tower, the jammer and the Dimensional Relay are **machines**: they need power. Receivers, radios, speakers and microphones never do.",
+   "## Rotation (always works)",
+   "- **Transmitters, jammer, Dimensional Relay:** a shaft into the left or right side. One shaft line can run a whole row.",
+   "- **Towers:** a drive shaft comes out of both edges of the base. Connect your shaft, cog or motor to either end.",
+   "They run at **16 RPM** or more without overstress. **64 RPM** is full power; **128 RPM** gives 1.5 times the range.",
+   "## Stress per RPM",
+   "- Transmitters: 4 / 8 / 16 / 32",
+   "- Jammer 8, Dimensional Relay 16",
+   "- Relay Tower 12, Big Relay Tower 24, Radio Tower 64",
+   "> Don't want to bother? Set **requireRotation = false** in config/airwaves-common.toml."
+  ]
+ },
+ {
+  "group": "Power",
+  "title": "Electricity",
+  "short": "Electricity",
+  "icons": [
+   "airwaves:transmitter_small",
+   "airwaves:radio_tower",
+   "powergrid:wire",
+   "electroenergetics:copper_wire_spool"
+  ],
+  "text": [
+   "With **Create: Power Grid** or **Create: Electro Energetics** installed, every machine can also run on **electricity**. You don't have to: a shaft always works.",
+   "## Hooking it up",
+   "1. Every machine has two **terminals** on its front: a **red +** and a **blue -** post.",
+   "2. Wire them into your circuit like any other load: Power Grid wire clips on, Electro Energetics wire attaches to them.",
+   "3. Look at the machine with goggles: it shows the **volts** and **watts** it draws.",
+   "- **Towers** have theirs built in too: on the back of the equipment shelter at the base of a relay tower, and on the junction box beside the core of the Radio Tower.",
+   "- Airwaves **copper, gold and silver wire** work as Power Grid and Electro Energetics wire too: click a terminal to start, click another to finish. Silver has the least resistance and reaches furthest.",
+   "- It works the other way round as well: Power Grid and Electro Energetics wire carry **audio** between Airwaves blocks.",
+   "> The machine is a real load in the circuit: the watts come straight out of your generators and batteries.",
+   "## Which power is used?",
+   "- **Rotation first.** While the shaft turns fast enough, the machine draws almost nothing from the wire.",
+   "- **Electricity as backup.** When the shaft stops, the machine switches over **without dropping off the air**: its capacitor bank holds two seconds.",
+   "- Use **both** for a station that never goes down.",
+   "@fig:power:7",
+   "## Watts and volts",
+   "Each machine has a **rated voltage**. At or above it you get full power; below it the machine browns out (less range, and below a quarter it stops). More than about **twice** the rated voltage and it refuses to draw.",
+   "- Small Transmitter 10 W at 12 V",
+   "- Medium 20 W at 24 V, Jammer 20 W at 24 V",
+   "- Large 40 W at 120 V, Giant 80 W at 120 V",
+   "- Dimensional Relay 40 W at 120 V",
+   "- Relay Tower 30 W at 120 V, Big 60 W at 240 V",
+   "- Radio Tower 160 W at 240 V",
+   "> Electricity always gives normal (1x) power. Only a fast shaft can push a machine to 1.5x."
+  ]
+ },
+ {
+  "group": "Big builds",
+  "title": "Relay towers",
+  "short": "Relay towers",
+  "icons": [
+   "airwaves:relay_tower_small",
+   "airwaves:relay_tower_big"
+  ],
+  "text": [
+   "A relay tower picks up a station on its own frequency, cleans it up and sends it out again from where it stands. Relays chain up to **4 hops**.",
+   "- **Relay Tower:** about 5600 blocks of range",
+   "- **Big Relay Tower:** about 14500 blocks",
+   "Tune the item before placing it (or click the tower with a tuned item). Power it through the drive shaft at its base, or with electricity. It only repeats a station it hears with at least 20% quality. Redstone on the core switches it off.",
+   "@fig:relay:6"
+  ]
+ },
+ {
+  "group": "Big builds",
+  "title": "Radio tower",
+  "short": "Radio tower",
+  "icons": [
+   "airwaves:radio_tower",
+   "minecraft:amethyst_block"
+  ],
+  "text": [
+   "A whole broadcast station in one piece: a 27 block tall tower that is its own giant antenna, reaching about **38000 blocks** on FM.",
+   "1. Put **amethyst** in the brass cabinet at the centre of the base (click within 2 blocks of it).",
+   "2. **Cable a microphone** (or a whole studio, through poles) to the cabinet.",
+   "3. **Power** it through the drive shaft at the edge of the base (64 SU per RPM), or with electricity.",
+   "The cabinet glows while it is on the air. Redstone on the cabinet puts it in standby."
+  ]
+ },
+ {
+  "group": "Big builds",
+  "title": "Dimensional Relay",
+  "short": "Dimensional Relay",
+  "icons": [
+   "airwaves:dimensional_relay",
+   "minecraft:crying_obsidian",
+   "minecraft:ender_eye"
+  ],
+  "text": [
+   "Radio does not cross between dimensions on its own. The **Dimensional Relay** carries it across: build one in the **Overworld** and one in the **Nether** (or the End), and the radio of each side can be heard on the other.",
+   "@fig:dimlink:7",
+   "## How it works",
+   "- Each relay **listens** like a relay tower: every station it hears around it, on **any frequency**, is sent across.",
+   "- Every running relay in another dimension **sends those stations out** again, each on its own frequency (about 4500 blocks on FM).",
+   "- It works **both ways**, and talking into a microphone on one side is heard by radios on the other.",
+   "## Setting one up",
+   "1. Place it near your radio network and give it **power** (shaft, 16 SU per RPM, or electricity).",
+   "2. Go through the portal and place **another one** there. Power it too.",
+   "3. The rift in its window starts turning; goggles show \"linked to the Nether\" and how many stations it carries.",
+   "> A running relay **keeps its own chunk loaded**, so the link never drops while you are away. Redstone switches it off."
+  ]
+ },
+ {
+  "group": "Big builds",
+  "title": "Create: Aeronautics airships",
+  "short": "Airships",
+  "icons": [
+   "create:propeller",
+   "airwaves:radio_console",
+   "airwaves:transmitter_small",
+   "airwaves:radio"
+  ],
+  "text": [
+   "Every Airwaves block works on airships: range, terrain, weather, voice and speakers all use where the ship really is.",
+   "- **Height pays off:** a transmitter or relay gets 50% more range for every 100 blocks it flies above the ground.",
+   "- **Cables** can run between a ship and the ground. Pulled more than a quarter past their length, they snap.",
+   "- Big transmitters and antennas are heavy; speakers and microphones are light.",
+   "@fig:altitude:7",
+   "## Radio Console",
+   "Every transmitter, receiver, relay and radio within **8 blocks** follows the console's frequency. On a ship it only reaches the ship's own blocks.",
+   "- **Click:** seek the next station and retune everything.",
+   "- **Sneak-click:** station report.",
+   "- **Redstone:** master switch, all its transmitters go on standby."
+  ]
+ },
+ {
+  "group": "Big builds",
+  "title": "Studio extras",
+  "short": "Studio extras",
+  "icons": [
+   "airwaves:on_air_sign",
+   "airwaves:radio_console"
+  ],
+  "text": [
+   "- **On Air Sign:** lights up red while any transmitter within 12 blocks is sending a voice.",
+   "- **Radio Console:** runs every radio device within 8 blocks from one desk (see Airships)."
+  ]
+ },
+ {
+  "group": "Making things",
+  "title": "Circuit boards",
+  "short": "Circuit boards",
+  "icons": [
+   "airwaves:circuit_workbench",
+   "airwaves:circuit_board",
+   "airwaves:resistor",
+   "airwaves:capacitor",
+   "airwaves:led",
+   "airwaves:transistor"
+  ],
+  "text": [
+   "Every device is built around a circuit board, and you design the boards yourself on the **Circuit Workbench**. There are **no recipes**: what you draw decides what you get.",
+   "1. Put a **Blank Circuit Board** in its slot.",
+   "2. Lay parts on the **8 x 5** grid, one per square.",
+   "3. **Draw copper** on the empty pads (click or drag, right-click erases) so the circuit runs from **IN** on the left to **OUT** on the right.",
+   "4. Pick what to make under the board, and take it.",
+   "@fig:board:7",
+   "## Stages",
+   "Parts that **touch**, or are **joined by copper** with nothing in between, work together. Some pairs make a **stage**:",
+   "- **Tuned tank:** coil + capacitor",
+   "- **Oscillator:** crystal + capacitor",
+   "- **Tube amp:** vacuum tube + resistor",
+   "- **Transistor amp:** transistor + resistor",
+   "- **Logic gate:** transistor + transistor",
+   "- **Timer:** resistor + capacitor",
+   "- **Indicator:** LED + resistor",
+   "## What it can be",
+   "- **Radio:** tank, oscillator, transistor amp, indicator",
+   "- **RF:** oscillator, tube amp, tank",
+   "- **Tuner:** tank and oscillator",
+   "- **Amplifier:** tube amp, no tank or oscillator",
+   "- **Audio:** transistor amp and timer, no tubes or oscillator",
+   "- **Display:** 3 indicators",
+   "- **Control:** logic gate and indicator",
+   "- **Logic Board:** any working circuit",
+   "One circuit often fits several kinds: the bench shows them all, each with the icon your board will have. Click the one you want.",
+   "> Every board keeps the exact circuit you drew, and its icon shows it. **Blueprints** on the right show one working circuit for each kind; **Auto** lays it out from your inventory."
+  ]
+ },
+ {
+  "group": "Making things",
+  "title": "Circuit Box",
+  "short": "Circuit Box",
+  "icons": [
+   "airwaves:circuit_box",
+   "airwaves:logic_board",
+   "minecraft:redstone",
+   "minecraft:repeater"
+  ],
+  "text": [
+   "The **Circuit Box** runs any board on its own. Like a repeater, it reads redstone at its **back** and sends its signal out of its **front**.",
+   "- **Right-click** it with a board to put the board in.",
+   "- **Sneak-click** with an empty hand to take it out.",
+   "- Tune it like a radio (Tuning Table, or click it with a tuned item).",
+   "## The board is the program",
+   "The stages run in the order they sit along the circuit, **from IN to OUT**. The first tank or oscillator is where the signal comes from:",
+   "- **Tank first:** the station on the box's frequency (stronger station, stronger signal)",
+   "- **Oscillator first:** a clock",
+   "- **Neither:** the redstone at the back",
+   "Every stage after that changes the signal:",
+   "- **Logic gate:** invert",
+   "- **Timer:** hold it 1 second longer (each timer adds 1 s)",
+   "- **Amplifier:** full strength",
+   "- **Oscillator:** blink",
+   "- **Tank:** only while the station is on the air",
+   "- **Indicator:** lights the lamp on the box",
+   "## Examples",
+   "- tank > amp: a full signal while your station is on the air (an ON AIR light!)",
+   "- tank > logic > timer: a signal when the station goes silent, held 1 s",
+   "- redstone > timer > timer: stretches a button press to 2 seconds",
+   "> Hover any board, or look at the box with goggles: it shows its program, like \"station heard > invert > out\"."
+  ]
+ },
+ {
+  "group": "Making things",
+  "title": "Microchips and sensors",
+  "short": "Chips & sensors",
+  "icons": [
+   "airwaves:memory_chip",
+   "airwaves:counter_chip",
+   "airwaves:pulse_chip",
+   "airwaves:light_sensor",
+   "airwaves:rain_sensor",
+   "airwaves:motion_sensor"
+  ],
+  "text": [
+   "Chips and sensors are board parts that need **no partner**: each one is a stage on its own, as long as the copper reaches it.",
+   "## Microchips: they compute",
+   "- **Memory Chip:** every new signal flips it on or off, and it remembers (a toggle, like a T flip-flop).",
+   "- **Counter Chip:** counts every new signal. Its output strength is the count, 1 to 15, then it starts again.",
+   "- **Pulse Chip:** turns any new signal into one short tick, however long the input stays on.",
+   "## Sensors: they read the world",
+   "A sensor that comes **first** along the circuit is where the signal comes from. Anywhere later it is a condition the signal must pass.",
+   "- **Light Sensor:** sky light, like a Daylight Detector. Later on: only by day.",
+   "- **Rain Sensor:** 8 in rain, 15 in a thunderstorm. Later on: only in rain.",
+   "- **Motion Sensor:** a player within 8 blocks, stronger the closer. Later on: only with someone near.",
+   "## Ideas",
+   "- motion > pulse > counter: counts visitors at your door",
+   "- redstone > memory: a button that switches a lamp on and off",
+   "- light sensor > logic gate: street lights that come on at night",
+   "A board with a chip can be a **Computer Board**, one with a sensor a **Sensor Board**."
+  ]
+ },
+ {
+  "group": "Making things",
+  "title": "Materials",
+  "short": "Materials",
+  "icons": [
+   "airwaves:silver_ore",
+   "airwaves:raw_silver",
+   "airwaves:silver_ingot",
+   "airwaves:silver_sheet",
+   "airwaves:polished_amethyst"
+  ],
+  "text": [
+   "- **Silver ore:** deep underground (y 24 and below), more often the deeper you go. Smelt it, or crush it with Create for extra.",
+   "- **Sheets:** press ingots with a Mechanical Press. A sheet and a stick give 4 wire.",
+   "- **Polished Amethyst:** sand amethyst shards with Create sandpaper.",
+   "- **Zinc and brass** come from Create."
+  ]
+ },
+ {
+  "group": "Making things",
+  "title": "Components",
+  "short": "Components",
+  "icons": [
+   "airwaves:vacuum_tube",
+   "airwaves:copper_coil",
+   "airwaves:crystal_oscillator",
+   "airwaves:signal_mechanism",
+   "airwaves:speaker_cone",
+   "airwaves:mic_capsule"
+  ],
+  "text": [
+   "- **Vacuum Tube, Copper Coil, Crystal Oscillator:** crafted parts for boards.",
+   "- **Blank Circuit Board:** sequenced assembly from a smooth stone slab: copper wire, silver nugget, quartz, then press.",
+   "- **Resistors, capacitors, LEDs, transistors:** crafted four at a time.",
+   "- **Signal Mechanism:** a precision mechanism with an oscillator, a tube and silver wire deployed on it.",
+   "Medium, Large and Giant devices, the towers and the Dimensional Relay are built on Create's **Mechanical Crafters**."
+  ]
+ },
+ {
+  "group": "Making things",
+  "title": "Multimeter",
+  "short": "Multimeter",
+  "icons": [
+   "airwaves:multimeter"
+  ],
+  "text": [
+   "Right-click anything with the **Multimeter**: shaft speed, electric charge, the cables on it, its frequency, and its range or the signal it receives."
+  ]
+ },
+ {
+  "group": "Making things",
+  "title": "Creative blocks",
+  "short": "Creative blocks",
+  "icons": [
+   "airwaves:creative_transmitter",
+   "airwaves:creative_receiver",
+   "airwaves:creative_antenna"
+  ],
+  "text": [
+   "Three creative-only blocks for testing. No recipe.",
+   "- **Creative Transmitter:** no amethyst, antenna or power. Always on the air; heard at full quality everywhere in the dimension.",
+   "- **Creative Receiver:** hears the nearest station on its frequency anywhere, at full quality.",
+   "- **Creative Antenna:** counts as a complete antenna of any size. Hold right-click on the box on its base to set its range (0 to 9999 blocks)."
+  ]
+ }
+]

@@ -1,0 +1,19 @@
+{
+ "variants": {
+  "facing=north": {
+   "model": "airwaves:block/insulator"
+  },
+  "facing=east": {
+   "model": "airwaves:block/insulator",
+   "y": 90
+  },
+  "facing=south": {
+   "model": "airwaves:block/insulator",
+   "y": 180
+  },
+  "facing=west": {
+   "model": "airwaves:block/insulator",
+   "y": 270
+  }
+ }
+}

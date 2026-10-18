@@ -1,0 +1,29 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "misc",
+ "pattern": [
+  "IGI",
+  "RLR",
+  "IWI"
+ ],
+ "key": {
+  "I": {
+   "tag": "c:plates/iron"
+  },
+  "G": {
+   "item": "minecraft:glass_pane"
+  },
+  "R": {
+   "item": "minecraft:red_dye"
+  },
+  "L": {
+   "item": "airwaves:led"
+  },
+  "W": {
+   "item": "airwaves:copper_wire"
+  }
+ },
+ "result": {
+  "id": "airwaves:on_air_sign"
+ }
+}

@@ -1,0 +1,19 @@
+{
+ "variants": {
+  "facing=north": {
+   "model": "airwaves:block/microphone"
+  },
+  "facing=east": {
+   "model": "airwaves:block/microphone",
+   "y": 90
+  },
+  "facing=south": {
+   "model": "airwaves:block/microphone",
+   "y": 180
+  },
+  "facing=west": {
+   "model": "airwaves:block/microphone",
+   "y": 270
+  }
+ }
+}

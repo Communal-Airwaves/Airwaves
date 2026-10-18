@@ -1,0 +1,13 @@
+{
+ "type": "create:sandpaper_polishing",
+ "ingredients": [
+  {
+   "item": "minecraft:amethyst_shard"
+  }
+ ],
+ "results": [
+  {
+   "id": "airwaves:polished_amethyst"
+  }
+ ]
+}

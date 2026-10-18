@@ -1,0 +1,32 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "misc",
+ "pattern": [
+  "WCW",
+  "XTX",
+  "KSK"
+ ],
+ "key": {
+  "W": {
+   "item": "airwaves:copper_wire"
+  },
+  "C": {
+   "item": "airwaves:control_board"
+  },
+  "X": {
+   "item": "airwaves:rf_board"
+  },
+  "T": {
+   "item": "airwaves:vacuum_tube"
+  },
+  "K": {
+   "item": "create:copper_casing"
+  },
+  "S": {
+   "item": "create:shaft"
+  }
+ },
+ "result": {
+  "id": "airwaves:jammer"
+ }
+}

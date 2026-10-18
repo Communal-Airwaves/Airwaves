@@ -1,0 +1,29 @@
+{
+ "type": "minecraft:block",
+ "pools": [
+  {
+   "rolls": 1,
+   "entries": [
+    {
+     "type": "minecraft:item",
+     "name": "airwaves:radio_console",
+     "functions": [
+      {
+       "function": "minecraft:copy_components",
+       "source": "block_entity",
+       "include": [
+        "airwaves:tuning",
+        "minecraft:custom_name"
+       ]
+      }
+     ]
+    }
+   ],
+   "conditions": [
+    {
+     "condition": "minecraft:survives_explosion"
+    }
+   ]
+  }
+ ]
+}

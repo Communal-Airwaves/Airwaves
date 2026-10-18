@@ -1,0 +1,16 @@
+{
+  "jars": [
+    {
+      "identifier": {
+        "group": "dev.ryanhcode.sable-companion",
+        "artifact": "sable-companion-common-1.21.1"
+      },
+      "version": {
+        "range": "[1.6.0,)",
+        "artifactVersion": "1.6.0"
+      },
+      "path": "META-INF/jarjar/sable-companion-common-1.21.1-1.6.0.jar",
+      "isObfuscated": false
+    }
+  ]
+}

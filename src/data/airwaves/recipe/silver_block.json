@@ -1,0 +1,17 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "misc",
+ "pattern": [
+  "SSS",
+  "SSS",
+  "SSS"
+ ],
+ "key": {
+  "S": {
+   "item": "airwaves:silver_ingot"
+  }
+ },
+ "result": {
+  "id": "airwaves:silver_block"
+ }
+}

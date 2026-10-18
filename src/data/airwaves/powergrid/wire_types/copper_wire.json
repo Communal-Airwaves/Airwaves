@@ -1,0 +1,14 @@
+{
+ "resistancePerItem": 0.0015,
+ "itemsPerMeter": 0.5,
+ "maximumLength": 16.0,
+ "thermalMass": 1.0,
+ "maximumCurrent": 80.0,
+ "texture": "airwaves:textures/special/copper_wire.png",
+ "horizontalCoefficient": 1.01,
+ "verticalCoefficient": 1.2,
+ "wireThickness": 0.0625,
+ "colorable": false,
+ "cord": false,
+ "insulated": false
+}

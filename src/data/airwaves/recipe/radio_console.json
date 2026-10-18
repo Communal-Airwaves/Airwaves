@@ -1,0 +1,32 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "misc",
+ "pattern": [
+  "DSR",
+  "BCB",
+  "KKK"
+ ],
+ "key": {
+  "D": {
+   "item": "airwaves:display_board"
+  },
+  "S": {
+   "item": "airwaves:speaker_cone"
+  },
+  "R": {
+   "item": "airwaves:radio_board"
+  },
+  "B": {
+   "item": "airwaves:control_board"
+  },
+  "C": {
+   "item": "airwaves:mic_capsule"
+  },
+  "K": {
+   "item": "create:andesite_casing"
+  }
+ },
+ "result": {
+  "id": "airwaves:radio_console"
+ }
+}

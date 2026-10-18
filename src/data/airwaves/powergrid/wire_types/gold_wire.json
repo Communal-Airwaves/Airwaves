@@ -1,0 +1,14 @@
+{
+ "resistancePerItem": 0.0009,
+ "itemsPerMeter": 0.5,
+ "maximumLength": 24.0,
+ "thermalMass": 1.0,
+ "maximumCurrent": 120.0,
+ "texture": "airwaves:textures/special/gold_wire.png",
+ "horizontalCoefficient": 1.01,
+ "verticalCoefficient": 1.2,
+ "wireThickness": 0.0625,
+ "colorable": false,
+ "cord": false,
+ "insulated": false
+}

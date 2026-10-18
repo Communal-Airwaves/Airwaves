@@ -1,0 +1,27 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "misc",
+ "pattern": [
+  "NRN",
+  "QTQ",
+  "NRN"
+ ],
+ "key": {
+  "N": {
+   "tag": "c:nuggets/silver"
+  },
+  "R": {
+   "item": "minecraft:redstone"
+  },
+  "Q": {
+   "item": "minecraft:quartz"
+  },
+  "T": {
+   "item": "airwaves:transistor"
+  }
+ },
+ "result": {
+  "id": "airwaves:memory_chip",
+  "count": 2
+ }
+}

@@ -1,0 +1,26 @@
+{
+ "replace": false,
+ "values": [
+  "airwaves:radio_casing",
+  "airwaves:jammer",
+  "airwaves:dimensional_relay",
+  "airwaves:microphone",
+  "airwaves:speaker",
+  "airwaves:radio",
+  "airwaves:circuit_workbench",
+  "airwaves:radio_console",
+  "airwaves:on_air_sign",
+  "airwaves:horn_speaker",
+  "airwaves:creative_transmitter",
+  "airwaves:creative_receiver",
+  "airwaves:creative_antenna",
+  "airwaves:transmitter_small",
+  "airwaves:transmitter_medium",
+  "airwaves:transmitter_large",
+  "airwaves:transmitter_giant",
+  "airwaves:receiver_small",
+  "airwaves:receiver_medium",
+  "airwaves:receiver_large",
+  "airwaves:receiver_giant"
+ ]
+}

@@ -1,0 +1,214 @@
+{
+ "crystal_in": {
+  "sounds": [
+   {
+    "name": "minecraft:block.amethyst_cluster.place",
+    "type": "event",
+    "pitch": 0.75,
+    "volume": 1.0
+   },
+   {
+    "name": "minecraft:block.amethyst_block.chime",
+    "type": "event",
+    "pitch": 0.6,
+    "volume": 0.8
+   }
+  ],
+  "subtitle": "subtitles.airwaves.crystal_in"
+ },
+ "crystal_out": {
+  "sounds": [
+   {
+    "name": "minecraft:block.amethyst_cluster.break",
+    "type": "event",
+    "pitch": 0.9,
+    "volume": 1.0
+   }
+  ],
+  "subtitle": "subtitles.airwaves.crystal_out"
+ },
+ "knob": {
+  "sounds": [
+   {
+    "name": "minecraft:block.comparator.click",
+    "type": "event",
+    "pitch": 1.8,
+    "volume": 0.5
+   }
+  ],
+  "subtitle": "subtitles.airwaves.knob"
+ },
+ "tune": {
+  "sounds": [
+   {
+    "name": "minecraft:block.lever.click",
+    "type": "event",
+    "pitch": 2.0,
+    "volume": 0.35
+   },
+   {
+    "name": "minecraft:ui.button.click",
+    "type": "event",
+    "pitch": 1.7,
+    "volume": 0.3
+   }
+  ],
+  "subtitle": "subtitles.airwaves.tune"
+ },
+ "seek": {
+  "sounds": [
+   {
+    "name": "minecraft:block.note_block.bit",
+    "type": "event",
+    "pitch": 1.5,
+    "volume": 0.25
+   },
+   {
+    "name": "minecraft:block.note_block.bit",
+    "type": "event",
+    "pitch": 1.8,
+    "volume": 0.25
+   }
+  ],
+  "subtitle": "subtitles.airwaves.seek"
+ },
+ "power_on": {
+  "sounds": [
+   {
+    "name": "minecraft:block.beacon.activate",
+    "type": "event",
+    "pitch": 1.7,
+    "volume": 0.35
+   }
+  ],
+  "subtitle": "subtitles.airwaves.power_on"
+ },
+ "power_off": {
+  "sounds": [
+   {
+    "name": "minecraft:block.beacon.deactivate",
+    "type": "event",
+    "pitch": 1.6,
+    "volume": 0.35
+   }
+  ],
+  "subtitle": "subtitles.airwaves.power_off"
+ },
+ "cable_grab": {
+  "sounds": [
+   {
+    "name": "minecraft:block.chain.hit",
+    "type": "event",
+    "pitch": 1.4,
+    "volume": 0.6
+   }
+  ],
+  "subtitle": "subtitles.airwaves.cable_grab"
+ },
+ "cable_attach": {
+  "sounds": [
+   {
+    "name": "minecraft:block.chain.place",
+    "type": "event",
+    "pitch": 1.3,
+    "volume": 0.8
+   },
+   {
+    "name": "minecraft:block.copper.place",
+    "type": "event",
+    "pitch": 1.6,
+    "volume": 0.6
+   }
+  ],
+  "subtitle": "subtitles.airwaves.cable_attach"
+ },
+ "cable_heavy": {
+  "sounds": [
+   {
+    "name": "minecraft:block.chain.place",
+    "type": "event",
+    "pitch": 0.6,
+    "volume": 1.0
+   },
+   {
+    "name": "minecraft:block.anvil.place",
+    "type": "event",
+    "pitch": 1.8,
+    "volume": 0.15
+   }
+  ],
+  "subtitle": "subtitles.airwaves.cable_heavy"
+ },
+ "cable_detach": {
+  "sounds": [
+   {
+    "name": "minecraft:block.chain.break",
+    "type": "event",
+    "pitch": 1.3,
+    "volume": 0.8
+   }
+  ],
+  "subtitle": "subtitles.airwaves.cable_detach"
+ },
+ "cable_reject": {
+  "sounds": [
+   {
+    "name": "minecraft:block.chain.hit",
+    "type": "event",
+    "pitch": 0.6,
+    "volume": 0.6
+   }
+  ],
+  "subtitle": "subtitles.airwaves.cable_reject"
+ },
+ "structure": {
+  "sounds": [
+   {
+    "name": "minecraft:block.anvil.land",
+    "type": "event",
+    "pitch": 0.5,
+    "volume": 0.4
+   },
+   {
+    "name": "minecraft:block.chain.place",
+    "type": "event",
+    "pitch": 0.7,
+    "volume": 1.0
+   }
+  ],
+  "subtitle": "subtitles.airwaves.structure"
+ },
+ "switch": {
+  "sounds": [
+   {
+    "name": "minecraft:block.lever.click",
+    "type": "event",
+    "pitch": 1.2,
+    "volume": 0.5
+   }
+  ],
+  "subtitle": "subtitles.airwaves.switch"
+ },
+ "probe": {
+  "sounds": [
+   {
+    "name": "minecraft:block.sculk_sensor.clicking",
+    "type": "event",
+    "pitch": 1.8,
+    "volume": 0.4
+   }
+  ],
+  "subtitle": "subtitles.airwaves.probe"
+ },
+ "book": {
+  "sounds": [
+   {
+    "name": "minecraft:item.book.page_turn",
+    "type": "event",
+    "pitch": 0.85,
+    "volume": 1.0
+   }
+  ],
+  "subtitle": "subtitles.airwaves.book"
+ }
+}

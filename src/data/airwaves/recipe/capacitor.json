@@ -1,0 +1,23 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "misc",
+ "pattern": [
+  " N ",
+  "PZP"
+ ],
+ "key": {
+  "N": {
+   "tag": "c:nuggets/copper"
+  },
+  "P": {
+   "item": "minecraft:paper"
+  },
+  "Z": {
+   "tag": "c:nuggets/zinc"
+  }
+ },
+ "result": {
+  "id": "airwaves:capacitor",
+  "count": 4
+ }
+}

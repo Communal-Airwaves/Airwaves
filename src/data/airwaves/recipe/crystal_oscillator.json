@@ -1,0 +1,24 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "misc",
+ "pattern": [
+  " N ",
+  "WAW",
+  " N "
+ ],
+ "key": {
+  "N": {
+   "tag": "c:nuggets/silver"
+  },
+  "W": {
+   "item": "airwaves:copper_wire"
+  },
+  "A": {
+   "item": "airwaves:polished_amethyst"
+  }
+ },
+ "result": {
+  "id": "airwaves:crystal_oscillator",
+  "count": 2
+ }
+}

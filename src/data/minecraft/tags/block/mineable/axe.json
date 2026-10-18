@@ -1,0 +1,9 @@
+{
+ "values": [
+  "airwaves:speaker",
+  "airwaves:insulator",
+  "airwaves:tuning_table",
+  "airwaves:radio",
+  "airwaves:circuit_workbench"
+ ]
+}

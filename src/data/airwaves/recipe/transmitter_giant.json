@@ -1,0 +1,35 @@
+{
+ "type": "create:mechanical_crafting",
+ "accept_mirrored": false,
+ "category": "misc",
+ "key": {
+  "K": {
+   "item": "airwaves:copper_coil"
+  },
+  "X": {
+   "item": "airwaves:rf_board"
+  },
+  "A": {
+   "item": "airwaves:amplifier_board"
+  },
+  "M": {
+   "item": "airwaves:signal_mechanism"
+  },
+  "S": {
+   "item": "airwaves:transmitter_large"
+  },
+  "C": {
+   "item": "create:brass_casing"
+  }
+ },
+ "pattern": [
+  " K ",
+  "XAX",
+  "MSM",
+  "CCC"
+ ],
+ "result": {
+  "id": "airwaves:transmitter_giant"
+ },
+ "show_notification": false
+}

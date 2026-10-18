@@ -1,0 +1,12 @@
+{
+ "type": "minecraft:smelting",
+ "category": "misc",
+ "ingredient": {
+  "tag": "c:ores/silver"
+ },
+ "result": {
+  "id": "airwaves:silver_ingot"
+ },
+ "experience": 1.0,
+ "cookingtime": 200
+}

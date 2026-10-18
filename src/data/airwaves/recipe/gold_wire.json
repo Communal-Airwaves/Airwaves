@@ -1,0 +1,16 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "category": "misc",
+ "ingredients": [
+  {
+   "tag": "c:plates/gold"
+  },
+  {
+   "item": "minecraft:stick"
+  }
+ ],
+ "result": {
+  "id": "airwaves:gold_wire",
+  "count": 4
+ }
+}

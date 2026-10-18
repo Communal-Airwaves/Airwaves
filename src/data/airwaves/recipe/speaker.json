@@ -1,0 +1,26 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "misc",
+ "pattern": [
+  " B ",
+  "BCB",
+  "PAP"
+ ],
+ "key": {
+  "B": {
+   "tag": "c:plates/brass"
+  },
+  "C": {
+   "item": "airwaves:speaker_cone"
+  },
+  "P": {
+   "tag": "minecraft:planks"
+  },
+  "A": {
+   "item": "airwaves:amplifier_board"
+  }
+ },
+ "result": {
+  "id": "airwaves:speaker"
+ }
+}

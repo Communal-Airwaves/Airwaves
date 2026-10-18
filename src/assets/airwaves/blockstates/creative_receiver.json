@@ -1,0 +1,94 @@
+{
+ "variants": {
+  "facing=north,active=false,crystal=0": {
+   "model": "airwaves:block/creative_receiver"
+  },
+  "facing=north,active=false,crystal=1": {
+   "model": "airwaves:block/creative_receiver"
+  },
+  "facing=north,active=false,crystal=2": {
+   "model": "airwaves:block/creative_receiver"
+  },
+  "facing=north,active=true,crystal=0": {
+   "model": "airwaves:block/creative_receiver_on"
+  },
+  "facing=north,active=true,crystal=1": {
+   "model": "airwaves:block/creative_receiver_on"
+  },
+  "facing=north,active=true,crystal=2": {
+   "model": "airwaves:block/creative_receiver_on"
+  },
+  "facing=east,active=false,crystal=0": {
+   "model": "airwaves:block/creative_receiver",
+   "y": 90
+  },
+  "facing=east,active=false,crystal=1": {
+   "model": "airwaves:block/creative_receiver",
+   "y": 90
+  },
+  "facing=east,active=false,crystal=2": {
+   "model": "airwaves:block/creative_receiver",
+   "y": 90
+  },
+  "facing=east,active=true,crystal=0": {
+   "model": "airwaves:block/creative_receiver_on",
+   "y": 90
+  },
+  "facing=east,active=true,crystal=1": {
+   "model": "airwaves:block/creative_receiver_on",
+   "y": 90
+  },
+  "facing=east,active=true,crystal=2": {
+   "model": "airwaves:block/creative_receiver_on",
+   "y": 90
+  },
+  "facing=south,active=false,crystal=0": {
+   "model": "airwaves:block/creative_receiver",
+   "y": 180
+  },
+  "facing=south,active=false,crystal=1": {
+   "model": "airwaves:block/creative_receiver",
+   "y": 180
+  },
+  "facing=south,active=false,crystal=2": {
+   "model": "airwaves:block/creative_receiver",
+   "y": 180
+  },
+  "facing=south,active=true,crystal=0": {
+   "model": "airwaves:block/creative_receiver_on",
+   "y": 180
+  },
+  "facing=south,active=true,crystal=1": {
+   "model": "airwaves:block/creative_receiver_on",
+   "y": 180
+  },
+  "facing=south,active=true,crystal=2": {
+   "model": "airwaves:block/creative_receiver_on",
+   "y": 180
+  },
+  "facing=west,active=false,crystal=0": {
+   "model": "airwaves:block/creative_receiver",
+   "y": 270
+  },
+  "facing=west,active=false,crystal=1": {
+   "model": "airwaves:block/creative_receiver",
+   "y": 270
+  },
+  "facing=west,active=false,crystal=2": {
+   "model": "airwaves:block/creative_receiver",
+   "y": 270
+  },
+  "facing=west,active=true,crystal=0": {
+   "model": "airwaves:block/creative_receiver_on",
+   "y": 270
+  },
+  "facing=west,active=true,crystal=1": {
+   "model": "airwaves:block/creative_receiver_on",
+   "y": 270
+  },
+  "facing=west,active=true,crystal=2": {
+   "model": "airwaves:block/creative_receiver_on",
+   "y": 270
+  }
+ }
+}

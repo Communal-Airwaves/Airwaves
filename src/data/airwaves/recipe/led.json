@@ -1,0 +1,23 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "misc",
+ "pattern": [
+  " G ",
+  "RNR"
+ ],
+ "key": {
+  "G": {
+   "item": "minecraft:glowstone_dust"
+  },
+  "R": {
+   "item": "minecraft:redstone"
+  },
+  "N": {
+   "tag": "c:nuggets/silver"
+  }
+ },
+ "result": {
+  "id": "airwaves:led",
+  "count": 4
+ }
+}

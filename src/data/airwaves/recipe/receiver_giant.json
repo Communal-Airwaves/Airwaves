@@ -1,0 +1,31 @@
+{
+ "type": "create:mechanical_crafting",
+ "accept_mirrored": false,
+ "category": "misc",
+ "key": {
+  "R": {
+   "item": "airwaves:tuner_board"
+  },
+  "D": {
+   "item": "airwaves:display_board"
+  },
+  "M": {
+   "item": "airwaves:signal_mechanism"
+  },
+  "S": {
+   "item": "airwaves:receiver_large"
+  },
+  "C": {
+   "item": "create:andesite_casing"
+  }
+ },
+ "pattern": [
+  "RDR",
+  "MSM",
+  "CCC"
+ ],
+ "result": {
+  "id": "airwaves:receiver_giant"
+ },
+ "show_notification": false
+}

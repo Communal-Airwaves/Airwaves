@@ -1,0 +1,29 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "misc",
+ "pattern": [
+  "GDG",
+  "BSB",
+  "PPP"
+ ],
+ "key": {
+  "G": {
+   "item": "minecraft:glass_pane"
+  },
+  "D": {
+   "item": "airwaves:display_board"
+  },
+  "B": {
+   "item": "airwaves:tuner_board"
+  },
+  "S": {
+   "item": "airwaves:signal_mechanism"
+  },
+  "P": {
+   "tag": "minecraft:planks"
+  }
+ },
+ "result": {
+  "id": "airwaves:tuning_table"
+ }
+}

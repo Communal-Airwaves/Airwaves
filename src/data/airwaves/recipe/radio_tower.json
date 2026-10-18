@@ -1,0 +1,36 @@
+{
+ "type": "create:mechanical_crafting",
+ "accept_mirrored": false,
+ "category": "misc",
+ "key": {
+  "G": {
+   "item": "create:metal_girder"
+  },
+  "A": {
+   "item": "airwaves:antenna_big"
+  },
+  "T": {
+   "item": "airwaves:transmitter_giant"
+  },
+  "M": {
+   "item": "airwaves:signal_mechanism"
+  },
+  "K": {
+   "item": "airwaves:copper_coil"
+  },
+  "C": {
+   "item": "create:brass_casing"
+  }
+ },
+ "pattern": [
+  "  G  ",
+  " AGA ",
+  " GTG ",
+  "GMKMG",
+  "CCCCC"
+ ],
+ "result": {
+  "id": "airwaves:radio_tower"
+ },
+ "show_notification": false
+}

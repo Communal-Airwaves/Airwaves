@@ -1,0 +1,23 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "misc",
+ "pattern": [
+  " W ",
+  "NCN"
+ ],
+ "key": {
+  "W": {
+   "item": "minecraft:water_bucket"
+  },
+  "N": {
+   "tag": "c:nuggets/copper"
+  },
+  "C": {
+   "item": "airwaves:copper_wire"
+  }
+ },
+ "result": {
+  "id": "airwaves:rain_sensor",
+  "count": 2
+ }
+}

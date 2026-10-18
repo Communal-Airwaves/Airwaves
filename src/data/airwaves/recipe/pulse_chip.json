@@ -1,0 +1,27 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "misc",
+ "pattern": [
+  "NRN",
+  "QPQ",
+  "NRN"
+ ],
+ "key": {
+  "N": {
+   "tag": "c:nuggets/silver"
+  },
+  "R": {
+   "item": "minecraft:redstone"
+  },
+  "Q": {
+   "item": "minecraft:quartz"
+  },
+  "P": {
+   "item": "minecraft:repeater"
+  }
+ },
+ "result": {
+  "id": "airwaves:pulse_chip",
+  "count": 2
+ }
+}

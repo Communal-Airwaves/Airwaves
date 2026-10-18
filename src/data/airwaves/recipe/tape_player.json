@@ -1,0 +1,29 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "misc",
+ "pattern": [
+  "BSB",
+  "KAK",
+  "PPP"
+ ],
+ "key": {
+  "B": {
+   "tag": "c:plates/brass"
+  },
+  "S": {
+   "item": "airwaves:speaker_cone"
+  },
+  "K": {
+   "item": "airwaves:mic_capsule"
+  },
+  "A": {
+   "item": "airwaves:audio_board"
+  },
+  "P": {
+   "tag": "c:plates/iron"
+  }
+ },
+ "result": {
+  "id": "airwaves:tape_player"
+ }
+}

@@ -1,0 +1,10 @@
+{
+ "variants": {
+  "top=false": {
+   "model": "airwaves:block/antenna_small"
+  },
+  "top=true": {
+   "model": "airwaves:block/antenna_small_top"
+  }
+ }
+}

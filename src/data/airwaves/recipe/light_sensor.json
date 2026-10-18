@@ -1,0 +1,23 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "misc",
+ "pattern": [
+  " G ",
+  "NDN"
+ ],
+ "key": {
+  "G": {
+   "item": "minecraft:glass_pane"
+  },
+  "N": {
+   "tag": "c:nuggets/copper"
+  },
+  "D": {
+   "item": "minecraft:daylight_detector"
+  }
+ },
+ "result": {
+  "id": "airwaves:light_sensor",
+  "count": 2
+ }
+}

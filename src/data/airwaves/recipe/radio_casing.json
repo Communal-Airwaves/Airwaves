@@ -1,0 +1,21 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "misc",
+ "pattern": [
+  "SSS",
+  "SCS",
+  "SSS"
+ ],
+ "key": {
+  "S": {
+   "tag": "c:plates/copper"
+  },
+  "C": {
+   "item": "create:copper_casing"
+  }
+ },
+ "result": {
+  "id": "airwaves:radio_casing",
+  "count": 4
+ }
+}

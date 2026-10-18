@@ -1,0 +1,26 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "misc",
+ "pattern": [
+  " W",
+  "BC",
+  "SS"
+ ],
+ "key": {
+  "W": {
+   "item": "airwaves:copper_wire"
+  },
+  "B": {
+   "item": "airwaves:radio_board"
+  },
+  "C": {
+   "item": "airwaves:speaker_cone"
+  },
+  "S": {
+   "tag": "c:plates/brass"
+  }
+ },
+ "result": {
+  "id": "airwaves:portable_radio"
+ }
+}

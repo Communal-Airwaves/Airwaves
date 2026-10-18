@@ -1,0 +1,23 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "misc",
+ "pattern": [
+  " Q ",
+  "NSN"
+ ],
+ "key": {
+  "Q": {
+   "item": "minecraft:quartz"
+  },
+  "N": {
+   "tag": "c:nuggets/copper"
+  },
+  "S": {
+   "tag": "c:nuggets/silver"
+  }
+ },
+ "result": {
+  "id": "airwaves:transistor",
+  "count": 4
+ }
+}

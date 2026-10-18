@@ -1,0 +1,23 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "misc",
+ "pattern": [
+  " G ",
+  "NON"
+ ],
+ "key": {
+  "G": {
+   "item": "minecraft:glass_pane"
+  },
+  "N": {
+   "tag": "c:nuggets/silver"
+  },
+  "O": {
+   "item": "minecraft:observer"
+  }
+ },
+ "result": {
+  "id": "airwaves:motion_sensor",
+  "count": 2
+ }
+}

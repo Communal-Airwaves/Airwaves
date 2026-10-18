@@ -1,0 +1,21 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "misc",
+ "pattern": [
+  "I I",
+  "IWI",
+  "I I"
+ ],
+ "key": {
+  "I": {
+   "tag": "c:plates/iron"
+  },
+  "W": {
+   "item": "airwaves:copper_wire"
+  }
+ },
+ "result": {
+  "id": "airwaves:antenna",
+  "count": 4
+ }
+}

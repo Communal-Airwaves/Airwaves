@@ -1,0 +1,84 @@
+{
+ "type": "create:sequenced_assembly",
+ "ingredient": {
+  "item": "minecraft:smooth_stone_slab"
+ },
+ "loops": 1,
+ "results": [
+  {
+   "id": "airwaves:circuit_board",
+   "count": 2,
+   "chance": 100.0
+  },
+  {
+   "id": "create:andesite_alloy",
+   "chance": 4.0
+  }
+ ],
+ "sequence": [
+  {
+   "type": "create:deploying",
+   "ingredients": [
+    {
+     "item": "airwaves:incomplete_circuit_board"
+    },
+    {
+     "item": "airwaves:copper_wire"
+    }
+   ],
+   "results": [
+    {
+     "id": "airwaves:incomplete_circuit_board"
+    }
+   ]
+  },
+  {
+   "type": "create:deploying",
+   "ingredients": [
+    {
+     "item": "airwaves:incomplete_circuit_board"
+    },
+    {
+     "tag": "c:nuggets/silver"
+    }
+   ],
+   "results": [
+    {
+     "id": "airwaves:incomplete_circuit_board"
+    }
+   ]
+  },
+  {
+   "type": "create:deploying",
+   "ingredients": [
+    {
+     "item": "airwaves:incomplete_circuit_board"
+    },
+    {
+     "item": "minecraft:quartz"
+    }
+   ],
+   "results": [
+    {
+     "id": "airwaves:incomplete_circuit_board"
+    }
+   ]
+  },
+  {
+   "type": "create:pressing",
+   "ingredients": [
+    {
+     "item": "airwaves:incomplete_circuit_board"
+    }
+   ],
+   "results": [
+    {
+     "id": "airwaves:incomplete_circuit_board"
+    }
+   ]
+  }
+ ],
+ "transitional_item": {
+  "id": "airwaves:incomplete_circuit_board"
+ }
+}

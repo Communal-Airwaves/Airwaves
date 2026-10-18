@@ -1,0 +1,23 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "misc",
+ "pattern": [
+  " P ",
+  "PSP",
+  " C "
+ ],
+ "key": {
+  "P": {
+   "item": "minecraft:paper"
+  },
+  "S": {
+   "tag": "c:plates/iron"
+  },
+  "C": {
+   "item": "airwaves:copper_coil"
+  }
+ },
+ "result": {
+  "id": "airwaves:speaker_cone"
+ }
+}

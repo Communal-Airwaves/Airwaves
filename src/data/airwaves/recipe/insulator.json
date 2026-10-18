@@ -1,0 +1,20 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "misc",
+ "pattern": [
+  "SGS",
+  "S S"
+ ],
+ "key": {
+  "S": {
+   "item": "minecraft:stick"
+  },
+  "G": {
+   "item": "minecraft:green_stained_glass"
+  }
+ },
+ "result": {
+  "id": "airwaves:insulator",
+  "count": 4
+ }
+}

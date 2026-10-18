@@ -1,0 +1,26 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "misc",
+ "pattern": [
+  "IBI",
+  "PCP",
+  "P P"
+ ],
+ "key": {
+  "I": {
+   "tag": "c:plates/iron"
+  },
+  "B": {
+   "item": "airwaves:circuit_board"
+  },
+  "C": {
+   "item": "create:andesite_casing"
+  },
+  "P": {
+   "tag": "minecraft:planks"
+  }
+ },
+ "result": {
+  "id": "airwaves:circuit_workbench"
+ }
+}

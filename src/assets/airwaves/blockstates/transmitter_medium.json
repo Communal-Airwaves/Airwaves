@@ -1,0 +1,184 @@
+{
+ "variants": {
+  "facing=north,crystal=0,active=false,on_air=false": {
+   "model": "airwaves:block/transmitter_medium"
+  },
+  "facing=north,crystal=0,active=false,on_air=true": {
+   "model": "airwaves:block/transmitter_medium"
+  },
+  "facing=north,crystal=0,active=true,on_air=false": {
+   "model": "airwaves:block/transmitter_medium"
+  },
+  "facing=north,crystal=0,active=true,on_air=true": {
+   "model": "airwaves:block/transmitter_medium"
+  },
+  "facing=north,crystal=1,active=false,on_air=false": {
+   "model": "airwaves:block/transmitter_medium_shard"
+  },
+  "facing=north,crystal=1,active=false,on_air=true": {
+   "model": "airwaves:block/transmitter_medium_shard"
+  },
+  "facing=north,crystal=1,active=true,on_air=false": {
+   "model": "airwaves:block/transmitter_medium_shard_on"
+  },
+  "facing=north,crystal=1,active=true,on_air=true": {
+   "model": "airwaves:block/transmitter_medium_shard_on_air"
+  },
+  "facing=north,crystal=2,active=false,on_air=false": {
+   "model": "airwaves:block/transmitter_medium_block"
+  },
+  "facing=north,crystal=2,active=false,on_air=true": {
+   "model": "airwaves:block/transmitter_medium_block"
+  },
+  "facing=north,crystal=2,active=true,on_air=false": {
+   "model": "airwaves:block/transmitter_medium_block_on"
+  },
+  "facing=north,crystal=2,active=true,on_air=true": {
+   "model": "airwaves:block/transmitter_medium_block_on_air"
+  },
+  "facing=east,crystal=0,active=false,on_air=false": {
+   "model": "airwaves:block/transmitter_medium",
+   "y": 90
+  },
+  "facing=east,crystal=0,active=false,on_air=true": {
+   "model": "airwaves:block/transmitter_medium",
+   "y": 90
+  },
+  "facing=east,crystal=0,active=true,on_air=false": {
+   "model": "airwaves:block/transmitter_medium",
+   "y": 90
+  },
+  "facing=east,crystal=0,active=true,on_air=true": {
+   "model": "airwaves:block/transmitter_medium",
+   "y": 90
+  },
+  "facing=east,crystal=1,active=false,on_air=false": {
+   "model": "airwaves:block/transmitter_medium_shard",
+   "y": 90
+  },
+  "facing=east,crystal=1,active=false,on_air=true": {
+   "model": "airwaves:block/transmitter_medium_shard",
+   "y": 90
+  },
+  "facing=east,crystal=1,active=true,on_air=false": {
+   "model": "airwaves:block/transmitter_medium_shard_on",
+   "y": 90
+  },
+  "facing=east,crystal=1,active=true,on_air=true": {
+   "model": "airwaves:block/transmitter_medium_shard_on_air",
+   "y": 90
+  },
+  "facing=east,crystal=2,active=false,on_air=false": {
+   "model": "airwaves:block/transmitter_medium_block",
+   "y": 90
+  },
+  "facing=east,crystal=2,active=false,on_air=true": {
+   "model": "airwaves:block/transmitter_medium_block",
+   "y": 90
+  },
+  "facing=east,crystal=2,active=true,on_air=false": {
+   "model": "airwaves:block/transmitter_medium_block_on",
+   "y": 90
+  },
+  "facing=east,crystal=2,active=true,on_air=true": {
+   "model": "airwaves:block/transmitter_medium_block_on_air",
+   "y": 90
+  },
+  "facing=south,crystal=0,active=false,on_air=false": {
+   "model": "airwaves:block/transmitter_medium",
+   "y": 180
+  },
+  "facing=south,crystal=0,active=false,on_air=true": {
+   "model": "airwaves:block/transmitter_medium",
+   "y": 180
+  },
+  "facing=south,crystal=0,active=true,on_air=false": {
+   "model": "airwaves:block/transmitter_medium",
+   "y": 180
+  },
+  "facing=south,crystal=0,active=true,on_air=true": {
+   "model": "airwaves:block/transmitter_medium",
+   "y": 180
+  },
+  "facing=south,crystal=1,active=false,on_air=false": {
+   "model": "airwaves:block/transmitter_medium_shard",
+   "y": 180
+  },
+  "facing=south,crystal=1,active=false,on_air=true": {
+   "model": "airwaves:block/transmitter_medium_shard",
+   "y": 180
+  },
+  "facing=south,crystal=1,active=true,on_air=false": {
+   "model": "airwaves:block/transmitter_medium_shard_on",
+   "y": 180
+  },
+  "facing=south,crystal=1,active=true,on_air=true": {
+   "model": "airwaves:block/transmitter_medium_shard_on_air",
+   "y": 180
+  },
+  "facing=south,crystal=2,active=false,on_air=false": {
+   "model": "airwaves:block/transmitter_medium_block",
+   "y": 180
+  },
+  "facing=south,crystal=2,active=false,on_air=true": {
+   "model": "airwaves:block/transmitter_medium_block",
+   "y": 180
+  },
+  "facing=south,crystal=2,active=true,on_air=false": {
+   "model": "airwaves:block/transmitter_medium_block_on",
+   "y": 180
+  },
+  "facing=south,crystal=2,active=true,on_air=true": {
+   "model": "airwaves:block/transmitter_medium_block_on_air",
+   "y": 180
+  },
+  "facing=west,crystal=0,active=false,on_air=false": {
+   "model": "airwaves:block/transmitter_medium",
+   "y": 270
+  },
+  "facing=west,crystal=0,active=false,on_air=true": {
+   "model": "airwaves:block/transmitter_medium",
+   "y": 270
+  },
+  "facing=west,crystal=0,active=true,on_air=false": {
+   "model": "airwaves:block/transmitter_medium",
+   "y": 270
+  },
+  "facing=west,crystal=0,active=true,on_air=true": {
+   "model": "airwaves:block/transmitter_medium",
+   "y": 270
+  },
+  "facing=west,crystal=1,active=false,on_air=false": {
+   "model": "airwaves:block/transmitter_medium_shard",
+   "y": 270
+  },
+  "facing=west,crystal=1,active=false,on_air=true": {
+   "model": "airwaves:block/transmitter_medium_shard",
+   "y": 270
+  },
+  "facing=west,crystal=1,active=true,on_air=false": {
+   "model": "airwaves:block/transmitter_medium_shard_on",
+   "y": 270
+  },
+  "facing=west,crystal=1,active=true,on_air=true": {
+   "model": "airwaves:block/transmitter_medium_shard_on_air",
+   "y": 270
+  },
+  "facing=west,crystal=2,active=false,on_air=false": {
+   "model": "airwaves:block/transmitter_medium_block",
+   "y": 270
+  },
+  "facing=west,crystal=2,active=false,on_air=true": {
+   "model": "airwaves:block/transmitter_medium_block",
+   "y": 270
+  },
+  "facing=west,crystal=2,active=true,on_air=false": {
+   "model": "airwaves:block/transmitter_medium_block_on",
+   "y": 270
+  },
+  "facing=west,crystal=2,active=true,on_air=true": {
+   "model": "airwaves:block/transmitter_medium_block_on_air",
+   "y": 270
+  }
+ }
+}

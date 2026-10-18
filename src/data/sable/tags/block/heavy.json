@@ -1,0 +1,10 @@
+{
+ "replace": false,
+ "values": [
+  "airwaves:transmitter_large",
+  "airwaves:transmitter_giant",
+  "airwaves:receiver_giant",
+  "airwaves:silver_block",
+  "airwaves:antenna_big"
+ ]
+}

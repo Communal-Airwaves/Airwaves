@@ -1,0 +1,32 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "misc",
+ "pattern": [
+  "GSG",
+  "BDB",
+  "WEW"
+ ],
+ "key": {
+  "G": {
+   "item": "minecraft:glass_pane"
+  },
+  "S": {
+   "tag": "c:plates/silver"
+  },
+  "B": {
+   "tag": "c:plates/brass"
+  },
+  "D": {
+   "item": "airwaves:display_board"
+  },
+  "W": {
+   "item": "airwaves:copper_wire"
+  },
+  "E": {
+   "item": "create:electron_tube"
+  }
+ },
+ "result": {
+  "id": "airwaves:multimeter"
+ }
+}

@@ -1,0 +1,36 @@
+{
+ "type": "create:mechanical_crafting",
+ "accept_mirrored": false,
+ "category": "misc",
+ "key": {
+  "A": {
+   "item": "airwaves:antenna"
+  },
+  "X": {
+   "item": "airwaves:rf_board"
+  },
+  "R": {
+   "item": "airwaves:tuner_board"
+  },
+  "K": {
+   "item": "airwaves:control_board"
+  },
+  "G": {
+   "item": "create:metal_girder"
+  },
+  "C": {
+   "item": "create:andesite_casing"
+  }
+ },
+ "pattern": [
+  " A ",
+  "XRX",
+  " K ",
+  " G ",
+  "GCG"
+ ],
+ "result": {
+  "id": "airwaves:relay_tower_small"
+ },
+ "show_notification": false
+}

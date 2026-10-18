@@ -1,0 +1,16 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "misc",
+ "pattern": [
+  "AA",
+  "AA"
+ ],
+ "key": {
+  "A": {
+   "item": "airwaves:antenna"
+  }
+ },
+ "result": {
+  "id": "airwaves:antenna_medium"
+ }
+}

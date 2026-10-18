@@ -1,0 +1,24 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "misc",
+ "pattern": [
+  " N ",
+  "KPK",
+  " N "
+ ],
+ "key": {
+  "N": {
+   "tag": "c:nuggets/copper"
+  },
+  "K": {
+   "item": "minecraft:coal"
+  },
+  "P": {
+   "item": "minecraft:paper"
+  }
+ },
+ "result": {
+  "id": "airwaves:resistor",
+  "count": 4
+ }
+}

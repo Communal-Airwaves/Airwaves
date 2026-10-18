@@ -1,0 +1,3076 @@
+{
+ "variants": {
+  "cx=0,cz=0,seg=0,top=false,narrow=false": {
+   "model": "airwaves:block/antenna_giant_0"
+  },
+  "cx=0,cz=0,seg=0,top=false,narrow=true": {
+   "model": "airwaves:block/antenna_giant_0"
+  },
+  "cx=0,cz=0,seg=0,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_1"
+  },
+  "cx=0,cz=0,seg=0,top=true,narrow=true": {
+   "model": "airwaves:block/antenna_giant_2"
+  },
+  "cx=0,cz=0,seg=1,top=false,narrow=false": {
+   "model": "airwaves:block/antenna_giant_3"
+  },
+  "cx=0,cz=0,seg=1,top=false,narrow=true": {
+   "model": "airwaves:block/antenna_giant_3"
+  },
+  "cx=0,cz=0,seg=1,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_1"
+  },
+  "cx=0,cz=0,seg=1,top=true,narrow=true": {
+   "model": "airwaves:block/antenna_giant_4"
+  },
+  "cx=0,cz=0,seg=2,top=false,narrow=false": {
+   "model": "airwaves:block/antenna_giant_5"
+  },
+  "cx=0,cz=0,seg=2,top=false,narrow=true": {
+   "model": "airwaves:block/antenna_giant_5"
+  },
+  "cx=0,cz=0,seg=2,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_6"
+  },
+  "cx=0,cz=0,seg=2,top=true,narrow=true": {
+   "model": "airwaves:block/antenna_giant_7"
+  },
+  "cx=0,cz=0,seg=3,top=false,narrow=false": {
+   "model": "airwaves:block/antenna_giant_5"
+  },
+  "cx=0,cz=0,seg=3,top=false,narrow=true": {
+   "model": "airwaves:block/antenna_giant_5"
+  },
+  "cx=0,cz=0,seg=3,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_6"
+  },
+  "cx=0,cz=0,seg=3,top=true,narrow=true": {
+   "model": "airwaves:block/antenna_giant_7"
+  },
+  "cx=0,cz=1,seg=0,top=false,narrow=false": {
+   "model": "airwaves:block/antenna_giant_8"
+  },
+  "cx=0,cz=1,seg=0,top=false,narrow=true": {
+   "model": "airwaves:block/antenna_giant_8"
+  },
+  "cx=0,cz=1,seg=0,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_9"
+  },
+  "cx=0,cz=1,seg=0,top=true,narrow=true": {
+   "model": "airwaves:block/antenna_giant_10"
+  },
+  "cx=0,cz=1,seg=1,top=false,narrow=false": {
+   "model": "airwaves:block/antenna_giant_8"
+  },
+  "cx=0,cz=1,seg=1,top=false,narrow=true": {
+   "model": "airwaves:block/antenna_giant_8"
+  },
+  "cx=0,cz=1,seg=1,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_9"
+  },
+  "cx=0,cz=1,seg=1,top=true,narrow=true": {
+   "model": "airwaves:block/antenna_giant_10"
+  },
+  "cx=0,cz=1,seg=2,top=false,narrow=false": {
+   "model": "airwaves:block/antenna_giant_11"
+  },
+  "cx=0,cz=1,seg=2,top=false,narrow=true": {
+   "model": "airwaves:block/antenna_giant_11"
+  },
+  "cx=0,cz=1,seg=2,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_12"
+  },
+  "cx=0,cz=1,seg=2,top=true,narrow=true": {
+   "model": "airwaves:block/antenna_giant_13"
+  },
+  "cx=0,cz=1,seg=3,top=false,narrow=false": {
+   "model": "airwaves:block/antenna_giant_11"
+  },
+  "cx=0,cz=1,seg=3,top=false,narrow=true": {
+   "model": "airwaves:block/antenna_giant_11"
+  },
+  "cx=0,cz=1,seg=3,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_12"
+  },
+  "cx=0,cz=1,seg=3,top=true,narrow=true": {
+   "model": "airwaves:block/antenna_giant_13"
+  },
+  "cx=0,cz=2,seg=0,top=false,narrow=false": {
+   "model": "airwaves:block/antenna_giant_8"
+  },
+  "cx=0,cz=2,seg=0,top=false,narrow=true": {
+   "model": "airwaves:block/antenna_giant_8"
+  },
+  "cx=0,cz=2,seg=0,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_9"
+  },
+  "cx=0,cz=2,seg=0,top=true,narrow=true": {
+   "model": "airwaves:block/antenna_giant_10"
+  },
+  "cx=0,cz=2,seg=1,top=false,narrow=false": {
+   "model": "airwaves:block/antenna_giant_8"
+  },
+  "cx=0,cz=2,seg=1,top=false,narrow=true": {
+   "model": "airwaves:block/antenna_giant_8"
+  },
+  "cx=0,cz=2,seg=1,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_9"
+  },
+  "cx=0,cz=2,seg=1,top=true,narrow=true": {
+   "model": "airwaves:block/antenna_giant_10"
+  },
+  "cx=0,cz=2,seg=2,top=false,narrow=false": {
+   "model": "airwaves:block/antenna_giant_11"
+  },
+  "cx=0,cz=2,seg=2,top=false,narrow=true": {
+   "model": "airwaves:block/antenna_giant_11"
+  },
+  "cx=0,cz=2,seg=2,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_12"
+  },
+  "cx=0,cz=2,seg=2,top=true,narrow=true": {
+   "model": "airwaves:block/antenna_giant_13"
+  },
+  "cx=0,cz=2,seg=3,top=false,narrow=false": {
+   "model": "airwaves:block/antenna_giant_11"
+  },
+  "cx=0,cz=2,seg=3,top=false,narrow=true": {
+   "model": "airwaves:block/antenna_giant_11"
+  },
+  "cx=0,cz=2,seg=3,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_12"
+  },
+  "cx=0,cz=2,seg=3,top=true,narrow=true": {
+   "model": "airwaves:block/antenna_giant_13"
+  },
+  "cx=0,cz=3,seg=0,top=false,narrow=false": {
+   "model": "airwaves:block/antenna_giant_8"
+  },
+  "cx=0,cz=3,seg=0,top=false,narrow=true": {
+   "model": "airwaves:block/antenna_giant_8"
+  },
+  "cx=0,cz=3,seg=0,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_14"
+  },
+  "cx=0,cz=3,seg=0,top=true,narrow=true": {
+   "model": "airwaves:block/antenna_giant_10"
+  },
+  "cx=0,cz=3,seg=1,top=false,narrow=false": {
+   "model": "airwaves:block/antenna_giant_8"
+  },
+  "cx=0,cz=3,seg=1,top=false,narrow=true": {
+   "model": "airwaves:block/antenna_giant_8"
+  },
+  "cx=0,cz=3,seg=1,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_14"
+  },
+  "cx=0,cz=3,seg=1,top=true,narrow=true": {
+   "model": "airwaves:block/antenna_giant_10"
+  },
+  "cx=0,cz=3,seg=2,top=false,narrow=false": {
+   "model": "airwaves:block/antenna_giant_11"
+  },
+  "cx=0,cz=3,seg=2,top=false,narrow=true": {
+   "model": "airwaves:block/antenna_giant_11"
+  },
+  "cx=0,cz=3,seg=2,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_15"
+  },
+  "cx=0,cz=3,seg=2,top=true,narrow=true": {
+   "model": "airwaves:block/antenna_giant_13"
+  },
+  "cx=0,cz=3,seg=3,top=false,narrow=false": {
+   "model": "airwaves:block/antenna_giant_11"
+  },
+  "cx=0,cz=3,seg=3,top=false,narrow=true": {
+   "model": "airwaves:block/antenna_giant_11"
+  },
+  "cx=0,cz=3,seg=3,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_15"
+  },
+  "cx=0,cz=3,seg=3,top=true,narrow=true": {
+   "model": "airwaves:block/antenna_giant_13"
+  },
+  "cx=0,cz=4,seg=0,top=false,narrow=false": {
+   "model": "airwaves:block/antenna_giant_8"
+  },
+  "cx=0,cz=4,seg=0,top=false,narrow=true": {
+   "model": "airwaves:block/antenna_giant_8"
+  },
+  "cx=0,cz=4,seg=0,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_16"
+  },
+  "cx=0,cz=4,seg=0,top=true,narrow=true": {
+   "model": "airwaves:block/antenna_giant_10"
+  },
+  "cx=0,cz=4,seg=1,top=false,narrow=false": {
+   "model": "airwaves:block/antenna_giant_8"
+  },
+  "cx=0,cz=4,seg=1,top=false,narrow=true": {
+   "model": "airwaves:block/antenna_giant_8"
+  },
+  "cx=0,cz=4,seg=1,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_16"
+  },
+  "cx=0,cz=4,seg=1,top=true,narrow=true": {
+   "model": "airwaves:block/antenna_giant_10"
+  },
+  "cx=0,cz=4,seg=2,top=false,narrow=false": {
+   "model": "airwaves:block/antenna_giant_11"
+  },
+  "cx=0,cz=4,seg=2,top=false,narrow=true": {
+   "model": "airwaves:block/antenna_giant_11"
+  },
+  "cx=0,cz=4,seg=2,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_17"
+  },
+  "cx=0,cz=4,seg=2,top=true,narrow=true": {
+   "model": "airwaves:block/antenna_giant_13"
+  },
+  "cx=0,cz=4,seg=3,top=false,narrow=false": {
+   "model": "airwaves:block/antenna_giant_11"
+  },
+  "cx=0,cz=4,seg=3,top=false,narrow=true": {
+   "model": "airwaves:block/antenna_giant_11"
+  },
+  "cx=0,cz=4,seg=3,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_17"
+  },
+  "cx=0,cz=4,seg=3,top=true,narrow=true": {
+   "model": "airwaves:block/antenna_giant_13"
+  },
+  "cx=0,cz=5,seg=0,top=false,narrow=false": {
+   "model": "airwaves:block/antenna_giant_8"
+  },
+  "cx=0,cz=5,seg=0,top=false,narrow=true": {
+   "model": "airwaves:block/antenna_giant_8"
+  },
+  "cx=0,cz=5,seg=0,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_9"
+  },
+  "cx=0,cz=5,seg=0,top=true,narrow=true": {
+   "model": "airwaves:block/antenna_giant_10"
+  },
+  "cx=0,cz=5,seg=1,top=false,narrow=false": {
+   "model": "airwaves:block/antenna_giant_8"
+  },
+  "cx=0,cz=5,seg=1,top=false,narrow=true": {
+   "model": "airwaves:block/antenna_giant_8"
+  },
+  "cx=0,cz=5,seg=1,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_9"
+  },
+  "cx=0,cz=5,seg=1,top=true,narrow=true": {
+   "model": "airwaves:block/antenna_giant_10"
+  },
+  "cx=0,cz=5,seg=2,top=false,narrow=false": {
+   "model": "airwaves:block/antenna_giant_11"
+  },
+  "cx=0,cz=5,seg=2,top=false,narrow=true": {
+   "model": "airwaves:block/antenna_giant_11"
+  },
+  "cx=0,cz=5,seg=2,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_12"
+  },
+  "cx=0,cz=5,seg=2,top=true,narrow=true": {
+   "model": "airwaves:block/antenna_giant_13"
+  },
+  "cx=0,cz=5,seg=3,top=false,narrow=false": {
+   "model": "airwaves:block/antenna_giant_11"
+  },
+  "cx=0,cz=5,seg=3,top=false,narrow=true": {
+   "model": "airwaves:block/antenna_giant_11"
+  },
+  "cx=0,cz=5,seg=3,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_12"
+  },
+  "cx=0,cz=5,seg=3,top=true,narrow=true": {
+   "model": "airwaves:block/antenna_giant_13"
+  },
+  "cx=0,cz=6,seg=0,top=false,narrow=false": {
+   "model": "airwaves:block/antenna_giant_8"
+  },
+  "cx=0,cz=6,seg=0,top=false,narrow=true": {
+   "model": "airwaves:block/antenna_giant_8"
+  },
+  "cx=0,cz=6,seg=0,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_9"
+  },
+  "cx=0,cz=6,seg=0,top=true,narrow=true": {
+   "model": "airwaves:block/antenna_giant_10"
+  },
+  "cx=0,cz=6,seg=1,top=false,narrow=false": {
+   "model": "airwaves:block/antenna_giant_8"
+  },
+  "cx=0,cz=6,seg=1,top=false,narrow=true": {
+   "model": "airwaves:block/antenna_giant_8"
+  },
+  "cx=0,cz=6,seg=1,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_9"
+  },
+  "cx=0,cz=6,seg=1,top=true,narrow=true": {
+   "model": "airwaves:block/antenna_giant_10"
+  },
+  "cx=0,cz=6,seg=2,top=false,narrow=false": {
+   "model": "airwaves:block/antenna_giant_11"
+  },
+  "cx=0,cz=6,seg=2,top=false,narrow=true": {
+   "model": "airwaves:block/antenna_giant_11"
+  },
+  "cx=0,cz=6,seg=2,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_12"
+  },
+  "cx=0,cz=6,seg=2,top=true,narrow=true": {
+   "model": "airwaves:block/antenna_giant_13"
+  },
+  "cx=0,cz=6,seg=3,top=false,narrow=false": {
+   "model": "airwaves:block/antenna_giant_11"
+  },
+  "cx=0,cz=6,seg=3,top=false,narrow=true": {
+   "model": "airwaves:block/antenna_giant_11"
+  },
+  "cx=0,cz=6,seg=3,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_12"
+  },
+  "cx=0,cz=6,seg=3,top=true,narrow=true": {
+   "model": "airwaves:block/antenna_giant_13"
+  },
+  "cx=0,cz=7,seg=0,top=false,narrow=false": {
+   "model": "airwaves:block/antenna_giant_18"
+  },
+  "cx=0,cz=7,seg=0,top=false,narrow=true": {
+   "model": "airwaves:block/antenna_giant_18"
+  },
+  "cx=0,cz=7,seg=0,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_19"
+  },
+  "cx=0,cz=7,seg=0,top=true,narrow=true": {
+   "model": "airwaves:block/antenna_giant_20"
+  },
+  "cx=0,cz=7,seg=1,top=false,narrow=false": {
+   "model": "airwaves:block/antenna_giant_21"
+  },
+  "cx=0,cz=7,seg=1,top=false,narrow=true": {
+   "model": "airwaves:block/antenna_giant_21"
+  },
+  "cx=0,cz=7,seg=1,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_19"
+  },
+  "cx=0,cz=7,seg=1,top=true,narrow=true": {
+   "model": "airwaves:block/antenna_giant_22"
+  },
+  "cx=0,cz=7,seg=2,top=false,narrow=false": {
+   "model": "airwaves:block/antenna_giant_23"
+  },
+  "cx=0,cz=7,seg=2,top=false,narrow=true": {
+   "model": "airwaves:block/antenna_giant_23"
+  },
+  "cx=0,cz=7,seg=2,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_24"
+  },
+  "cx=0,cz=7,seg=2,top=true,narrow=true": {
+   "model": "airwaves:block/antenna_giant_25"
+  },
+  "cx=0,cz=7,seg=3,top=false,narrow=false": {
+   "model": "airwaves:block/antenna_giant_23"
+  },
+  "cx=0,cz=7,seg=3,top=false,narrow=true": {
+   "model": "airwaves:block/antenna_giant_23"
+  },
+  "cx=0,cz=7,seg=3,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_24"
+  },
+  "cx=0,cz=7,seg=3,top=true,narrow=true": {
+   "model": "airwaves:block/antenna_giant_25"
+  },
+  "cx=1,cz=0,seg=0,top=false,narrow=false": {
+   "model": "airwaves:block/antenna_giant_26"
+  },
+  "cx=1,cz=0,seg=0,top=false,narrow=true": {
+   "model": "airwaves:block/antenna_giant_26"
+  },
+  "cx=1,cz=0,seg=0,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_27"
+  },
+  "cx=1,cz=0,seg=0,top=true,narrow=true": {
+   "model": "airwaves:block/antenna_giant_28"
+  },
+  "cx=1,cz=0,seg=1,top=false,narrow=false": {
+   "model": "airwaves:block/antenna_giant_26"
+  },
+  "cx=1,cz=0,seg=1,top=false,narrow=true": {
+   "model": "airwaves:block/antenna_giant_26"
+  },
+  "cx=1,cz=0,seg=1,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_27"
+  },
+  "cx=1,cz=0,seg=1,top=true,narrow=true": {
+   "model": "airwaves:block/antenna_giant_28"
+  },
+  "cx=1,cz=0,seg=2,top=false,narrow=false": {
+   "model": "airwaves:block/antenna_giant_29"
+  },
+  "cx=1,cz=0,seg=2,top=false,narrow=true": {
+   "model": "airwaves:block/antenna_giant_29"
+  },
+  "cx=1,cz=0,seg=2,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_30"
+  },
+  "cx=1,cz=0,seg=2,top=true,narrow=true": {
+   "model": "airwaves:block/antenna_giant_31"
+  },
+  "cx=1,cz=0,seg=3,top=false,narrow=false": {
+   "model": "airwaves:block/antenna_giant_29"
+  },
+  "cx=1,cz=0,seg=3,top=false,narrow=true": {
+   "model": "airwaves:block/antenna_giant_29"
+  },
+  "cx=1,cz=0,seg=3,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_30"
+  },
+  "cx=1,cz=0,seg=3,top=true,narrow=true": {
+   "model": "airwaves:block/antenna_giant_31"
+  },
+  "cx=1,cz=1,seg=0,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=1,cz=1,seg=0,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=1,cz=1,seg=0,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_32"
+  },
+  "cx=1,cz=1,seg=0,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=1,cz=1,seg=1,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=1,cz=1,seg=1,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=1,cz=1,seg=1,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_32"
+  },
+  "cx=1,cz=1,seg=1,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=1,cz=1,seg=2,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=1,cz=1,seg=2,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=1,cz=1,seg=2,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_32"
+  },
+  "cx=1,cz=1,seg=2,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=1,cz=1,seg=3,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=1,cz=1,seg=3,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=1,cz=1,seg=3,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_32"
+  },
+  "cx=1,cz=1,seg=3,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=1,cz=2,seg=0,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=1,cz=2,seg=0,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=1,cz=2,seg=0,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_32"
+  },
+  "cx=1,cz=2,seg=0,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=1,cz=2,seg=1,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=1,cz=2,seg=1,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=1,cz=2,seg=1,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_32"
+  },
+  "cx=1,cz=2,seg=1,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=1,cz=2,seg=2,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=1,cz=2,seg=2,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=1,cz=2,seg=2,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_32"
+  },
+  "cx=1,cz=2,seg=2,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=1,cz=2,seg=3,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=1,cz=2,seg=3,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=1,cz=2,seg=3,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_32"
+  },
+  "cx=1,cz=2,seg=3,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=1,cz=3,seg=0,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=1,cz=3,seg=0,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=1,cz=3,seg=0,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_32"
+  },
+  "cx=1,cz=3,seg=0,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=1,cz=3,seg=1,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=1,cz=3,seg=1,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=1,cz=3,seg=1,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_32"
+  },
+  "cx=1,cz=3,seg=1,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=1,cz=3,seg=2,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=1,cz=3,seg=2,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=1,cz=3,seg=2,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_32"
+  },
+  "cx=1,cz=3,seg=2,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=1,cz=3,seg=3,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=1,cz=3,seg=3,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=1,cz=3,seg=3,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_32"
+  },
+  "cx=1,cz=3,seg=3,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=1,cz=4,seg=0,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=1,cz=4,seg=0,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=1,cz=4,seg=0,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_33"
+  },
+  "cx=1,cz=4,seg=0,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=1,cz=4,seg=1,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=1,cz=4,seg=1,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=1,cz=4,seg=1,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_33"
+  },
+  "cx=1,cz=4,seg=1,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=1,cz=4,seg=2,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=1,cz=4,seg=2,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=1,cz=4,seg=2,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_34"
+  },
+  "cx=1,cz=4,seg=2,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=1,cz=4,seg=3,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=1,cz=4,seg=3,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=1,cz=4,seg=3,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_34"
+  },
+  "cx=1,cz=4,seg=3,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=1,cz=5,seg=0,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=1,cz=5,seg=0,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=1,cz=5,seg=0,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_32"
+  },
+  "cx=1,cz=5,seg=0,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=1,cz=5,seg=1,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=1,cz=5,seg=1,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=1,cz=5,seg=1,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_32"
+  },
+  "cx=1,cz=5,seg=1,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=1,cz=5,seg=2,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=1,cz=5,seg=2,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=1,cz=5,seg=2,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_32"
+  },
+  "cx=1,cz=5,seg=2,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=1,cz=5,seg=3,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=1,cz=5,seg=3,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=1,cz=5,seg=3,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_32"
+  },
+  "cx=1,cz=5,seg=3,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=1,cz=6,seg=0,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=1,cz=6,seg=0,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=1,cz=6,seg=0,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_32"
+  },
+  "cx=1,cz=6,seg=0,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=1,cz=6,seg=1,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=1,cz=6,seg=1,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=1,cz=6,seg=1,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_32"
+  },
+  "cx=1,cz=6,seg=1,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=1,cz=6,seg=2,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=1,cz=6,seg=2,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=1,cz=6,seg=2,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_32"
+  },
+  "cx=1,cz=6,seg=2,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=1,cz=6,seg=3,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=1,cz=6,seg=3,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=1,cz=6,seg=3,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_32"
+  },
+  "cx=1,cz=6,seg=3,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=1,cz=7,seg=0,top=false,narrow=false": {
+   "model": "airwaves:block/antenna_giant_35"
+  },
+  "cx=1,cz=7,seg=0,top=false,narrow=true": {
+   "model": "airwaves:block/antenna_giant_35"
+  },
+  "cx=1,cz=7,seg=0,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_36"
+  },
+  "cx=1,cz=7,seg=0,top=true,narrow=true": {
+   "model": "airwaves:block/antenna_giant_37"
+  },
+  "cx=1,cz=7,seg=1,top=false,narrow=false": {
+   "model": "airwaves:block/antenna_giant_35"
+  },
+  "cx=1,cz=7,seg=1,top=false,narrow=true": {
+   "model": "airwaves:block/antenna_giant_35"
+  },
+  "cx=1,cz=7,seg=1,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_36"
+  },
+  "cx=1,cz=7,seg=1,top=true,narrow=true": {
+   "model": "airwaves:block/antenna_giant_37"
+  },
+  "cx=1,cz=7,seg=2,top=false,narrow=false": {
+   "model": "airwaves:block/antenna_giant_38"
+  },
+  "cx=1,cz=7,seg=2,top=false,narrow=true": {
+   "model": "airwaves:block/antenna_giant_38"
+  },
+  "cx=1,cz=7,seg=2,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_39"
+  },
+  "cx=1,cz=7,seg=2,top=true,narrow=true": {
+   "model": "airwaves:block/antenna_giant_40"
+  },
+  "cx=1,cz=7,seg=3,top=false,narrow=false": {
+   "model": "airwaves:block/antenna_giant_38"
+  },
+  "cx=1,cz=7,seg=3,top=false,narrow=true": {
+   "model": "airwaves:block/antenna_giant_38"
+  },
+  "cx=1,cz=7,seg=3,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_39"
+  },
+  "cx=1,cz=7,seg=3,top=true,narrow=true": {
+   "model": "airwaves:block/antenna_giant_40"
+  },
+  "cx=2,cz=0,seg=0,top=false,narrow=false": {
+   "model": "airwaves:block/antenna_giant_26"
+  },
+  "cx=2,cz=0,seg=0,top=false,narrow=true": {
+   "model": "airwaves:block/antenna_giant_26"
+  },
+  "cx=2,cz=0,seg=0,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_41"
+  },
+  "cx=2,cz=0,seg=0,top=true,narrow=true": {
+   "model": "airwaves:block/antenna_giant_28"
+  },
+  "cx=2,cz=0,seg=1,top=false,narrow=false": {
+   "model": "airwaves:block/antenna_giant_26"
+  },
+  "cx=2,cz=0,seg=1,top=false,narrow=true": {
+   "model": "airwaves:block/antenna_giant_26"
+  },
+  "cx=2,cz=0,seg=1,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_41"
+  },
+  "cx=2,cz=0,seg=1,top=true,narrow=true": {
+   "model": "airwaves:block/antenna_giant_28"
+  },
+  "cx=2,cz=0,seg=2,top=false,narrow=false": {
+   "model": "airwaves:block/antenna_giant_29"
+  },
+  "cx=2,cz=0,seg=2,top=false,narrow=true": {
+   "model": "airwaves:block/antenna_giant_29"
+  },
+  "cx=2,cz=0,seg=2,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_42"
+  },
+  "cx=2,cz=0,seg=2,top=true,narrow=true": {
+   "model": "airwaves:block/antenna_giant_31"
+  },
+  "cx=2,cz=0,seg=3,top=false,narrow=false": {
+   "model": "airwaves:block/antenna_giant_29"
+  },
+  "cx=2,cz=0,seg=3,top=false,narrow=true": {
+   "model": "airwaves:block/antenna_giant_29"
+  },
+  "cx=2,cz=0,seg=3,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_42"
+  },
+  "cx=2,cz=0,seg=3,top=true,narrow=true": {
+   "model": "airwaves:block/antenna_giant_31"
+  },
+  "cx=2,cz=1,seg=0,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=2,cz=1,seg=0,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=2,cz=1,seg=0,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_32"
+  },
+  "cx=2,cz=1,seg=0,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=2,cz=1,seg=1,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=2,cz=1,seg=1,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=2,cz=1,seg=1,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_32"
+  },
+  "cx=2,cz=1,seg=1,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=2,cz=1,seg=2,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=2,cz=1,seg=2,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=2,cz=1,seg=2,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_32"
+  },
+  "cx=2,cz=1,seg=2,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=2,cz=1,seg=3,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=2,cz=1,seg=3,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=2,cz=1,seg=3,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_32"
+  },
+  "cx=2,cz=1,seg=3,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=2,cz=2,seg=0,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=2,cz=2,seg=0,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=2,cz=2,seg=0,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_32"
+  },
+  "cx=2,cz=2,seg=0,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=2,cz=2,seg=1,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=2,cz=2,seg=1,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=2,cz=2,seg=1,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_32"
+  },
+  "cx=2,cz=2,seg=1,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=2,cz=2,seg=2,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=2,cz=2,seg=2,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=2,cz=2,seg=2,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_32"
+  },
+  "cx=2,cz=2,seg=2,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=2,cz=2,seg=3,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=2,cz=2,seg=3,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=2,cz=2,seg=3,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_32"
+  },
+  "cx=2,cz=2,seg=3,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=2,cz=3,seg=0,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=2,cz=3,seg=0,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=2,cz=3,seg=0,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_32"
+  },
+  "cx=2,cz=3,seg=0,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=2,cz=3,seg=1,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=2,cz=3,seg=1,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=2,cz=3,seg=1,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_32"
+  },
+  "cx=2,cz=3,seg=1,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=2,cz=3,seg=2,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=2,cz=3,seg=2,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=2,cz=3,seg=2,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_32"
+  },
+  "cx=2,cz=3,seg=2,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=2,cz=3,seg=3,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=2,cz=3,seg=3,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=2,cz=3,seg=3,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_32"
+  },
+  "cx=2,cz=3,seg=3,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=2,cz=4,seg=0,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=2,cz=4,seg=0,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=2,cz=4,seg=0,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_33"
+  },
+  "cx=2,cz=4,seg=0,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=2,cz=4,seg=1,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=2,cz=4,seg=1,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=2,cz=4,seg=1,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_33"
+  },
+  "cx=2,cz=4,seg=1,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=2,cz=4,seg=2,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=2,cz=4,seg=2,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=2,cz=4,seg=2,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_34"
+  },
+  "cx=2,cz=4,seg=2,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=2,cz=4,seg=3,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=2,cz=4,seg=3,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=2,cz=4,seg=3,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_34"
+  },
+  "cx=2,cz=4,seg=3,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=2,cz=5,seg=0,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=2,cz=5,seg=0,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=2,cz=5,seg=0,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_32"
+  },
+  "cx=2,cz=5,seg=0,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=2,cz=5,seg=1,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=2,cz=5,seg=1,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=2,cz=5,seg=1,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_32"
+  },
+  "cx=2,cz=5,seg=1,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=2,cz=5,seg=2,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=2,cz=5,seg=2,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=2,cz=5,seg=2,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_32"
+  },
+  "cx=2,cz=5,seg=2,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=2,cz=5,seg=3,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=2,cz=5,seg=3,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=2,cz=5,seg=3,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_32"
+  },
+  "cx=2,cz=5,seg=3,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=2,cz=6,seg=0,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=2,cz=6,seg=0,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=2,cz=6,seg=0,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_32"
+  },
+  "cx=2,cz=6,seg=0,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=2,cz=6,seg=1,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=2,cz=6,seg=1,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=2,cz=6,seg=1,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_32"
+  },
+  "cx=2,cz=6,seg=1,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=2,cz=6,seg=2,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=2,cz=6,seg=2,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=2,cz=6,seg=2,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_32"
+  },
+  "cx=2,cz=6,seg=2,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=2,cz=6,seg=3,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=2,cz=6,seg=3,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=2,cz=6,seg=3,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_32"
+  },
+  "cx=2,cz=6,seg=3,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=2,cz=7,seg=0,top=false,narrow=false": {
+   "model": "airwaves:block/antenna_giant_35"
+  },
+  "cx=2,cz=7,seg=0,top=false,narrow=true": {
+   "model": "airwaves:block/antenna_giant_35"
+  },
+  "cx=2,cz=7,seg=0,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_36"
+  },
+  "cx=2,cz=7,seg=0,top=true,narrow=true": {
+   "model": "airwaves:block/antenna_giant_37"
+  },
+  "cx=2,cz=7,seg=1,top=false,narrow=false": {
+   "model": "airwaves:block/antenna_giant_35"
+  },
+  "cx=2,cz=7,seg=1,top=false,narrow=true": {
+   "model": "airwaves:block/antenna_giant_35"
+  },
+  "cx=2,cz=7,seg=1,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_36"
+  },
+  "cx=2,cz=7,seg=1,top=true,narrow=true": {
+   "model": "airwaves:block/antenna_giant_37"
+  },
+  "cx=2,cz=7,seg=2,top=false,narrow=false": {
+   "model": "airwaves:block/antenna_giant_38"
+  },
+  "cx=2,cz=7,seg=2,top=false,narrow=true": {
+   "model": "airwaves:block/antenna_giant_38"
+  },
+  "cx=2,cz=7,seg=2,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_39"
+  },
+  "cx=2,cz=7,seg=2,top=true,narrow=true": {
+   "model": "airwaves:block/antenna_giant_40"
+  },
+  "cx=2,cz=7,seg=3,top=false,narrow=false": {
+   "model": "airwaves:block/antenna_giant_38"
+  },
+  "cx=2,cz=7,seg=3,top=false,narrow=true": {
+   "model": "airwaves:block/antenna_giant_38"
+  },
+  "cx=2,cz=7,seg=3,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_39"
+  },
+  "cx=2,cz=7,seg=3,top=true,narrow=true": {
+   "model": "airwaves:block/antenna_giant_40"
+  },
+  "cx=3,cz=0,seg=0,top=false,narrow=false": {
+   "model": "airwaves:block/antenna_giant_43"
+  },
+  "cx=3,cz=0,seg=0,top=false,narrow=true": {
+   "model": "airwaves:block/antenna_giant_43"
+  },
+  "cx=3,cz=0,seg=0,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_44"
+  },
+  "cx=3,cz=0,seg=0,top=true,narrow=true": {
+   "model": "airwaves:block/antenna_giant_45"
+  },
+  "cx=3,cz=0,seg=1,top=false,narrow=false": {
+   "model": "airwaves:block/antenna_giant_43"
+  },
+  "cx=3,cz=0,seg=1,top=false,narrow=true": {
+   "model": "airwaves:block/antenna_giant_43"
+  },
+  "cx=3,cz=0,seg=1,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_44"
+  },
+  "cx=3,cz=0,seg=1,top=true,narrow=true": {
+   "model": "airwaves:block/antenna_giant_45"
+  },
+  "cx=3,cz=0,seg=2,top=false,narrow=false": {
+   "model": "airwaves:block/antenna_giant_46"
+  },
+  "cx=3,cz=0,seg=2,top=false,narrow=true": {
+   "model": "airwaves:block/antenna_giant_46"
+  },
+  "cx=3,cz=0,seg=2,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_47"
+  },
+  "cx=3,cz=0,seg=2,top=true,narrow=true": {
+   "model": "airwaves:block/antenna_giant_48"
+  },
+  "cx=3,cz=0,seg=3,top=false,narrow=false": {
+   "model": "airwaves:block/antenna_giant_46"
+  },
+  "cx=3,cz=0,seg=3,top=false,narrow=true": {
+   "model": "airwaves:block/antenna_giant_46"
+  },
+  "cx=3,cz=0,seg=3,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_47"
+  },
+  "cx=3,cz=0,seg=3,top=true,narrow=true": {
+   "model": "airwaves:block/antenna_giant_48"
+  },
+  "cx=3,cz=1,seg=0,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=3,cz=1,seg=0,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=3,cz=1,seg=0,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_32"
+  },
+  "cx=3,cz=1,seg=0,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=3,cz=1,seg=1,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=3,cz=1,seg=1,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=3,cz=1,seg=1,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_32"
+  },
+  "cx=3,cz=1,seg=1,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=3,cz=1,seg=2,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=3,cz=1,seg=2,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=3,cz=1,seg=2,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_32"
+  },
+  "cx=3,cz=1,seg=2,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=3,cz=1,seg=3,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=3,cz=1,seg=3,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=3,cz=1,seg=3,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_32"
+  },
+  "cx=3,cz=1,seg=3,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=3,cz=2,seg=0,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=3,cz=2,seg=0,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=3,cz=2,seg=0,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_32"
+  },
+  "cx=3,cz=2,seg=0,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=3,cz=2,seg=1,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=3,cz=2,seg=1,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=3,cz=2,seg=1,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_32"
+  },
+  "cx=3,cz=2,seg=1,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=3,cz=2,seg=2,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=3,cz=2,seg=2,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=3,cz=2,seg=2,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_32"
+  },
+  "cx=3,cz=2,seg=2,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=3,cz=2,seg=3,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=3,cz=2,seg=3,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=3,cz=2,seg=3,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_32"
+  },
+  "cx=3,cz=2,seg=3,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=3,cz=3,seg=0,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=3,cz=3,seg=0,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=3,cz=3,seg=0,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_49"
+  },
+  "cx=3,cz=3,seg=0,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=3,cz=3,seg=1,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=3,cz=3,seg=1,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=3,cz=3,seg=1,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_49"
+  },
+  "cx=3,cz=3,seg=1,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=3,cz=3,seg=2,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=3,cz=3,seg=2,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=3,cz=3,seg=2,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_50"
+  },
+  "cx=3,cz=3,seg=2,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=3,cz=3,seg=3,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=3,cz=3,seg=3,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=3,cz=3,seg=3,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_50"
+  },
+  "cx=3,cz=3,seg=3,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=3,cz=4,seg=0,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=3,cz=4,seg=0,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=3,cz=4,seg=0,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_33"
+  },
+  "cx=3,cz=4,seg=0,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=3,cz=4,seg=1,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=3,cz=4,seg=1,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=3,cz=4,seg=1,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_33"
+  },
+  "cx=3,cz=4,seg=1,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=3,cz=4,seg=2,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=3,cz=4,seg=2,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=3,cz=4,seg=2,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_34"
+  },
+  "cx=3,cz=4,seg=2,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=3,cz=4,seg=3,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=3,cz=4,seg=3,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=3,cz=4,seg=3,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_34"
+  },
+  "cx=3,cz=4,seg=3,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=3,cz=5,seg=0,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=3,cz=5,seg=0,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=3,cz=5,seg=0,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_32"
+  },
+  "cx=3,cz=5,seg=0,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=3,cz=5,seg=1,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=3,cz=5,seg=1,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=3,cz=5,seg=1,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_32"
+  },
+  "cx=3,cz=5,seg=1,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=3,cz=5,seg=2,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=3,cz=5,seg=2,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=3,cz=5,seg=2,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_32"
+  },
+  "cx=3,cz=5,seg=2,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=3,cz=5,seg=3,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=3,cz=5,seg=3,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=3,cz=5,seg=3,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_32"
+  },
+  "cx=3,cz=5,seg=3,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=3,cz=6,seg=0,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=3,cz=6,seg=0,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=3,cz=6,seg=0,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_32"
+  },
+  "cx=3,cz=6,seg=0,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=3,cz=6,seg=1,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=3,cz=6,seg=1,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=3,cz=6,seg=1,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_32"
+  },
+  "cx=3,cz=6,seg=1,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=3,cz=6,seg=2,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=3,cz=6,seg=2,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=3,cz=6,seg=2,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_32"
+  },
+  "cx=3,cz=6,seg=2,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=3,cz=6,seg=3,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=3,cz=6,seg=3,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=3,cz=6,seg=3,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_32"
+  },
+  "cx=3,cz=6,seg=3,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=3,cz=7,seg=0,top=false,narrow=false": {
+   "model": "airwaves:block/antenna_giant_35"
+  },
+  "cx=3,cz=7,seg=0,top=false,narrow=true": {
+   "model": "airwaves:block/antenna_giant_35"
+  },
+  "cx=3,cz=7,seg=0,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_51"
+  },
+  "cx=3,cz=7,seg=0,top=true,narrow=true": {
+   "model": "airwaves:block/antenna_giant_37"
+  },
+  "cx=3,cz=7,seg=1,top=false,narrow=false": {
+   "model": "airwaves:block/antenna_giant_35"
+  },
+  "cx=3,cz=7,seg=1,top=false,narrow=true": {
+   "model": "airwaves:block/antenna_giant_35"
+  },
+  "cx=3,cz=7,seg=1,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_51"
+  },
+  "cx=3,cz=7,seg=1,top=true,narrow=true": {
+   "model": "airwaves:block/antenna_giant_37"
+  },
+  "cx=3,cz=7,seg=2,top=false,narrow=false": {
+   "model": "airwaves:block/antenna_giant_38"
+  },
+  "cx=3,cz=7,seg=2,top=false,narrow=true": {
+   "model": "airwaves:block/antenna_giant_38"
+  },
+  "cx=3,cz=7,seg=2,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_52"
+  },
+  "cx=3,cz=7,seg=2,top=true,narrow=true": {
+   "model": "airwaves:block/antenna_giant_40"
+  },
+  "cx=3,cz=7,seg=3,top=false,narrow=false": {
+   "model": "airwaves:block/antenna_giant_38"
+  },
+  "cx=3,cz=7,seg=3,top=false,narrow=true": {
+   "model": "airwaves:block/antenna_giant_38"
+  },
+  "cx=3,cz=7,seg=3,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_52"
+  },
+  "cx=3,cz=7,seg=3,top=true,narrow=true": {
+   "model": "airwaves:block/antenna_giant_40"
+  },
+  "cx=4,cz=0,seg=0,top=false,narrow=false": {
+   "model": "airwaves:block/antenna_giant_53"
+  },
+  "cx=4,cz=0,seg=0,top=false,narrow=true": {
+   "model": "airwaves:block/antenna_giant_53"
+  },
+  "cx=4,cz=0,seg=0,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_54"
+  },
+  "cx=4,cz=0,seg=0,top=true,narrow=true": {
+   "model": "airwaves:block/antenna_giant_55"
+  },
+  "cx=4,cz=0,seg=1,top=false,narrow=false": {
+   "model": "airwaves:block/antenna_giant_53"
+  },
+  "cx=4,cz=0,seg=1,top=false,narrow=true": {
+   "model": "airwaves:block/antenna_giant_53"
+  },
+  "cx=4,cz=0,seg=1,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_54"
+  },
+  "cx=4,cz=0,seg=1,top=true,narrow=true": {
+   "model": "airwaves:block/antenna_giant_55"
+  },
+  "cx=4,cz=0,seg=2,top=false,narrow=false": {
+   "model": "airwaves:block/antenna_giant_56"
+  },
+  "cx=4,cz=0,seg=2,top=false,narrow=true": {
+   "model": "airwaves:block/antenna_giant_56"
+  },
+  "cx=4,cz=0,seg=2,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_57"
+  },
+  "cx=4,cz=0,seg=2,top=true,narrow=true": {
+   "model": "airwaves:block/antenna_giant_58"
+  },
+  "cx=4,cz=0,seg=3,top=false,narrow=false": {
+   "model": "airwaves:block/antenna_giant_56"
+  },
+  "cx=4,cz=0,seg=3,top=false,narrow=true": {
+   "model": "airwaves:block/antenna_giant_56"
+  },
+  "cx=4,cz=0,seg=3,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_57"
+  },
+  "cx=4,cz=0,seg=3,top=true,narrow=true": {
+   "model": "airwaves:block/antenna_giant_58"
+  },
+  "cx=4,cz=1,seg=0,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=4,cz=1,seg=0,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=4,cz=1,seg=0,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_59"
+  },
+  "cx=4,cz=1,seg=0,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=4,cz=1,seg=1,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=4,cz=1,seg=1,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=4,cz=1,seg=1,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_59"
+  },
+  "cx=4,cz=1,seg=1,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=4,cz=1,seg=2,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=4,cz=1,seg=2,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=4,cz=1,seg=2,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_60"
+  },
+  "cx=4,cz=1,seg=2,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=4,cz=1,seg=3,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=4,cz=1,seg=3,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=4,cz=1,seg=3,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_60"
+  },
+  "cx=4,cz=1,seg=3,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=4,cz=2,seg=0,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=4,cz=2,seg=0,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=4,cz=2,seg=0,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_59"
+  },
+  "cx=4,cz=2,seg=0,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=4,cz=2,seg=1,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=4,cz=2,seg=1,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=4,cz=2,seg=1,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_59"
+  },
+  "cx=4,cz=2,seg=1,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=4,cz=2,seg=2,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=4,cz=2,seg=2,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=4,cz=2,seg=2,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_60"
+  },
+  "cx=4,cz=2,seg=2,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=4,cz=2,seg=3,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=4,cz=2,seg=3,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=4,cz=2,seg=3,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_60"
+  },
+  "cx=4,cz=2,seg=3,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=4,cz=3,seg=0,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=4,cz=3,seg=0,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=4,cz=3,seg=0,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_59"
+  },
+  "cx=4,cz=3,seg=0,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=4,cz=3,seg=1,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=4,cz=3,seg=1,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=4,cz=3,seg=1,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_59"
+  },
+  "cx=4,cz=3,seg=1,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=4,cz=3,seg=2,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=4,cz=3,seg=2,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=4,cz=3,seg=2,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_60"
+  },
+  "cx=4,cz=3,seg=2,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=4,cz=3,seg=3,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=4,cz=3,seg=3,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=4,cz=3,seg=3,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_60"
+  },
+  "cx=4,cz=3,seg=3,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=4,cz=4,seg=0,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=4,cz=4,seg=0,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=4,cz=4,seg=0,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_61"
+  },
+  "cx=4,cz=4,seg=0,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=4,cz=4,seg=1,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=4,cz=4,seg=1,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=4,cz=4,seg=1,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_61"
+  },
+  "cx=4,cz=4,seg=1,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=4,cz=4,seg=2,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=4,cz=4,seg=2,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=4,cz=4,seg=2,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_62"
+  },
+  "cx=4,cz=4,seg=2,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=4,cz=4,seg=3,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=4,cz=4,seg=3,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=4,cz=4,seg=3,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_62"
+  },
+  "cx=4,cz=4,seg=3,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=4,cz=5,seg=0,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=4,cz=5,seg=0,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=4,cz=5,seg=0,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_59"
+  },
+  "cx=4,cz=5,seg=0,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=4,cz=5,seg=1,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=4,cz=5,seg=1,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=4,cz=5,seg=1,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_59"
+  },
+  "cx=4,cz=5,seg=1,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=4,cz=5,seg=2,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=4,cz=5,seg=2,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=4,cz=5,seg=2,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_60"
+  },
+  "cx=4,cz=5,seg=2,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=4,cz=5,seg=3,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=4,cz=5,seg=3,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=4,cz=5,seg=3,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_60"
+  },
+  "cx=4,cz=5,seg=3,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=4,cz=6,seg=0,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=4,cz=6,seg=0,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=4,cz=6,seg=0,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_59"
+  },
+  "cx=4,cz=6,seg=0,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=4,cz=6,seg=1,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=4,cz=6,seg=1,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=4,cz=6,seg=1,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_59"
+  },
+  "cx=4,cz=6,seg=1,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=4,cz=6,seg=2,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=4,cz=6,seg=2,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=4,cz=6,seg=2,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_60"
+  },
+  "cx=4,cz=6,seg=2,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=4,cz=6,seg=3,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=4,cz=6,seg=3,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=4,cz=6,seg=3,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_60"
+  },
+  "cx=4,cz=6,seg=3,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=4,cz=7,seg=0,top=false,narrow=false": {
+   "model": "airwaves:block/antenna_giant_35"
+  },
+  "cx=4,cz=7,seg=0,top=false,narrow=true": {
+   "model": "airwaves:block/antenna_giant_35"
+  },
+  "cx=4,cz=7,seg=0,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_63"
+  },
+  "cx=4,cz=7,seg=0,top=true,narrow=true": {
+   "model": "airwaves:block/antenna_giant_37"
+  },
+  "cx=4,cz=7,seg=1,top=false,narrow=false": {
+   "model": "airwaves:block/antenna_giant_35"
+  },
+  "cx=4,cz=7,seg=1,top=false,narrow=true": {
+   "model": "airwaves:block/antenna_giant_35"
+  },
+  "cx=4,cz=7,seg=1,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_63"
+  },
+  "cx=4,cz=7,seg=1,top=true,narrow=true": {
+   "model": "airwaves:block/antenna_giant_37"
+  },
+  "cx=4,cz=7,seg=2,top=false,narrow=false": {
+   "model": "airwaves:block/antenna_giant_38"
+  },
+  "cx=4,cz=7,seg=2,top=false,narrow=true": {
+   "model": "airwaves:block/antenna_giant_38"
+  },
+  "cx=4,cz=7,seg=2,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_64"
+  },
+  "cx=4,cz=7,seg=2,top=true,narrow=true": {
+   "model": "airwaves:block/antenna_giant_40"
+  },
+  "cx=4,cz=7,seg=3,top=false,narrow=false": {
+   "model": "airwaves:block/antenna_giant_38"
+  },
+  "cx=4,cz=7,seg=3,top=false,narrow=true": {
+   "model": "airwaves:block/antenna_giant_38"
+  },
+  "cx=4,cz=7,seg=3,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_64"
+  },
+  "cx=4,cz=7,seg=3,top=true,narrow=true": {
+   "model": "airwaves:block/antenna_giant_40"
+  },
+  "cx=5,cz=0,seg=0,top=false,narrow=false": {
+   "model": "airwaves:block/antenna_giant_26"
+  },
+  "cx=5,cz=0,seg=0,top=false,narrow=true": {
+   "model": "airwaves:block/antenna_giant_26"
+  },
+  "cx=5,cz=0,seg=0,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_27"
+  },
+  "cx=5,cz=0,seg=0,top=true,narrow=true": {
+   "model": "airwaves:block/antenna_giant_28"
+  },
+  "cx=5,cz=0,seg=1,top=false,narrow=false": {
+   "model": "airwaves:block/antenna_giant_26"
+  },
+  "cx=5,cz=0,seg=1,top=false,narrow=true": {
+   "model": "airwaves:block/antenna_giant_26"
+  },
+  "cx=5,cz=0,seg=1,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_27"
+  },
+  "cx=5,cz=0,seg=1,top=true,narrow=true": {
+   "model": "airwaves:block/antenna_giant_28"
+  },
+  "cx=5,cz=0,seg=2,top=false,narrow=false": {
+   "model": "airwaves:block/antenna_giant_29"
+  },
+  "cx=5,cz=0,seg=2,top=false,narrow=true": {
+   "model": "airwaves:block/antenna_giant_29"
+  },
+  "cx=5,cz=0,seg=2,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_30"
+  },
+  "cx=5,cz=0,seg=2,top=true,narrow=true": {
+   "model": "airwaves:block/antenna_giant_31"
+  },
+  "cx=5,cz=0,seg=3,top=false,narrow=false": {
+   "model": "airwaves:block/antenna_giant_29"
+  },
+  "cx=5,cz=0,seg=3,top=false,narrow=true": {
+   "model": "airwaves:block/antenna_giant_29"
+  },
+  "cx=5,cz=0,seg=3,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_30"
+  },
+  "cx=5,cz=0,seg=3,top=true,narrow=true": {
+   "model": "airwaves:block/antenna_giant_31"
+  },
+  "cx=5,cz=1,seg=0,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=5,cz=1,seg=0,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=5,cz=1,seg=0,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_32"
+  },
+  "cx=5,cz=1,seg=0,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=5,cz=1,seg=1,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=5,cz=1,seg=1,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=5,cz=1,seg=1,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_32"
+  },
+  "cx=5,cz=1,seg=1,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=5,cz=1,seg=2,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=5,cz=1,seg=2,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=5,cz=1,seg=2,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_32"
+  },
+  "cx=5,cz=1,seg=2,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=5,cz=1,seg=3,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=5,cz=1,seg=3,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=5,cz=1,seg=3,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_32"
+  },
+  "cx=5,cz=1,seg=3,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=5,cz=2,seg=0,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=5,cz=2,seg=0,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=5,cz=2,seg=0,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_32"
+  },
+  "cx=5,cz=2,seg=0,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=5,cz=2,seg=1,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=5,cz=2,seg=1,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=5,cz=2,seg=1,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_32"
+  },
+  "cx=5,cz=2,seg=1,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=5,cz=2,seg=2,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=5,cz=2,seg=2,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=5,cz=2,seg=2,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_32"
+  },
+  "cx=5,cz=2,seg=2,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=5,cz=2,seg=3,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=5,cz=2,seg=3,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=5,cz=2,seg=3,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_32"
+  },
+  "cx=5,cz=2,seg=3,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=5,cz=3,seg=0,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=5,cz=3,seg=0,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=5,cz=3,seg=0,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_32"
+  },
+  "cx=5,cz=3,seg=0,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=5,cz=3,seg=1,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=5,cz=3,seg=1,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=5,cz=3,seg=1,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_32"
+  },
+  "cx=5,cz=3,seg=1,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=5,cz=3,seg=2,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=5,cz=3,seg=2,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=5,cz=3,seg=2,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_32"
+  },
+  "cx=5,cz=3,seg=2,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=5,cz=3,seg=3,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=5,cz=3,seg=3,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=5,cz=3,seg=3,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_32"
+  },
+  "cx=5,cz=3,seg=3,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=5,cz=4,seg=0,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=5,cz=4,seg=0,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=5,cz=4,seg=0,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_33"
+  },
+  "cx=5,cz=4,seg=0,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=5,cz=4,seg=1,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=5,cz=4,seg=1,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=5,cz=4,seg=1,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_33"
+  },
+  "cx=5,cz=4,seg=1,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=5,cz=4,seg=2,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=5,cz=4,seg=2,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=5,cz=4,seg=2,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_34"
+  },
+  "cx=5,cz=4,seg=2,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=5,cz=4,seg=3,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=5,cz=4,seg=3,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=5,cz=4,seg=3,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_34"
+  },
+  "cx=5,cz=4,seg=3,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=5,cz=5,seg=0,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=5,cz=5,seg=0,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=5,cz=5,seg=0,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_32"
+  },
+  "cx=5,cz=5,seg=0,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=5,cz=5,seg=1,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=5,cz=5,seg=1,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=5,cz=5,seg=1,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_32"
+  },
+  "cx=5,cz=5,seg=1,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=5,cz=5,seg=2,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=5,cz=5,seg=2,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=5,cz=5,seg=2,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_32"
+  },
+  "cx=5,cz=5,seg=2,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=5,cz=5,seg=3,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=5,cz=5,seg=3,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=5,cz=5,seg=3,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_32"
+  },
+  "cx=5,cz=5,seg=3,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=5,cz=6,seg=0,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=5,cz=6,seg=0,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=5,cz=6,seg=0,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_32"
+  },
+  "cx=5,cz=6,seg=0,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=5,cz=6,seg=1,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=5,cz=6,seg=1,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=5,cz=6,seg=1,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_32"
+  },
+  "cx=5,cz=6,seg=1,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=5,cz=6,seg=2,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=5,cz=6,seg=2,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=5,cz=6,seg=2,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_32"
+  },
+  "cx=5,cz=6,seg=2,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=5,cz=6,seg=3,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=5,cz=6,seg=3,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=5,cz=6,seg=3,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_32"
+  },
+  "cx=5,cz=6,seg=3,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=5,cz=7,seg=0,top=false,narrow=false": {
+   "model": "airwaves:block/antenna_giant_35"
+  },
+  "cx=5,cz=7,seg=0,top=false,narrow=true": {
+   "model": "airwaves:block/antenna_giant_35"
+  },
+  "cx=5,cz=7,seg=0,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_36"
+  },
+  "cx=5,cz=7,seg=0,top=true,narrow=true": {
+   "model": "airwaves:block/antenna_giant_37"
+  },
+  "cx=5,cz=7,seg=1,top=false,narrow=false": {
+   "model": "airwaves:block/antenna_giant_35"
+  },
+  "cx=5,cz=7,seg=1,top=false,narrow=true": {
+   "model": "airwaves:block/antenna_giant_35"
+  },
+  "cx=5,cz=7,seg=1,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_36"
+  },
+  "cx=5,cz=7,seg=1,top=true,narrow=true": {
+   "model": "airwaves:block/antenna_giant_37"
+  },
+  "cx=5,cz=7,seg=2,top=false,narrow=false": {
+   "model": "airwaves:block/antenna_giant_38"
+  },
+  "cx=5,cz=7,seg=2,top=false,narrow=true": {
+   "model": "airwaves:block/antenna_giant_38"
+  },
+  "cx=5,cz=7,seg=2,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_39"
+  },
+  "cx=5,cz=7,seg=2,top=true,narrow=true": {
+   "model": "airwaves:block/antenna_giant_40"
+  },
+  "cx=5,cz=7,seg=3,top=false,narrow=false": {
+   "model": "airwaves:block/antenna_giant_38"
+  },
+  "cx=5,cz=7,seg=3,top=false,narrow=true": {
+   "model": "airwaves:block/antenna_giant_38"
+  },
+  "cx=5,cz=7,seg=3,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_39"
+  },
+  "cx=5,cz=7,seg=3,top=true,narrow=true": {
+   "model": "airwaves:block/antenna_giant_40"
+  },
+  "cx=6,cz=0,seg=0,top=false,narrow=false": {
+   "model": "airwaves:block/antenna_giant_26"
+  },
+  "cx=6,cz=0,seg=0,top=false,narrow=true": {
+   "model": "airwaves:block/antenna_giant_26"
+  },
+  "cx=6,cz=0,seg=0,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_27"
+  },
+  "cx=6,cz=0,seg=0,top=true,narrow=true": {
+   "model": "airwaves:block/antenna_giant_28"
+  },
+  "cx=6,cz=0,seg=1,top=false,narrow=false": {
+   "model": "airwaves:block/antenna_giant_26"
+  },
+  "cx=6,cz=0,seg=1,top=false,narrow=true": {
+   "model": "airwaves:block/antenna_giant_26"
+  },
+  "cx=6,cz=0,seg=1,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_27"
+  },
+  "cx=6,cz=0,seg=1,top=true,narrow=true": {
+   "model": "airwaves:block/antenna_giant_28"
+  },
+  "cx=6,cz=0,seg=2,top=false,narrow=false": {
+   "model": "airwaves:block/antenna_giant_29"
+  },
+  "cx=6,cz=0,seg=2,top=false,narrow=true": {
+   "model": "airwaves:block/antenna_giant_29"
+  },
+  "cx=6,cz=0,seg=2,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_30"
+  },
+  "cx=6,cz=0,seg=2,top=true,narrow=true": {
+   "model": "airwaves:block/antenna_giant_31"
+  },
+  "cx=6,cz=0,seg=3,top=false,narrow=false": {
+   "model": "airwaves:block/antenna_giant_29"
+  },
+  "cx=6,cz=0,seg=3,top=false,narrow=true": {
+   "model": "airwaves:block/antenna_giant_29"
+  },
+  "cx=6,cz=0,seg=3,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_30"
+  },
+  "cx=6,cz=0,seg=3,top=true,narrow=true": {
+   "model": "airwaves:block/antenna_giant_31"
+  },
+  "cx=6,cz=1,seg=0,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=6,cz=1,seg=0,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=6,cz=1,seg=0,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_32"
+  },
+  "cx=6,cz=1,seg=0,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=6,cz=1,seg=1,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=6,cz=1,seg=1,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=6,cz=1,seg=1,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_32"
+  },
+  "cx=6,cz=1,seg=1,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=6,cz=1,seg=2,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=6,cz=1,seg=2,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=6,cz=1,seg=2,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_32"
+  },
+  "cx=6,cz=1,seg=2,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=6,cz=1,seg=3,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=6,cz=1,seg=3,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=6,cz=1,seg=3,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_32"
+  },
+  "cx=6,cz=1,seg=3,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=6,cz=2,seg=0,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=6,cz=2,seg=0,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=6,cz=2,seg=0,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_32"
+  },
+  "cx=6,cz=2,seg=0,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=6,cz=2,seg=1,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=6,cz=2,seg=1,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=6,cz=2,seg=1,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_32"
+  },
+  "cx=6,cz=2,seg=1,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=6,cz=2,seg=2,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=6,cz=2,seg=2,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=6,cz=2,seg=2,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_32"
+  },
+  "cx=6,cz=2,seg=2,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=6,cz=2,seg=3,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=6,cz=2,seg=3,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=6,cz=2,seg=3,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_32"
+  },
+  "cx=6,cz=2,seg=3,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=6,cz=3,seg=0,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=6,cz=3,seg=0,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=6,cz=3,seg=0,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_32"
+  },
+  "cx=6,cz=3,seg=0,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=6,cz=3,seg=1,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=6,cz=3,seg=1,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=6,cz=3,seg=1,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_32"
+  },
+  "cx=6,cz=3,seg=1,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=6,cz=3,seg=2,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=6,cz=3,seg=2,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=6,cz=3,seg=2,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_32"
+  },
+  "cx=6,cz=3,seg=2,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=6,cz=3,seg=3,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=6,cz=3,seg=3,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=6,cz=3,seg=3,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_32"
+  },
+  "cx=6,cz=3,seg=3,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=6,cz=4,seg=0,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=6,cz=4,seg=0,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=6,cz=4,seg=0,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_33"
+  },
+  "cx=6,cz=4,seg=0,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=6,cz=4,seg=1,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=6,cz=4,seg=1,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=6,cz=4,seg=1,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_33"
+  },
+  "cx=6,cz=4,seg=1,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=6,cz=4,seg=2,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=6,cz=4,seg=2,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=6,cz=4,seg=2,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_34"
+  },
+  "cx=6,cz=4,seg=2,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=6,cz=4,seg=3,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=6,cz=4,seg=3,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=6,cz=4,seg=3,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_34"
+  },
+  "cx=6,cz=4,seg=3,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=6,cz=5,seg=0,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=6,cz=5,seg=0,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=6,cz=5,seg=0,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_32"
+  },
+  "cx=6,cz=5,seg=0,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=6,cz=5,seg=1,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=6,cz=5,seg=1,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=6,cz=5,seg=1,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_32"
+  },
+  "cx=6,cz=5,seg=1,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=6,cz=5,seg=2,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=6,cz=5,seg=2,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=6,cz=5,seg=2,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_32"
+  },
+  "cx=6,cz=5,seg=2,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=6,cz=5,seg=3,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=6,cz=5,seg=3,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=6,cz=5,seg=3,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_32"
+  },
+  "cx=6,cz=5,seg=3,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=6,cz=6,seg=0,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=6,cz=6,seg=0,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=6,cz=6,seg=0,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_32"
+  },
+  "cx=6,cz=6,seg=0,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=6,cz=6,seg=1,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=6,cz=6,seg=1,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=6,cz=6,seg=1,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_32"
+  },
+  "cx=6,cz=6,seg=1,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=6,cz=6,seg=2,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=6,cz=6,seg=2,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=6,cz=6,seg=2,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_32"
+  },
+  "cx=6,cz=6,seg=2,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=6,cz=6,seg=3,top=false,narrow=false": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=6,cz=6,seg=3,top=false,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=6,cz=6,seg=3,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_32"
+  },
+  "cx=6,cz=6,seg=3,top=true,narrow=true": {
+   "model": "airwaves:block/mast_empty"
+  },
+  "cx=6,cz=7,seg=0,top=false,narrow=false": {
+   "model": "airwaves:block/antenna_giant_35"
+  },
+  "cx=6,cz=7,seg=0,top=false,narrow=true": {
+   "model": "airwaves:block/antenna_giant_35"
+  },
+  "cx=6,cz=7,seg=0,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_36"
+  },
+  "cx=6,cz=7,seg=0,top=true,narrow=true": {
+   "model": "airwaves:block/antenna_giant_37"
+  },
+  "cx=6,cz=7,seg=1,top=false,narrow=false": {
+   "model": "airwaves:block/antenna_giant_35"
+  },
+  "cx=6,cz=7,seg=1,top=false,narrow=true": {
+   "model": "airwaves:block/antenna_giant_35"
+  },
+  "cx=6,cz=7,seg=1,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_36"
+  },
+  "cx=6,cz=7,seg=1,top=true,narrow=true": {
+   "model": "airwaves:block/antenna_giant_37"
+  },
+  "cx=6,cz=7,seg=2,top=false,narrow=false": {
+   "model": "airwaves:block/antenna_giant_38"
+  },
+  "cx=6,cz=7,seg=2,top=false,narrow=true": {
+   "model": "airwaves:block/antenna_giant_38"
+  },
+  "cx=6,cz=7,seg=2,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_39"
+  },
+  "cx=6,cz=7,seg=2,top=true,narrow=true": {
+   "model": "airwaves:block/antenna_giant_40"
+  },
+  "cx=6,cz=7,seg=3,top=false,narrow=false": {
+   "model": "airwaves:block/antenna_giant_38"
+  },
+  "cx=6,cz=7,seg=3,top=false,narrow=true": {
+   "model": "airwaves:block/antenna_giant_38"
+  },
+  "cx=6,cz=7,seg=3,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_39"
+  },
+  "cx=6,cz=7,seg=3,top=true,narrow=true": {
+   "model": "airwaves:block/antenna_giant_40"
+  },
+  "cx=7,cz=0,seg=0,top=false,narrow=false": {
+   "model": "airwaves:block/antenna_giant_65"
+  },
+  "cx=7,cz=0,seg=0,top=false,narrow=true": {
+   "model": "airwaves:block/antenna_giant_65"
+  },
+  "cx=7,cz=0,seg=0,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_66"
+  },
+  "cx=7,cz=0,seg=0,top=true,narrow=true": {
+   "model": "airwaves:block/antenna_giant_67"
+  },
+  "cx=7,cz=0,seg=1,top=false,narrow=false": {
+   "model": "airwaves:block/antenna_giant_68"
+  },
+  "cx=7,cz=0,seg=1,top=false,narrow=true": {
+   "model": "airwaves:block/antenna_giant_68"
+  },
+  "cx=7,cz=0,seg=1,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_66"
+  },
+  "cx=7,cz=0,seg=1,top=true,narrow=true": {
+   "model": "airwaves:block/antenna_giant_69"
+  },
+  "cx=7,cz=0,seg=2,top=false,narrow=false": {
+   "model": "airwaves:block/antenna_giant_70"
+  },
+  "cx=7,cz=0,seg=2,top=false,narrow=true": {
+   "model": "airwaves:block/antenna_giant_70"
+  },
+  "cx=7,cz=0,seg=2,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_71"
+  },
+  "cx=7,cz=0,seg=2,top=true,narrow=true": {
+   "model": "airwaves:block/antenna_giant_72"
+  },
+  "cx=7,cz=0,seg=3,top=false,narrow=false": {
+   "model": "airwaves:block/antenna_giant_70"
+  },
+  "cx=7,cz=0,seg=3,top=false,narrow=true": {
+   "model": "airwaves:block/antenna_giant_70"
+  },
+  "cx=7,cz=0,seg=3,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_71"
+  },
+  "cx=7,cz=0,seg=3,top=true,narrow=true": {
+   "model": "airwaves:block/antenna_giant_72"
+  },
+  "cx=7,cz=1,seg=0,top=false,narrow=false": {
+   "model": "airwaves:block/antenna_giant_73"
+  },
+  "cx=7,cz=1,seg=0,top=false,narrow=true": {
+   "model": "airwaves:block/antenna_giant_73"
+  },
+  "cx=7,cz=1,seg=0,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_74"
+  },
+  "cx=7,cz=1,seg=0,top=true,narrow=true": {
+   "model": "airwaves:block/antenna_giant_75"
+  },
+  "cx=7,cz=1,seg=1,top=false,narrow=false": {
+   "model": "airwaves:block/antenna_giant_73"
+  },
+  "cx=7,cz=1,seg=1,top=false,narrow=true": {
+   "model": "airwaves:block/antenna_giant_73"
+  },
+  "cx=7,cz=1,seg=1,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_74"
+  },
+  "cx=7,cz=1,seg=1,top=true,narrow=true": {
+   "model": "airwaves:block/antenna_giant_75"
+  },
+  "cx=7,cz=1,seg=2,top=false,narrow=false": {
+   "model": "airwaves:block/antenna_giant_76"
+  },
+  "cx=7,cz=1,seg=2,top=false,narrow=true": {
+   "model": "airwaves:block/antenna_giant_76"
+  },
+  "cx=7,cz=1,seg=2,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_77"
+  },
+  "cx=7,cz=1,seg=2,top=true,narrow=true": {
+   "model": "airwaves:block/antenna_giant_78"
+  },
+  "cx=7,cz=1,seg=3,top=false,narrow=false": {
+   "model": "airwaves:block/antenna_giant_76"
+  },
+  "cx=7,cz=1,seg=3,top=false,narrow=true": {
+   "model": "airwaves:block/antenna_giant_76"
+  },
+  "cx=7,cz=1,seg=3,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_77"
+  },
+  "cx=7,cz=1,seg=3,top=true,narrow=true": {
+   "model": "airwaves:block/antenna_giant_78"
+  },
+  "cx=7,cz=2,seg=0,top=false,narrow=false": {
+   "model": "airwaves:block/antenna_giant_73"
+  },
+  "cx=7,cz=2,seg=0,top=false,narrow=true": {
+   "model": "airwaves:block/antenna_giant_73"
+  },
+  "cx=7,cz=2,seg=0,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_74"
+  },
+  "cx=7,cz=2,seg=0,top=true,narrow=true": {
+   "model": "airwaves:block/antenna_giant_75"
+  },
+  "cx=7,cz=2,seg=1,top=false,narrow=false": {
+   "model": "airwaves:block/antenna_giant_73"
+  },
+  "cx=7,cz=2,seg=1,top=false,narrow=true": {
+   "model": "airwaves:block/antenna_giant_73"
+  },
+  "cx=7,cz=2,seg=1,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_74"
+  },
+  "cx=7,cz=2,seg=1,top=true,narrow=true": {
+   "model": "airwaves:block/antenna_giant_75"
+  },
+  "cx=7,cz=2,seg=2,top=false,narrow=false": {
+   "model": "airwaves:block/antenna_giant_76"
+  },
+  "cx=7,cz=2,seg=2,top=false,narrow=true": {
+   "model": "airwaves:block/antenna_giant_76"
+  },
+  "cx=7,cz=2,seg=2,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_77"
+  },
+  "cx=7,cz=2,seg=2,top=true,narrow=true": {
+   "model": "airwaves:block/antenna_giant_78"
+  },
+  "cx=7,cz=2,seg=3,top=false,narrow=false": {
+   "model": "airwaves:block/antenna_giant_76"
+  },
+  "cx=7,cz=2,seg=3,top=false,narrow=true": {
+   "model": "airwaves:block/antenna_giant_76"
+  },
+  "cx=7,cz=2,seg=3,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_77"
+  },
+  "cx=7,cz=2,seg=3,top=true,narrow=true": {
+   "model": "airwaves:block/antenna_giant_78"
+  },
+  "cx=7,cz=3,seg=0,top=false,narrow=false": {
+   "model": "airwaves:block/antenna_giant_73"
+  },
+  "cx=7,cz=3,seg=0,top=false,narrow=true": {
+   "model": "airwaves:block/antenna_giant_73"
+  },
+  "cx=7,cz=3,seg=0,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_79"
+  },
+  "cx=7,cz=3,seg=0,top=true,narrow=true": {
+   "model": "airwaves:block/antenna_giant_75"
+  },
+  "cx=7,cz=3,seg=1,top=false,narrow=false": {
+   "model": "airwaves:block/antenna_giant_73"
+  },
+  "cx=7,cz=3,seg=1,top=false,narrow=true": {
+   "model": "airwaves:block/antenna_giant_73"
+  },
+  "cx=7,cz=3,seg=1,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_79"
+  },
+  "cx=7,cz=3,seg=1,top=true,narrow=true": {
+   "model": "airwaves:block/antenna_giant_75"
+  },
+  "cx=7,cz=3,seg=2,top=false,narrow=false": {
+   "model": "airwaves:block/antenna_giant_76"
+  },
+  "cx=7,cz=3,seg=2,top=false,narrow=true": {
+   "model": "airwaves:block/antenna_giant_76"
+  },
+  "cx=7,cz=3,seg=2,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_80"
+  },
+  "cx=7,cz=3,seg=2,top=true,narrow=true": {
+   "model": "airwaves:block/antenna_giant_78"
+  },
+  "cx=7,cz=3,seg=3,top=false,narrow=false": {
+   "model": "airwaves:block/antenna_giant_76"
+  },
+  "cx=7,cz=3,seg=3,top=false,narrow=true": {
+   "model": "airwaves:block/antenna_giant_76"
+  },
+  "cx=7,cz=3,seg=3,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_80"
+  },
+  "cx=7,cz=3,seg=3,top=true,narrow=true": {
+   "model": "airwaves:block/antenna_giant_78"
+  },
+  "cx=7,cz=4,seg=0,top=false,narrow=false": {
+   "model": "airwaves:block/antenna_giant_73"
+  },
+  "cx=7,cz=4,seg=0,top=false,narrow=true": {
+   "model": "airwaves:block/antenna_giant_73"
+  },
+  "cx=7,cz=4,seg=0,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_81"
+  },
+  "cx=7,cz=4,seg=0,top=true,narrow=true": {
+   "model": "airwaves:block/antenna_giant_75"
+  },
+  "cx=7,cz=4,seg=1,top=false,narrow=false": {
+   "model": "airwaves:block/antenna_giant_73"
+  },
+  "cx=7,cz=4,seg=1,top=false,narrow=true": {
+   "model": "airwaves:block/antenna_giant_73"
+  },
+  "cx=7,cz=4,seg=1,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_81"
+  },
+  "cx=7,cz=4,seg=1,top=true,narrow=true": {
+   "model": "airwaves:block/antenna_giant_75"
+  },
+  "cx=7,cz=4,seg=2,top=false,narrow=false": {
+   "model": "airwaves:block/antenna_giant_76"
+  },
+  "cx=7,cz=4,seg=2,top=false,narrow=true": {
+   "model": "airwaves:block/antenna_giant_76"
+  },
+  "cx=7,cz=4,seg=2,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_82"
+  },
+  "cx=7,cz=4,seg=2,top=true,narrow=true": {
+   "model": "airwaves:block/antenna_giant_78"
+  },
+  "cx=7,cz=4,seg=3,top=false,narrow=false": {
+   "model": "airwaves:block/antenna_giant_76"
+  },
+  "cx=7,cz=4,seg=3,top=false,narrow=true": {
+   "model": "airwaves:block/antenna_giant_76"
+  },
+  "cx=7,cz=4,seg=3,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_82"
+  },
+  "cx=7,cz=4,seg=3,top=true,narrow=true": {
+   "model": "airwaves:block/antenna_giant_78"
+  },
+  "cx=7,cz=5,seg=0,top=false,narrow=false": {
+   "model": "airwaves:block/antenna_giant_73"
+  },
+  "cx=7,cz=5,seg=0,top=false,narrow=true": {
+   "model": "airwaves:block/antenna_giant_73"
+  },
+  "cx=7,cz=5,seg=0,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_74"
+  },
+  "cx=7,cz=5,seg=0,top=true,narrow=true": {
+   "model": "airwaves:block/antenna_giant_75"
+  },
+  "cx=7,cz=5,seg=1,top=false,narrow=false": {
+   "model": "airwaves:block/antenna_giant_73"
+  },
+  "cx=7,cz=5,seg=1,top=false,narrow=true": {
+   "model": "airwaves:block/antenna_giant_73"
+  },
+  "cx=7,cz=5,seg=1,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_74"
+  },
+  "cx=7,cz=5,seg=1,top=true,narrow=true": {
+   "model": "airwaves:block/antenna_giant_75"
+  },
+  "cx=7,cz=5,seg=2,top=false,narrow=false": {
+   "model": "airwaves:block/antenna_giant_76"
+  },
+  "cx=7,cz=5,seg=2,top=false,narrow=true": {
+   "model": "airwaves:block/antenna_giant_76"
+  },
+  "cx=7,cz=5,seg=2,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_77"
+  },
+  "cx=7,cz=5,seg=2,top=true,narrow=true": {
+   "model": "airwaves:block/antenna_giant_78"
+  },
+  "cx=7,cz=5,seg=3,top=false,narrow=false": {
+   "model": "airwaves:block/antenna_giant_76"
+  },
+  "cx=7,cz=5,seg=3,top=false,narrow=true": {
+   "model": "airwaves:block/antenna_giant_76"
+  },
+  "cx=7,cz=5,seg=3,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_77"
+  },
+  "cx=7,cz=5,seg=3,top=true,narrow=true": {
+   "model": "airwaves:block/antenna_giant_78"
+  },
+  "cx=7,cz=6,seg=0,top=false,narrow=false": {
+   "model": "airwaves:block/antenna_giant_73"
+  },
+  "cx=7,cz=6,seg=0,top=false,narrow=true": {
+   "model": "airwaves:block/antenna_giant_73"
+  },
+  "cx=7,cz=6,seg=0,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_74"
+  },
+  "cx=7,cz=6,seg=0,top=true,narrow=true": {
+   "model": "airwaves:block/antenna_giant_75"
+  },
+  "cx=7,cz=6,seg=1,top=false,narrow=false": {
+   "model": "airwaves:block/antenna_giant_73"
+  },
+  "cx=7,cz=6,seg=1,top=false,narrow=true": {
+   "model": "airwaves:block/antenna_giant_73"
+  },
+  "cx=7,cz=6,seg=1,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_74"
+  },
+  "cx=7,cz=6,seg=1,top=true,narrow=true": {
+   "model": "airwaves:block/antenna_giant_75"
+  },
+  "cx=7,cz=6,seg=2,top=false,narrow=false": {
+   "model": "airwaves:block/antenna_giant_76"
+  },
+  "cx=7,cz=6,seg=2,top=false,narrow=true": {
+   "model": "airwaves:block/antenna_giant_76"
+  },
+  "cx=7,cz=6,seg=2,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_77"
+  },
+  "cx=7,cz=6,seg=2,top=true,narrow=true": {
+   "model": "airwaves:block/antenna_giant_78"
+  },
+  "cx=7,cz=6,seg=3,top=false,narrow=false": {
+   "model": "airwaves:block/antenna_giant_76"
+  },
+  "cx=7,cz=6,seg=3,top=false,narrow=true": {
+   "model": "airwaves:block/antenna_giant_76"
+  },
+  "cx=7,cz=6,seg=3,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_77"
+  },
+  "cx=7,cz=6,seg=3,top=true,narrow=true": {
+   "model": "airwaves:block/antenna_giant_78"
+  },
+  "cx=7,cz=7,seg=0,top=false,narrow=false": {
+   "model": "airwaves:block/antenna_giant_83"
+  },
+  "cx=7,cz=7,seg=0,top=false,narrow=true": {
+   "model": "airwaves:block/antenna_giant_83"
+  },
+  "cx=7,cz=7,seg=0,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_84"
+  },
+  "cx=7,cz=7,seg=0,top=true,narrow=true": {
+   "model": "airwaves:block/antenna_giant_85"
+  },
+  "cx=7,cz=7,seg=1,top=false,narrow=false": {
+   "model": "airwaves:block/antenna_giant_86"
+  },
+  "cx=7,cz=7,seg=1,top=false,narrow=true": {
+   "model": "airwaves:block/antenna_giant_86"
+  },
+  "cx=7,cz=7,seg=1,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_84"
+  },
+  "cx=7,cz=7,seg=1,top=true,narrow=true": {
+   "model": "airwaves:block/antenna_giant_87"
+  },
+  "cx=7,cz=7,seg=2,top=false,narrow=false": {
+   "model": "airwaves:block/antenna_giant_88"
+  },
+  "cx=7,cz=7,seg=2,top=false,narrow=true": {
+   "model": "airwaves:block/antenna_giant_88"
+  },
+  "cx=7,cz=7,seg=2,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_89"
+  },
+  "cx=7,cz=7,seg=2,top=true,narrow=true": {
+   "model": "airwaves:block/antenna_giant_90"
+  },
+  "cx=7,cz=7,seg=3,top=false,narrow=false": {
+   "model": "airwaves:block/antenna_giant_88"
+  },
+  "cx=7,cz=7,seg=3,top=false,narrow=true": {
+   "model": "airwaves:block/antenna_giant_88"
+  },
+  "cx=7,cz=7,seg=3,top=true,narrow=false": {
+   "model": "airwaves:block/antenna_giant_89"
+  },
+  "cx=7,cz=7,seg=3,top=true,narrow=true": {
+   "model": "airwaves:block/antenna_giant_90"
+  }
+ }
+}

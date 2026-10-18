@@ -1,0 +1,8 @@
+{
+ "replace": false,
+ "values": [
+  "airwaves:microphone",
+  "airwaves:insulator",
+  "airwaves:yagi_antenna"
+ ]
+}

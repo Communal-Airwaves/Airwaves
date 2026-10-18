@@ -1,0 +1,19 @@
+{
+ "variants": {
+  "facing=north": {
+   "model": "airwaves:block/speaker"
+  },
+  "facing=east": {
+   "model": "airwaves:block/speaker",
+   "y": 90
+  },
+  "facing=south": {
+   "model": "airwaves:block/speaker",
+   "y": 180
+  },
+  "facing=west": {
+   "model": "airwaves:block/speaker",
+   "y": 270
+  }
+ }
+}

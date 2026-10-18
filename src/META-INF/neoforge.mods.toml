@@ -1,0 +1,81 @@
+modLoader="javafml"
+loaderVersion="[1,)"
+license="MIT"
+
+[[mods]]
+modId="airwaves"
+version="0.1.0"
+logoFile="logo.png"
+displayName="Create: Airwaves"
+description='''Real radio for your Create world.
+
+Talk into a microphone, send your voice down the wire to a transmitter, and anyone with a radio on the same frequency hears you, with static that grows with distance, hills and storms.
+
+- Transmitters and receivers in four sizes, with antenna masts that grow layer by layer
+- Powered by rotation: every transmitter, relay and broadcast tower runs on Create stress
+- Copper, gold, silver and fiber wires, glass insulators, utility poles and line pylons
+- Relay towers and a 27-block Radio Tower for continent-wide stations
+- Make your own circuit boards on the Circuit Workbench
+- Radio Console for airship bridges, fully working on Create: Aeronautics
+- Signal jammers, PA horns, On Air signs, tuning table and portable radio
+- Built-in proximity voice chat, Ponder scenes, Engineer's Goggles info and a Field Manual
+
+Release 0.1.0, build 9.9'''
+
+[[dependencies.airwaves]]
+modId="neoforge"
+type="required"
+versionRange="[21.1.0,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.airwaves]]
+modId="minecraft"
+type="required"
+versionRange="[1.21.1]"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.airwaves]]
+modId="create"
+type="required"
+versionRange="[6.0.10,6.1.0)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.airwaves]]
+modId="aeronautics"
+type="required"
+versionRange="[1.0.0,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.airwaves]]
+modId="sable"
+type="required"
+versionRange="[1.0.0,)"
+ordering="NONE"
+side="BOTH"
+
+# Create: Power Grid is optional: when it is installed, powered devices can also run on electricity
+# (wire the built-in red + and blue - terminals of a machine to a circuit)
+[[dependencies.airwaves]]
+modId="powergrid"
+type="optional"
+versionRange="[0.6.2,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.airwaves]]
+modId="electroenergetics"
+type="optional"
+versionRange="[1.21.1-1.1.0,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.airwaves]]
+modId="voicechat"
+type="optional"
+versionRange="*"
+ordering="NONE"
+side="BOTH"

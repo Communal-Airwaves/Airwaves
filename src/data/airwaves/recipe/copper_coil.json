@@ -1,0 +1,21 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "misc",
+ "pattern": [
+  "WWW",
+  "WAW",
+  "WWW"
+ ],
+ "key": {
+  "W": {
+   "item": "airwaves:copper_wire"
+  },
+  "A": {
+   "item": "create:andesite_alloy"
+  }
+ },
+ "result": {
+  "id": "airwaves:copper_coil",
+  "count": 2
+ }
+}

@@ -1,0 +1,25 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "misc",
+ "pattern": [
+  "GBG",
+  "RAR"
+ ],
+ "key": {
+  "G": {
+   "item": "minecraft:glass_pane"
+  },
+  "B": {
+   "item": "airwaves:circuit_board"
+  },
+  "R": {
+   "item": "minecraft:redstone"
+  },
+  "A": {
+   "item": "create:andesite_casing"
+  }
+ },
+ "result": {
+  "id": "airwaves:circuit_box"
+ }
+}

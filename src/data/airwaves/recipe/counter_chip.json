@@ -1,0 +1,27 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "misc",
+ "pattern": [
+  "NRN",
+  "QCQ",
+  "NRN"
+ ],
+ "key": {
+  "N": {
+   "tag": "c:nuggets/silver"
+  },
+  "R": {
+   "item": "minecraft:redstone"
+  },
+  "Q": {
+   "item": "minecraft:quartz"
+  },
+  "C": {
+   "item": "minecraft:comparator"
+  }
+ },
+ "result": {
+  "id": "airwaves:counter_chip",
+  "count": 2
+ }
+}

@@ -1,0 +1,19 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "category": "misc",
+ "ingredients": [
+  {
+   "item": "minecraft:paper"
+  },
+  {
+   "tag": "c:nuggets/copper"
+  },
+  {
+   "item": "minecraft:redstone"
+  }
+ ],
+ "result": {
+  "id": "airwaves:frequency_card",
+  "count": 2
+ }
+}

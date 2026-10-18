@@ -1,0 +1,66 @@
+{
+ "type": "create:sequenced_assembly",
+ "ingredient": {
+  "item": "create:precision_mechanism"
+ },
+ "loops": 1,
+ "results": [
+  {
+   "id": "airwaves:signal_mechanism",
+   "chance": 100.0
+  }
+ ],
+ "sequence": [
+  {
+   "type": "create:deploying",
+   "ingredients": [
+    {
+     "item": "airwaves:incomplete_signal_mechanism"
+    },
+    {
+     "item": "airwaves:crystal_oscillator"
+    }
+   ],
+   "results": [
+    {
+     "id": "airwaves:incomplete_signal_mechanism"
+    }
+   ]
+  },
+  {
+   "type": "create:deploying",
+   "ingredients": [
+    {
+     "item": "airwaves:incomplete_signal_mechanism"
+    },
+    {
+     "item": "airwaves:vacuum_tube"
+    }
+   ],
+   "results": [
+    {
+     "id": "airwaves:incomplete_signal_mechanism"
+    }
+   ]
+  },
+  {
+   "type": "create:deploying",
+   "ingredients": [
+    {
+     "item": "airwaves:incomplete_signal_mechanism"
+    },
+    {
+     "item": "airwaves:silver_wire"
+    }
+   ],
+   "results": [
+    {
+     "id": "airwaves:incomplete_signal_mechanism"
+    }
+   ]
+  }
+ ],
+ "transitional_item": {
+  "id": "airwaves:incomplete_signal_mechanism"
+ }
+}

@@ -1,0 +1,24 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "misc",
+ "pattern": [
+  "PPP",
+  "RWR",
+  "PPP"
+ ],
+ "key": {
+  "P": {
+   "tag": "c:plates/iron"
+  },
+  "R": {
+   "item": "minecraft:black_dye"
+  },
+  "W": {
+   "item": "minecraft:string"
+  }
+ },
+ "result": {
+  "id": "airwaves:tape",
+  "count": 2
+ }
+}

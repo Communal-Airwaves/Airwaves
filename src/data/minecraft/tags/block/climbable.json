@@ -1,0 +1,11 @@
+{
+ "values": [
+  "airwaves:antenna",
+  "airwaves:antenna_medium",
+  "airwaves:antenna_big",
+  "airwaves:antenna_giant",
+  "airwaves:relay_tower_small",
+  "airwaves:relay_tower_big",
+  "airwaves:radio_tower"
+ ]
+}

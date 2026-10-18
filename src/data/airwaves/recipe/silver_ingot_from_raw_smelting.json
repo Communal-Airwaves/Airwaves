@@ -1,0 +1,12 @@
+{
+ "type": "minecraft:smelting",
+ "category": "misc",
+ "ingredient": {
+  "item": "airwaves:raw_silver"
+ },
+ "result": {
+  "id": "airwaves:silver_ingot"
+ },
+ "experience": 0.7,
+ "cookingtime": 200
+}

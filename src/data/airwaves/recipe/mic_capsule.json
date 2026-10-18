@@ -1,0 +1,23 @@
+{
+ "type": "minecraft:crafting_shaped",
+ "category": "misc",
+ "pattern": [
+  " P ",
+  "SCS",
+  " S "
+ ],
+ "key": {
+  "P": {
+   "item": "minecraft:paper"
+  },
+  "S": {
+   "tag": "c:plates/brass"
+  },
+  "C": {
+   "item": "airwaves:copper_coil"
+  }
+ },
+ "result": {
+  "id": "airwaves:mic_capsule"
+ }
+}

@@ -1,0 +1,64 @@
+{
+ "variants": {
+  "facing=north,board=false,lit=false": {
+   "model": "airwaves:block/circuit_box"
+  },
+  "facing=north,board=false,lit=true": {
+   "model": "airwaves:block/circuit_box_lit"
+  },
+  "facing=north,board=true,lit=false": {
+   "model": "airwaves:block/circuit_box_board"
+  },
+  "facing=north,board=true,lit=true": {
+   "model": "airwaves:block/circuit_box_board_lit"
+  },
+  "facing=east,board=false,lit=false": {
+   "model": "airwaves:block/circuit_box",
+   "y": 90
+  },
+  "facing=east,board=false,lit=true": {
+   "model": "airwaves:block/circuit_box_lit",
+   "y": 90
+  },
+  "facing=east,board=true,lit=false": {
+   "model": "airwaves:block/circuit_box_board",
+   "y": 90
+  },
+  "facing=east,board=true,lit=true": {
+   "model": "airwaves:block/circuit_box_board_lit",
+   "y": 90
+  },
+  "facing=south,board=false,lit=false": {
+   "model": "airwaves:block/circuit_box",
+   "y": 180
+  },
+  "facing=south,board=false,lit=true": {
+   "model": "airwaves:block/circuit_box_lit",
+   "y": 180
+  },
+  "facing=south,board=true,lit=false": {
+   "model": "airwaves:block/circuit_box_board",
+   "y": 180
+  },
+  "facing=south,board=true,lit=true": {
+   "model": "airwaves:block/circuit_box_board_lit",
+   "y": 180
+  },
+  "facing=west,board=false,lit=false": {
+   "model": "airwaves:block/circuit_box",
+   "y": 270
+  },
+  "facing=west,board=false,lit=true": {
+   "model": "airwaves:block/circuit_box_lit",
+   "y": 270
+  },
+  "facing=west,board=true,lit=false": {
+   "model": "airwaves:block/circuit_box_board",
+   "y": 270
+  },
+  "facing=west,board=true,lit=true": {
+   "model": "airwaves:block/circuit_box_board_lit",
+   "y": 270
+  }
+ }
+}

@@ -1,0 +1,49 @@
+{
+ "variants": {
+  "facing=north,part=left": {
+   "model": "airwaves:block/tuning_table_left"
+  },
+  "facing=north,part=center": {
+   "model": "airwaves:block/tuning_table_center"
+  },
+  "facing=north,part=right": {
+   "model": "airwaves:block/tuning_table_right"
+  },
+  "facing=east,part=left": {
+   "model": "airwaves:block/tuning_table_left",
+   "y": 90
+  },
+  "facing=east,part=center": {
+   "model": "airwaves:block/tuning_table_center",
+   "y": 90
+  },
+  "facing=east,part=right": {
+   "model": "airwaves:block/tuning_table_right",
+   "y": 90
+  },
+  "facing=south,part=left": {
+   "model": "airwaves:block/tuning_table_left",
+   "y": 180
+  },
+  "facing=south,part=center": {
+   "model": "airwaves:block/tuning_table_center",
+   "y": 180
+  },
+  "facing=south,part=right": {
+   "model": "airwaves:block/tuning_table_right",
+   "y": 180
+  },
+  "facing=west,part=left": {
+   "model": "airwaves:block/tuning_table_left",
+   "y": 270
+  },
+  "facing=west,part=center": {
+   "model": "airwaves:block/tuning_table_center",
+   "y": 270
+  },
+  "facing=west,part=right": {
+   "model": "airwaves:block/tuning_table_right",
+   "y": 270
+  }
+ }
+}

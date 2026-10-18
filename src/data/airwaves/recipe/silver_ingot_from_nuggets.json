@@ -1,0 +1,36 @@
+{
+ "type": "minecraft:crafting_shapeless",
+ "category": "misc",
+ "ingredients": [
+  {
+   "item": "airwaves:silver_nugget"
+  },
+  {
+   "item": "airwaves:silver_nugget"
+  },
+  {
+   "item": "airwaves:silver_nugget"
+  },
+  {
+   "item": "airwaves:silver_nugget"
+  },
+  {
+   "item": "airwaves:silver_nugget"
+  },
+  {
+   "item": "airwaves:silver_nugget"
+  },
+  {
+   "item": "airwaves:silver_nugget"
+  },
+  {
+   "item": "airwaves:silver_nugget"
+  },
+  {
+   "item": "airwaves:silver_nugget"
+  }
+ ],
+ "result": {
+  "id": "airwaves:silver_ingot"
+ }
+}
