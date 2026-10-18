@@ -11,10 +11,10 @@
    "tag": "c:plates/iron"
   },
   "R": {
-   "item": "minecraft:black_dye"
+   "item": "create:belt_connector"
   },
   "W": {
-   "item": "minecraft:string"
+   "item": "minecraft:black_dye"
   }
  },
  "result": {

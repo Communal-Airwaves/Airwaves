@@ -1,6 +1,6 @@
 modLoader="javafml"
 loaderVersion="[1,)"
-license="MIT"
+license="CC BY-NC-SA 4.0"
 
 [[mods]]
 modId="airwaves"

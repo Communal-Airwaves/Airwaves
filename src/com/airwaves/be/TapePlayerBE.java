@@ -7,18 +7,16 @@ import com.airwaves.logic.SoundCapture;
 import com.airwaves.logic.TapeAudio;
 import com.airwaves.logic.TapeData;
 import java.util.ArrayList;
-import java.util.LinkedHashSet;
+import java.util.LinkedHashMap;
 import java.util.List;
-import java.util.Set;
+import java.util.Map;
 import java.util.UUID;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.component.DataComponentType;
 import net.minecraft.nbt.CompoundTag;
-import net.minecraft.network.protocol.game.ClientboundStopSoundPacket;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerLevel;
-import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.ContainerHelper;
@@ -55,7 +53,8 @@ public class TapePlayerBE extends MicrophoneBE {
    private List<TapeAudio.Frame> playing = List.of();
    private long recStart;
    private int voiceIdx;
-   private final Set<ResourceLocation> music = new LinkedHashSet();
+   private final Map<ResourceLocation, Track> music = new LinkedHashMap();
+   private boolean resume;
    public final ContainerData data = new ContainerData() {
       public int get(int i) {
          int var10000;
@@ -140,14 +139,38 @@ public class TapePlayerBE extends MicrophoneBE {
          }
 
          this.mode = 1;
-         this.cueIdx = this.firstCueAt(this.pos);
-         this.playing = this.level.getServer() != null ? TapeAudio.load(this.level.getServer(), this.tape().audio()) : List.of();
-
-         for(this.voiceIdx = 0; this.voiceIdx < this.playing.size() && ((TapeAudio.Frame)this.playing.get(this.voiceIdx)).ms() < this.pos * 50; ++this.voiceIdx) {
-         }
-
+         this.seek();
          this.setChanged();
       }
+   }
+
+   private void seek() {
+      this.resume = false;
+      this.cueIdx = this.firstCueAt(this.pos);
+      this.playing = this.level != null && this.level.getServer() != null ? TapeAudio.load(this.level.getServer(), this.tape().audio()) : List.of();
+
+      for(this.voiceIdx = 0; this.voiceIdx < this.playing.size() && ((TapeAudio.Frame)this.playing.get(this.voiceIdx)).ms() < this.pos * 50; ++this.voiceIdx) {
+      }
+
+      this.music.clear();
+
+      for(TapeData.Cue c : this.tape().cues()) {
+         if (c.tick() >= this.pos) {
+            break;
+         }
+
+         if (c.kind() == 1) {
+            this.music.put(c.sound(), new Track(c.tick(), c.volume(), c.pitch()));
+         } else if (c.kind() == 2) {
+            this.music.remove(c.sound());
+         }
+      }
+
+      Level var4 = this.level;
+      if (var4 instanceof ServerLevel sl) {
+         this.heartbeat(sl);
+      }
+
    }
 
    public void stop() {
@@ -253,6 +276,14 @@ public class TapePlayerBE extends MicrophoneBE {
             if (t.blank()) {
                this.stop();
             } else {
+               if (this.resume) {
+                  this.seek();
+               }
+
+               if (this.pos % 20 == 0) {
+                  this.heartbeat(sl);
+               }
+
                List<TapeData.Cue> cues = t.cues();
 
                while(this.cueIdx < cues.size() && ((TapeData.Cue)cues.get(this.cueIdx)).tick() <= this.pos) {
@@ -302,16 +333,15 @@ public class TapePlayerBE extends MicrophoneBE {
       boolean on = this.wired();
       if (c.kind() == 2) {
          this.stopOne(sl, c.sound(), on);
+      } else if (c.kind() == 1) {
+         Track tr = new Track(c.tick(), c.volume(), c.pitch());
+         this.music.put(c.sound(), tr);
+         this.beat(sl, c.sound(), tr, on);
       } else {
-         float vol = c.kind() == 1 ? 2.5F : c.volume();
-         if (c.kind() == 1) {
-            this.music.add(c.sound());
-         }
-
          SoundCapture.suppress = on;
 
          try {
-            sl.playSound((Player)null, (double)this.worldPosition.getX() + (double)0.5F, (double)this.worldPosition.getY() + (double)0.5F, (double)this.worldPosition.getZ() + (double)0.5F, SoundEvent.createVariableRangeEvent(c.sound()), SoundSource.RECORDS, vol, c.pitch());
+            sl.playSound((Player)null, (double)this.worldPosition.getX() + (double)0.5F, (double)this.worldPosition.getY() + (double)0.5F, (double)this.worldPosition.getZ() + (double)0.5F, SoundEvent.createVariableRangeEvent(c.sound()), SoundSource.RECORDS, c.volume(), c.pitch());
          } finally {
             SoundCapture.suppress = false;
          }
@@ -322,6 +352,26 @@ public class TapePlayerBE extends MicrophoneBE {
          }
 
       }
+   }
+
+   private void heartbeat(ServerLevel sl) {
+      boolean on = this.wired();
+
+      for(Map.Entry<ResourceLocation, Track> e : this.music.entrySet()) {
+         this.beat(sl, (ResourceLocation)e.getKey(), (Track)e.getValue(), on);
+      }
+
+   }
+
+   private void beat(ServerLevel sl, ResourceLocation id, Track tr, boolean on) {
+      int off = Math.max(0, this.pos - tr.start()) * 50;
+      long key = this.worldPosition.asLong();
+      RadioNetwork.sendSound(sl, this.worldPosition, id, 2.5F * tr.volume(), tr.pitch(), 1.0F, true, (byte)1, key, off);
+      if (on) {
+         this.feeds.onAir(sl);
+         RadioNetwork.broadcastSound(sl, this.feeds.getBlockPos().asLong(), id, tr.volume() * this.line, tr.pitch(), (byte)1, key, off);
+      }
+
    }
 
    private void speak(ServerLevel sl, byte[] frame) {
@@ -338,16 +388,10 @@ public class TapePlayerBE extends MicrophoneBE {
 
    private void stopOne(ServerLevel sl, ResourceLocation id, boolean on) {
       this.music.remove(id);
-      ClientboundStopSoundPacket stopPkt = new ClientboundStopSoundPacket(id, SoundSource.RECORDS);
-
-      for(ServerPlayer p : sl.players()) {
-         if (p.blockPosition().distSqr(this.worldPosition) < (double)9216.0F) {
-            p.connection.send(stopPkt);
-         }
-      }
-
+      long key = this.worldPosition.asLong();
+      RadioNetwork.sendSound(sl, this.worldPosition, id, 1.0F, 1.0F, 1.0F, true, (byte)2, key, 0);
       if (on) {
-         RadioNetwork.broadcastSound(sl, this.feeds.getBlockPos().asLong(), id, 1.0F, 1.0F, (byte)2, this.worldPosition.asLong());
+         RadioNetwork.broadcastSound(sl, this.feeds.getBlockPos().asLong(), id, 1.0F, 1.0F, (byte)2, key);
       }
 
    }
@@ -358,7 +402,7 @@ public class TapePlayerBE extends MicrophoneBE {
          if (!this.music.isEmpty()) {
             boolean on = this.wired();
 
-            for(ResourceLocation id : new ArrayList(this.music)) {
+            for(ResourceLocation id : new ArrayList(this.music.keySet())) {
                this.stopOne(sl, id, on);
             }
 
@@ -379,6 +423,8 @@ public class TapePlayerBE extends MicrophoneBE {
       ContainerHelper.saveAllItems(tag, this.inv.getItems(), r);
       tag.putBoolean("loop", this.loop);
       tag.putBoolean("signal", this.lastSignal);
+      tag.putInt("mode", this.mode == 1 ? 1 : 0);
+      tag.putInt("pos", this.mode == 1 ? this.pos : 0);
    }
 
    protected void loadAdditional(CompoundTag tag, HolderLookup.Provider r) {
@@ -387,5 +433,11 @@ public class TapePlayerBE extends MicrophoneBE {
       ContainerHelper.loadAllItems(tag, this.inv.getItems(), r);
       this.loop = tag.getBoolean("loop");
       this.lastSignal = tag.getBoolean("signal");
+      this.mode = tag.getInt("mode") == 1 ? 1 : 0;
+      this.pos = tag.getInt("pos");
+      this.resume = this.mode == 1;
+   }
+
+   private static record Track(int start, float volume, float pitch) {
    }
 }

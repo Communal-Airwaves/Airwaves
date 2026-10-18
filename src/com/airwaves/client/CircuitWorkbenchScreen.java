@@ -333,7 +333,7 @@ public class CircuitWorkbenchScreen extends AbstractContainerScreen<CircuitWorkb
                g.fill(sx - 1, sy - 1, sx + 19, sy + 19, a << 24 | 16728112);
             }
 
-            if (works && c[i].is((Item)ModRegistry.VACUUM_TUBE.get())) {
+            if (works && c[i].is(ModRegistry.electronTube())) {
                g.fill(sx, sy, sx + 18, sy + 18, 1090494528);
             }
 

@@ -2,8 +2,8 @@
  "type": "minecraft:crafting_shaped",
  "category": "misc",
  "pattern": [
-  "PWP",
-  "PBC",
+  " W ",
+  "BKC",
   "PPP"
  ],
  "key": {
@@ -15,6 +15,9 @@
   },
   "B": {
    "item": "airwaves:radio_board"
+  },
+  "K": {
+   "item": "create:andesite_casing"
   },
   "P": {
    "tag": "minecraft:planks"

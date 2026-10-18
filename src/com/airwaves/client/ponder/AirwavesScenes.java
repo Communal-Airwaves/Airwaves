@@ -2,10 +2,10 @@ package com.airwaves.client.ponder;
 
 import com.airwaves.ModRegistry;
 import com.airwaves.be.CableNode;
+import com.airwaves.be.YagiAntennaBE;
 import com.airwaves.block.CircuitBoxBlock;
 import com.airwaves.block.DimensionalRelayBlock;
 import com.airwaves.block.JammerBlock;
-import com.airwaves.block.OnAirSignBlock;
 import com.airwaves.block.RadioBlock;
 import com.airwaves.block.RadioConsoleBlock;
 import com.airwaves.block.ReceiverBlock;
@@ -88,9 +88,9 @@ public final class AirwavesScenes {
          scene.idle(6);
       }
 
-      scene.overlay().showText(90).text("An Antenna of the same size as the Transmitter has to stand on that Copper. It needs to be at least 4 layers tall").pointAt(util.vector().centerOf(3, 4, 2)).placeNearTarget().attachKeyFrame();
+      scene.overlay().showText(90).text("An Antenna has to stand on that Copper, at least 4 layers tall").pointAt(util.vector().centerOf(3, 4, 2)).placeNearTarget().attachKeyFrame();
       scene.idle(100);
-      scene.overlay().showText(90).text("The taller the Antenna, the further it reaches. A small Antenna 4 tall reaches about 600 blocks, 10 tall about 1700, and 20 tall about 3700").pointAt(util.vector().topOf(3, 5, 2)).placeNearTarget();
+      scene.overlay().showText(90).text("The taller the Antenna, the further it reaches. An Antenna 4 tall reaches about 1400 blocks, 10 tall about 3900, and 20 tall about 8500. Masts count up to 96 tall").pointAt(util.vector().topOf(3, 5, 2)).placeNearTarget();
       scene.idle(100);
       scene.world().showSection(util.select().position(tx), Direction.DOWN);
       scene.idle(15);
@@ -107,7 +107,7 @@ public final class AirwavesScenes {
       scene.effects().indicateSuccess(tx);
       scene.overlay().showText(90).text("Transmitters are powered by Rotational Force. Connect a shaft to the left or right side. They need at least 16 RPM").pointAt(util.vector().blockSurface(tx, Direction.EAST)).placeNearTarget().attachKeyFrame();
       scene.idle(100);
-      scene.overlay().showText(90).text("64 RPM gives full range, and 128 RPM gives 1.5 times the range. Stress per RPM: Small 4, Medium 8, Large 16, Giant 32").pointAt(util.vector().centerOf(5, 1, 3)).placeNearTarget();
+      scene.overlay().showText(90).text("64 RPM gives full range, and 128 RPM gives 1.5 times the range. It needs 32 stress per RPM, or run it on electricity instead").pointAt(util.vector().centerOf(5, 1, 3)).placeNearTarget();
       scene.idle(100);
       scene.overlay().showText(90).text("Once running, it broadcasts anyone talking within 2.5 blocks of it, or anything said into a cabled Microphone").pointAt(util.vector().blockSurface(tx, Direction.SOUTH)).placeNearTarget().attachKeyFrame();
       scene.idle(100);
@@ -136,7 +136,7 @@ public final class AirwavesScenes {
       cable(scene, mic, tx, CableType.COPPER);
       scene.overlay().showText(90).text("Use a Wire on the Microphone, then on the jack of the Transmitter, to connect them").pointAt(util.vector().centerOf(2, 1, 3)).placeNearTarget().attachKeyFrame();
       scene.idle(100);
-      scene.overlay().showText(90).text("Wires only carry sound. Copper reaches 16 blocks, Gold 24, Silver 32 and Fiber 64. Better Wires lose less quality").pointAt(util.vector().centerOf(3, 1, 3)).placeNearTarget().attachKeyFrame();
+      scene.overlay().showText(90).text("Wires only carry sound. Copper Wire reaches 16 blocks; use Insulators to go further").pointAt(util.vector().centerOf(3, 1, 3)).placeNearTarget().attachKeyFrame();
       scene.idle(100);
       scene.overlay().showText(90).text("Anyone within 3.5 blocks of the Microphone is now on air. A glowing pulse runs along the Wire while they talk").pointAt(util.vector().topOf(mic)).placeNearTarget();
       scene.idle(100);
@@ -148,11 +148,10 @@ public final class AirwavesScenes {
 
    public static void receiver(SceneBuilder builder, SceneBuildingUtil util) {
       CreateSceneBuilder scene = new CreateSceneBuilder(builder);
-      scene.title("receiver_setup", "Receivers, Speakers and the PA Horn");
+      scene.title("receiver_setup", "Receivers and Speakers");
       base(scene, util, 7);
       BlockPos rx = util.grid().at(2, 1, 3);
       BlockPos sp = util.grid().at(5, 1, 3);
-      BlockPos horn = util.grid().at(5, 1, 5);
       BlockPos lamp = util.grid().at(1, 1, 3);
       scene.world().showSection(util.select().position(rx), Direction.DOWN);
       scene.idle(10);
@@ -164,7 +163,7 @@ public final class AirwavesScenes {
          scene.idle(6);
       }
 
-      scene.overlay().showText(90).text("They need an Antenna of the same size, placed on top of them or on a Copper block behind them. Copper behind adds 25 percent more gain").pointAt(util.vector().centerOf(2, 3, 3)).placeNearTarget().attachKeyFrame();
+      scene.overlay().showText(90).text("They need an Antenna, placed on top of them or on a Copper block behind them. Copper behind adds 25 percent more gain").pointAt(util.vector().centerOf(2, 3, 3)).placeNearTarget().attachKeyFrame();
       scene.idle(100);
       scene.overlay().showControls(util.vector().blockSurface(rx, Direction.SOUTH), Pointing.DOWN, 40).rightClick().withItem(new ItemStack(Items.AMETHYST_SHARD));
       scene.idle(10);
@@ -177,11 +176,6 @@ public final class AirwavesScenes {
       scene.idle(10);
       cable(scene, rx, sp, CableType.COPPER);
       scene.overlay().showText(90).text("Speakers cabled to a Receiver play its sound. One Receiver can drive many Speakers").pointAt(util.vector().centerOf(sp)).placeNearTarget().attachKeyFrame();
-      scene.idle(100);
-      scene.world().showSection(util.select().position(horn), Direction.DOWN);
-      scene.idle(10);
-      cable(scene, rx, horn, CableType.COPPER);
-      scene.overlay().showText(90).text("PA Horns work just like Speakers, and are made for walls and poles outside").pointAt(util.vector().centerOf(horn)).placeNearTarget();
       scene.idle(100);
       scene.world().showSection(util.select().position(lamp), Direction.DOWN);
       scene.idle(10);
@@ -208,12 +202,8 @@ public final class AirwavesScenes {
       scene.idle(100);
       scene.overlay().showText(90).text("The top layer always gets a cap with a beacon light").pointAt(util.vector().topOf(1, 7, 3)).placeNearTarget();
       scene.idle(100);
-      scene.world().showSection(util.select().fromTo(4, 1, 2, 5, 3, 3), Direction.DOWN);
-      scene.idle(15);
-      scene.overlay().showText(90).text("Bigger Antennas are wider: Medium is 2x2, Big is 4x4 and Giant is 8x8. One item places a whole layer at once").pointAt(util.vector().topOf(5, 3, 3)).placeNearTarget().attachKeyFrame();
-      scene.idle(100);
-      scene.overlay().showText(90).text("Small Antennas grow up to 20 layers and Medium up to 40. Big ones reach 64 and Giant ones 96, getting narrower near the top").pointAt(util.vector().topOf(5, 3, 3)).placeNearTarget();
-      scene.idle(100);
+      scene.overlay().showText(100).text("Transmitters and Receivers make use of up to 96 layers of mast").pointAt(util.vector().centerOf(1, 5, 3)).placeNearTarget().attachKeyFrame();
+      scene.idle(110);
       scene.overlay().showText(90).text("Taller masts give more range and a cleaner signal. They can also be climbed like ladders").pointAt(util.vector().centerOf(1, 4, 3)).placeNearTarget();
       scene.idle(100);
       scene.markAsFinished();
@@ -228,17 +218,17 @@ public final class AirwavesScenes {
       BlockPos tx = util.grid().at(7, 1, 4);
       scene.world().showSection(util.select().position(mic).add(util.select().position(tx)), Direction.DOWN);
       scene.idle(15);
-      scene.overlay().showText(90).text("Every type of Wire has a maximum length. If two blocks are too far apart, the cable cannot be placed").pointAt(util.vector().centerOf(4, 1, 4)).placeNearTarget().attachKeyFrame();
+      scene.overlay().showText(90).text("Copper Wire reaches 16 blocks. If two blocks are further apart, the cable cannot be placed").pointAt(util.vector().centerOf(4, 1, 4)).placeNearTarget().attachKeyFrame();
       scene.idle(100);
       scene.world().showSection(util.select().position(ins), Direction.DOWN);
       scene.idle(10);
-      cable(scene, mic, ins, CableType.GOLD);
+      cable(scene, mic, ins, CableType.COPPER);
       scene.idle(10);
-      cable(scene, ins, tx, CableType.SILVER);
+      cable(scene, ins, tx, CableType.COPPER);
       scene.overlay().showText(90).text("Glass Insulators hold cables in between, so a line can go much further. Each one holds up to 4 cables, so a line can also split here").pointAt(util.vector().topOf(ins)).placeNearTarget().attachKeyFrame();
       scene.idle(100);
       scene.overlay().showBigLine(PonderPalette.OUTPUT, util.vector().centerOf(mic), util.vector().centerOf(tx), 80);
-      scene.overlay().showText(90).text("Each block of Wire adds a little noise. Copper is the noisiest, and Fiber has no noise at all").pointAt(util.vector().centerOf(5, 1, 4)).placeNearTarget().attachKeyFrame();
+      scene.overlay().showText(90).text("Each block of Wire adds a little noise, so keep audio runs short where you can").pointAt(util.vector().centerOf(5, 1, 4)).placeNearTarget().attachKeyFrame();
       scene.idle(100);
       scene.overlay().showText(90).text("Any Airwaves cable joins any other at an insulator. With Power Grid installed they carry its electricity too").pointAt(util.vector().topOf(ins)).placeNearTarget();
       scene.idle(100);
@@ -337,7 +327,8 @@ public final class AirwavesScenes {
       scene.title("yagi_antenna", "Yagi Antennas: Radio with a Direction");
       base(scene, util, 7);
       BlockPos tx = util.grid().at(3, 1, 4);
-      BlockPos yagi = util.grid().at(3, 6, 3);
+      BlockPos mount = util.grid().at(3, 6, 3);
+      BlockPos yagi = util.grid().at(3, 7, 3);
       BlockPos front = util.grid().at(0, 1, 3);
       BlockPos back = util.grid().at(6, 1, 2);
       scene.world().showSection(util.select().fromTo(3, 1, 3, 3, 5, 3), Direction.DOWN);
@@ -347,10 +338,24 @@ public final class AirwavesScenes {
       scene.idle(15);
       scene.overlay().showText(70).text("An ordinary antenna mast sends its station out the same way all round").pointAt(util.vector().topOf(3, 5, 3)).placeNearTarget().attachKeyFrame();
       scene.idle(80);
-      scene.world().showSection(util.select().position(yagi), Direction.DOWN);
+      scene.world().showSection(util.select().position(mount), Direction.DOWN);
       scene.idle(10);
-      scene.overlay().showText(80).text("Clamp a Yagi Antenna on top of the mast and it becomes a beam. The Yagi points the way you face when you place it").pointAt(util.vector().topOf(yagi)).placeNearTarget().attachKeyFrame();
+      scene.overlay().showText(80).text("To make it a beam, cap the mast with a steel mast head: a Block of Iron (or Create's Industrial Iron)").pointAt(util.vector().topOf(mount)).placeNearTarget().attachKeyFrame();
       scene.idle(90);
+      scene.world().showSection(util.select().position(yagi), Direction.DOWN);
+      scene.world().modifyBlockEntity(yagi, YagiAntennaBE.class, (be) -> be.setBearing(0));
+      scene.idle(10);
+      scene.overlay().showText(80).text("Then mount the Yagi Antenna on it. It starts out pointing the way you look").pointAt(util.vector().topOf(yagi)).placeNearTarget().attachKeyFrame();
+      scene.idle(90);
+      scene.overlay().showControls(util.vector().topOf(yagi), Pointing.DOWN, 50).rightClick();
+      scene.overlay().showText(90).text("Look at the top of it and right-click, then drag, to set its bearing. The arrays swing round to point anywhere").pointAt(util.vector().topOf(yagi)).placeNearTarget().attachKeyFrame();
+
+      for(int a = 15; a <= 270; a += 15) {
+         scene.idle(3);
+         scene.world().modifyBlockEntity(yagi, YagiAntennaBE.class, (be) -> be.setBearing(a));
+      }
+
+      scene.idle(50);
       scene.world().showSection(util.select().position(front), Direction.DOWN);
       scene.world().showSection(util.select().position(back), Direction.DOWN);
       scene.idle(10);
@@ -360,7 +365,7 @@ public final class AirwavesScenes {
       scene.overlay().showText(80).text("Straight ahead the station reaches 1.9 times as far as before").pointAt(util.vector().topOf(front)).placeNearTarget().attachKeyFrame();
       scene.idle(90);
       scene.overlay().showBigLine(PonderPalette.RED, util.vector().centerOf(yagi), util.vector().topOf(back), 90);
-      scene.overlay().showText(80).text("To the sides it reaches about a third, and right behind barely an eighth: a real blind spot").pointAt(util.vector().topOf(back)).placeNearTarget();
+      scene.overlay().showText(80).text("Anywhere outside its 60 degree wedge it reaches nothing: a real blind spot").pointAt(util.vector().topOf(back)).placeNearTarget();
       scene.idle(90);
       scene.overlay().showText(90).text("On a receiver's mast it listens the same way. Point two Yagis at each other for a long link that stations around you do not hear").pointAt(util.vector().topOf(yagi)).placeNearTarget().attachKeyFrame();
       scene.idle(100);
@@ -625,7 +630,7 @@ public final class AirwavesScenes {
       scene.idle(20);
       BlockPos console = util.grid().at(4, 3, 6);
       BlockPos rx = util.grid().at(6, 3, 6);
-      BlockPos horn = util.grid().at(8, 3, 6);
+      BlockPos sp = util.grid().at(8, 3, 6);
       BlockPos fan = util.grid().at(11, 2, 6);
       scene.world().setKineticSpeed(util.select().position(fan), 64.0F);
       scene.overlay().showText(90).text("All radio blocks work on Aeronautics airships, and use where the ship really is").pointAt(util.vector().centerOf(6, 7, 6)).placeNearTarget().attachKeyFrame();
@@ -642,7 +647,7 @@ public final class AirwavesScenes {
       scene.world().modifyBlock(console, (s) -> (BlockState)s.setValue(RadioConsoleBlock.ACTIVE, true), false);
       scene.overlay().showText(90).text("Right-click it to seek the next station. Sneak-click it to see a report of everything it controls").pointAt(util.vector().topOf(console).add((double)0.0F, (double)0.5F, (double)0.0F)).placeNearTarget().attachKeyFrame();
       scene.idle(100);
-      scene.overlay().showText(90).text("Here it controls the ship's Receiver, which plays through a PA Horn at the back").pointAt(util.vector().topOf(rx).add((double)0.0F, (double)0.5F, (double)0.0F)).placeNearTarget();
+      scene.overlay().showText(90).text("Here it controls the ship's Receiver, which plays through a Speaker at the back").pointAt(util.vector().topOf(rx).add((double)0.0F, (double)0.5F, (double)0.0F)).placeNearTarget();
       scene.idle(100);
       scene.overlay().showText(90).text("A Redstone signal puts all of its Transmitters on standby. A Comparator can read the signal strength").pointAt(util.vector().topOf(console).add((double)0.0F, (double)0.5F, (double)0.0F)).placeNearTarget().attachKeyFrame();
       scene.idle(100);
@@ -650,39 +655,7 @@ public final class AirwavesScenes {
       scene.idle(30);
       scene.overlay().showText(90).text("Cables can connect a ship to the ground, but they snap if pulled more than a quarter past their maximum length").pointAt(util.vector().centerOf(8, 3, 6)).placeNearTarget().attachKeyFrame();
       scene.idle(100);
-      scene.overlay().showText(90).text("Radio blocks have airship weights. Big Transmitters are heavy, small blocks are light").pointAt(util.vector().centerOf(horn)).placeNearTarget();
-      scene.idle(100);
-      scene.markAsFinished();
-   }
-
-   public static void studio(SceneBuilder builder, SceneBuildingUtil util) {
-      CreateSceneBuilder scene = new CreateSceneBuilder(builder);
-      scene.title("studio_extras", "The On Air Sign");
-      base(scene, util, 7);
-      BlockPos sign = util.grid().at(3, 2, 4);
-      BlockPos tx = util.grid().at(3, 1, 2);
-      BlockPos mic = util.grid().at(1, 1, 3);
-      BlockPos horn = util.grid().at(6, 3, 1);
-      BlockPos rx = util.grid().at(5, 1, 2);
-      scene.world().showSection(util.select().fromTo(1, 1, 5, 5, 2, 5), Direction.DOWN);
-      scene.idle(10);
-      scene.world().showSection(util.select().position(sign), Direction.SOUTH);
-      scene.idle(10);
-      scene.overlay().showText(90).text("On Air Signs are placed on walls, facing the way you click").pointAt(util.vector().blockSurface(sign, Direction.NORTH)).placeNearTarget().attachKeyFrame();
-      scene.idle(100);
-      scene.world().showSection(util.select().position(tx).add(util.select().position(mic)), Direction.DOWN);
-      scene.idle(10);
-      cable(scene, mic, tx, CableType.COPPER);
-      scene.overlay().showText(90).text("When a Transmitter within 12 blocks is sending a voice...").pointAt(util.vector().topOf(tx)).placeNearTarget().attachKeyFrame();
-      scene.idle(70);
-      scene.world().modifyBlock(tx, (s) -> (BlockState)s.setValue(TransmitterBlock.ON_AIR, true), false);
-      scene.world().modifyBlock(sign, (s) -> (BlockState)s.setValue(OnAirSignBlock.LIT, true), false);
-      scene.overlay().showText(90).text("...the sign lights up red, so everyone knows you are live").pointAt(util.vector().blockSurface(sign, Direction.NORTH)).placeNearTarget();
-      scene.idle(100);
-      scene.world().showSection(util.select().fromTo(5, 1, 1, 6, 3, 2), Direction.DOWN);
-      scene.idle(10);
-      cable(scene, rx, horn, CableType.COPPER);
-      scene.overlay().showText(90).text("PA Horns can be mounted on posts and walls to play a Receiver's sound outside").pointAt(util.vector().centerOf(horn)).placeNearTarget().attachKeyFrame();
+      scene.overlay().showText(90).text("Radio blocks have airship weights. Big Transmitters are heavy, small blocks are light").pointAt(util.vector().centerOf(sp)).placeNearTarget();
       scene.idle(100);
       scene.markAsFinished();
    }

@@ -7,10 +7,10 @@
    "item": "create:metal_girder"
   },
   "A": {
-   "item": "airwaves:antenna_big"
+   "item": "airwaves:antenna"
   },
   "T": {
-   "item": "airwaves:transmitter_giant"
+   "item": "airwaves:transmitter"
   },
   "M": {
    "item": "airwaves:signal_mechanism"

@@ -1,7 +1,1060 @@
 {
- "variants": {
-  "": {
-   "model": "airwaves:block/silver_block"
+ "multipart": [
+  {
+   "when": {
+    "up": "false",
+    "west": "false",
+    "down": "false",
+    "east": "false"
+   },
+   "apply": {
+    "model": "airwaves:block/silver_block_ctm/north_0"
+   }
+  },
+  {
+   "when": {
+    "up": "true",
+    "west": "false",
+    "down": "false",
+    "east": "false"
+   },
+   "apply": {
+    "model": "airwaves:block/silver_block_ctm/north_1"
+   }
+  },
+  {
+   "when": {
+    "up": "false",
+    "west": "true",
+    "down": "false",
+    "east": "false"
+   },
+   "apply": {
+    "model": "airwaves:block/silver_block_ctm/north_2"
+   }
+  },
+  {
+   "when": {
+    "up": "true",
+    "west": "true",
+    "down": "false",
+    "east": "false"
+   },
+   "apply": {
+    "model": "airwaves:block/silver_block_ctm/north_3"
+   }
+  },
+  {
+   "when": {
+    "up": "false",
+    "west": "false",
+    "down": "true",
+    "east": "false"
+   },
+   "apply": {
+    "model": "airwaves:block/silver_block_ctm/north_4"
+   }
+  },
+  {
+   "when": {
+    "up": "true",
+    "west": "false",
+    "down": "true",
+    "east": "false"
+   },
+   "apply": {
+    "model": "airwaves:block/silver_block_ctm/north_5"
+   }
+  },
+  {
+   "when": {
+    "up": "false",
+    "west": "true",
+    "down": "true",
+    "east": "false"
+   },
+   "apply": {
+    "model": "airwaves:block/silver_block_ctm/north_6"
+   }
+  },
+  {
+   "when": {
+    "up": "true",
+    "west": "true",
+    "down": "true",
+    "east": "false"
+   },
+   "apply": {
+    "model": "airwaves:block/silver_block_ctm/north_7"
+   }
+  },
+  {
+   "when": {
+    "up": "false",
+    "west": "false",
+    "down": "false",
+    "east": "true"
+   },
+   "apply": {
+    "model": "airwaves:block/silver_block_ctm/north_8"
+   }
+  },
+  {
+   "when": {
+    "up": "true",
+    "west": "false",
+    "down": "false",
+    "east": "true"
+   },
+   "apply": {
+    "model": "airwaves:block/silver_block_ctm/north_9"
+   }
+  },
+  {
+   "when": {
+    "up": "false",
+    "west": "true",
+    "down": "false",
+    "east": "true"
+   },
+   "apply": {
+    "model": "airwaves:block/silver_block_ctm/north_10"
+   }
+  },
+  {
+   "when": {
+    "up": "true",
+    "west": "true",
+    "down": "false",
+    "east": "true"
+   },
+   "apply": {
+    "model": "airwaves:block/silver_block_ctm/north_11"
+   }
+  },
+  {
+   "when": {
+    "up": "false",
+    "west": "false",
+    "down": "true",
+    "east": "true"
+   },
+   "apply": {
+    "model": "airwaves:block/silver_block_ctm/north_12"
+   }
+  },
+  {
+   "when": {
+    "up": "true",
+    "west": "false",
+    "down": "true",
+    "east": "true"
+   },
+   "apply": {
+    "model": "airwaves:block/silver_block_ctm/north_13"
+   }
+  },
+  {
+   "when": {
+    "up": "false",
+    "west": "true",
+    "down": "true",
+    "east": "true"
+   },
+   "apply": {
+    "model": "airwaves:block/silver_block_ctm/north_14"
+   }
+  },
+  {
+   "when": {
+    "up": "true",
+    "west": "true",
+    "down": "true",
+    "east": "true"
+   },
+   "apply": {
+    "model": "airwaves:block/silver_block_ctm/north_15"
+   }
+  },
+  {
+   "when": {
+    "up": "false",
+    "east": "false",
+    "down": "false",
+    "west": "false"
+   },
+   "apply": {
+    "model": "airwaves:block/silver_block_ctm/south_0"
+   }
+  },
+  {
+   "when": {
+    "up": "true",
+    "east": "false",
+    "down": "false",
+    "west": "false"
+   },
+   "apply": {
+    "model": "airwaves:block/silver_block_ctm/south_1"
+   }
+  },
+  {
+   "when": {
+    "up": "false",
+    "east": "true",
+    "down": "false",
+    "west": "false"
+   },
+   "apply": {
+    "model": "airwaves:block/silver_block_ctm/south_2"
+   }
+  },
+  {
+   "when": {
+    "up": "true",
+    "east": "true",
+    "down": "false",
+    "west": "false"
+   },
+   "apply": {
+    "model": "airwaves:block/silver_block_ctm/south_3"
+   }
+  },
+  {
+   "when": {
+    "up": "false",
+    "east": "false",
+    "down": "true",
+    "west": "false"
+   },
+   "apply": {
+    "model": "airwaves:block/silver_block_ctm/south_4"
+   }
+  },
+  {
+   "when": {
+    "up": "true",
+    "east": "false",
+    "down": "true",
+    "west": "false"
+   },
+   "apply": {
+    "model": "airwaves:block/silver_block_ctm/south_5"
+   }
+  },
+  {
+   "when": {
+    "up": "false",
+    "east": "true",
+    "down": "true",
+    "west": "false"
+   },
+   "apply": {
+    "model": "airwaves:block/silver_block_ctm/south_6"
+   }
+  },
+  {
+   "when": {
+    "up": "true",
+    "east": "true",
+    "down": "true",
+    "west": "false"
+   },
+   "apply": {
+    "model": "airwaves:block/silver_block_ctm/south_7"
+   }
+  },
+  {
+   "when": {
+    "up": "false",
+    "east": "false",
+    "down": "false",
+    "west": "true"
+   },
+   "apply": {
+    "model": "airwaves:block/silver_block_ctm/south_8"
+   }
+  },
+  {
+   "when": {
+    "up": "true",
+    "east": "false",
+    "down": "false",
+    "west": "true"
+   },
+   "apply": {
+    "model": "airwaves:block/silver_block_ctm/south_9"
+   }
+  },
+  {
+   "when": {
+    "up": "false",
+    "east": "true",
+    "down": "false",
+    "west": "true"
+   },
+   "apply": {
+    "model": "airwaves:block/silver_block_ctm/south_10"
+   }
+  },
+  {
+   "when": {
+    "up": "true",
+    "east": "true",
+    "down": "false",
+    "west": "true"
+   },
+   "apply": {
+    "model": "airwaves:block/silver_block_ctm/south_11"
+   }
+  },
+  {
+   "when": {
+    "up": "false",
+    "east": "false",
+    "down": "true",
+    "west": "true"
+   },
+   "apply": {
+    "model": "airwaves:block/silver_block_ctm/south_12"
+   }
+  },
+  {
+   "when": {
+    "up": "true",
+    "east": "false",
+    "down": "true",
+    "west": "true"
+   },
+   "apply": {
+    "model": "airwaves:block/silver_block_ctm/south_13"
+   }
+  },
+  {
+   "when": {
+    "up": "false",
+    "east": "true",
+    "down": "true",
+    "west": "true"
+   },
+   "apply": {
+    "model": "airwaves:block/silver_block_ctm/south_14"
+   }
+  },
+  {
+   "when": {
+    "up": "true",
+    "east": "true",
+    "down": "true",
+    "west": "true"
+   },
+   "apply": {
+    "model": "airwaves:block/silver_block_ctm/south_15"
+   }
+  },
+  {
+   "when": {
+    "up": "false",
+    "north": "false",
+    "down": "false",
+    "south": "false"
+   },
+   "apply": {
+    "model": "airwaves:block/silver_block_ctm/east_0"
+   }
+  },
+  {
+   "when": {
+    "up": "true",
+    "north": "false",
+    "down": "false",
+    "south": "false"
+   },
+   "apply": {
+    "model": "airwaves:block/silver_block_ctm/east_1"
+   }
+  },
+  {
+   "when": {
+    "up": "false",
+    "north": "true",
+    "down": "false",
+    "south": "false"
+   },
+   "apply": {
+    "model": "airwaves:block/silver_block_ctm/east_2"
+   }
+  },
+  {
+   "when": {
+    "up": "true",
+    "north": "true",
+    "down": "false",
+    "south": "false"
+   },
+   "apply": {
+    "model": "airwaves:block/silver_block_ctm/east_3"
+   }
+  },
+  {
+   "when": {
+    "up": "false",
+    "north": "false",
+    "down": "true",
+    "south": "false"
+   },
+   "apply": {
+    "model": "airwaves:block/silver_block_ctm/east_4"
+   }
+  },
+  {
+   "when": {
+    "up": "true",
+    "north": "false",
+    "down": "true",
+    "south": "false"
+   },
+   "apply": {
+    "model": "airwaves:block/silver_block_ctm/east_5"
+   }
+  },
+  {
+   "when": {
+    "up": "false",
+    "north": "true",
+    "down": "true",
+    "south": "false"
+   },
+   "apply": {
+    "model": "airwaves:block/silver_block_ctm/east_6"
+   }
+  },
+  {
+   "when": {
+    "up": "true",
+    "north": "true",
+    "down": "true",
+    "south": "false"
+   },
+   "apply": {
+    "model": "airwaves:block/silver_block_ctm/east_7"
+   }
+  },
+  {
+   "when": {
+    "up": "false",
+    "north": "false",
+    "down": "false",
+    "south": "true"
+   },
+   "apply": {
+    "model": "airwaves:block/silver_block_ctm/east_8"
+   }
+  },
+  {
+   "when": {
+    "up": "true",
+    "north": "false",
+    "down": "false",
+    "south": "true"
+   },
+   "apply": {
+    "model": "airwaves:block/silver_block_ctm/east_9"
+   }
+  },
+  {
+   "when": {
+    "up": "false",
+    "north": "true",
+    "down": "false",
+    "south": "true"
+   },
+   "apply": {
+    "model": "airwaves:block/silver_block_ctm/east_10"
+   }
+  },
+  {
+   "when": {
+    "up": "true",
+    "north": "true",
+    "down": "false",
+    "south": "true"
+   },
+   "apply": {
+    "model": "airwaves:block/silver_block_ctm/east_11"
+   }
+  },
+  {
+   "when": {
+    "up": "false",
+    "north": "false",
+    "down": "true",
+    "south": "true"
+   },
+   "apply": {
+    "model": "airwaves:block/silver_block_ctm/east_12"
+   }
+  },
+  {
+   "when": {
+    "up": "true",
+    "north": "false",
+    "down": "true",
+    "south": "true"
+   },
+   "apply": {
+    "model": "airwaves:block/silver_block_ctm/east_13"
+   }
+  },
+  {
+   "when": {
+    "up": "false",
+    "north": "true",
+    "down": "true",
+    "south": "true"
+   },
+   "apply": {
+    "model": "airwaves:block/silver_block_ctm/east_14"
+   }
+  },
+  {
+   "when": {
+    "up": "true",
+    "north": "true",
+    "down": "true",
+    "south": "true"
+   },
+   "apply": {
+    "model": "airwaves:block/silver_block_ctm/east_15"
+   }
+  },
+  {
+   "when": {
+    "up": "false",
+    "south": "false",
+    "down": "false",
+    "north": "false"
+   },
+   "apply": {
+    "model": "airwaves:block/silver_block_ctm/west_0"
+   }
+  },
+  {
+   "when": {
+    "up": "true",
+    "south": "false",
+    "down": "false",
+    "north": "false"
+   },
+   "apply": {
+    "model": "airwaves:block/silver_block_ctm/west_1"
+   }
+  },
+  {
+   "when": {
+    "up": "false",
+    "south": "true",
+    "down": "false",
+    "north": "false"
+   },
+   "apply": {
+    "model": "airwaves:block/silver_block_ctm/west_2"
+   }
+  },
+  {
+   "when": {
+    "up": "true",
+    "south": "true",
+    "down": "false",
+    "north": "false"
+   },
+   "apply": {
+    "model": "airwaves:block/silver_block_ctm/west_3"
+   }
+  },
+  {
+   "when": {
+    "up": "false",
+    "south": "false",
+    "down": "true",
+    "north": "false"
+   },
+   "apply": {
+    "model": "airwaves:block/silver_block_ctm/west_4"
+   }
+  },
+  {
+   "when": {
+    "up": "true",
+    "south": "false",
+    "down": "true",
+    "north": "false"
+   },
+   "apply": {
+    "model": "airwaves:block/silver_block_ctm/west_5"
+   }
+  },
+  {
+   "when": {
+    "up": "false",
+    "south": "true",
+    "down": "true",
+    "north": "false"
+   },
+   "apply": {
+    "model": "airwaves:block/silver_block_ctm/west_6"
+   }
+  },
+  {
+   "when": {
+    "up": "true",
+    "south": "true",
+    "down": "true",
+    "north": "false"
+   },
+   "apply": {
+    "model": "airwaves:block/silver_block_ctm/west_7"
+   }
+  },
+  {
+   "when": {
+    "up": "false",
+    "south": "false",
+    "down": "false",
+    "north": "true"
+   },
+   "apply": {
+    "model": "airwaves:block/silver_block_ctm/west_8"
+   }
+  },
+  {
+   "when": {
+    "up": "true",
+    "south": "false",
+    "down": "false",
+    "north": "true"
+   },
+   "apply": {
+    "model": "airwaves:block/silver_block_ctm/west_9"
+   }
+  },
+  {
+   "when": {
+    "up": "false",
+    "south": "true",
+    "down": "false",
+    "north": "true"
+   },
+   "apply": {
+    "model": "airwaves:block/silver_block_ctm/west_10"
+   }
+  },
+  {
+   "when": {
+    "up": "true",
+    "south": "true",
+    "down": "false",
+    "north": "true"
+   },
+   "apply": {
+    "model": "airwaves:block/silver_block_ctm/west_11"
+   }
+  },
+  {
+   "when": {
+    "up": "false",
+    "south": "false",
+    "down": "true",
+    "north": "true"
+   },
+   "apply": {
+    "model": "airwaves:block/silver_block_ctm/west_12"
+   }
+  },
+  {
+   "when": {
+    "up": "true",
+    "south": "false",
+    "down": "true",
+    "north": "true"
+   },
+   "apply": {
+    "model": "airwaves:block/silver_block_ctm/west_13"
+   }
+  },
+  {
+   "when": {
+    "up": "false",
+    "south": "true",
+    "down": "true",
+    "north": "true"
+   },
+   "apply": {
+    "model": "airwaves:block/silver_block_ctm/west_14"
+   }
+  },
+  {
+   "when": {
+    "up": "true",
+    "south": "true",
+    "down": "true",
+    "north": "true"
+   },
+   "apply": {
+    "model": "airwaves:block/silver_block_ctm/west_15"
+   }
+  },
+  {
+   "when": {
+    "north": "false",
+    "east": "false",
+    "south": "false",
+    "west": "false"
+   },
+   "apply": {
+    "model": "airwaves:block/silver_block_ctm/up_0"
+   }
+  },
+  {
+   "when": {
+    "north": "true",
+    "east": "false",
+    "south": "false",
+    "west": "false"
+   },
+   "apply": {
+    "model": "airwaves:block/silver_block_ctm/up_1"
+   }
+  },
+  {
+   "when": {
+    "north": "false",
+    "east": "true",
+    "south": "false",
+    "west": "false"
+   },
+   "apply": {
+    "model": "airwaves:block/silver_block_ctm/up_2"
+   }
+  },
+  {
+   "when": {
+    "north": "true",
+    "east": "true",
+    "south": "false",
+    "west": "false"
+   },
+   "apply": {
+    "model": "airwaves:block/silver_block_ctm/up_3"
+   }
+  },
+  {
+   "when": {
+    "north": "false",
+    "east": "false",
+    "south": "true",
+    "west": "false"
+   },
+   "apply": {
+    "model": "airwaves:block/silver_block_ctm/up_4"
+   }
+  },
+  {
+   "when": {
+    "north": "true",
+    "east": "false",
+    "south": "true",
+    "west": "false"
+   },
+   "apply": {
+    "model": "airwaves:block/silver_block_ctm/up_5"
+   }
+  },
+  {
+   "when": {
+    "north": "false",
+    "east": "true",
+    "south": "true",
+    "west": "false"
+   },
+   "apply": {
+    "model": "airwaves:block/silver_block_ctm/up_6"
+   }
+  },
+  {
+   "when": {
+    "north": "true",
+    "east": "true",
+    "south": "true",
+    "west": "false"
+   },
+   "apply": {
+    "model": "airwaves:block/silver_block_ctm/up_7"
+   }
+  },
+  {
+   "when": {
+    "north": "false",
+    "east": "false",
+    "south": "false",
+    "west": "true"
+   },
+   "apply": {
+    "model": "airwaves:block/silver_block_ctm/up_8"
+   }
+  },
+  {
+   "when": {
+    "north": "true",
+    "east": "false",
+    "south": "false",
+    "west": "true"
+   },
+   "apply": {
+    "model": "airwaves:block/silver_block_ctm/up_9"
+   }
+  },
+  {
+   "when": {
+    "north": "false",
+    "east": "true",
+    "south": "false",
+    "west": "true"
+   },
+   "apply": {
+    "model": "airwaves:block/silver_block_ctm/up_10"
+   }
+  },
+  {
+   "when": {
+    "north": "true",
+    "east": "true",
+    "south": "false",
+    "west": "true"
+   },
+   "apply": {
+    "model": "airwaves:block/silver_block_ctm/up_11"
+   }
+  },
+  {
+   "when": {
+    "north": "false",
+    "east": "false",
+    "south": "true",
+    "west": "true"
+   },
+   "apply": {
+    "model": "airwaves:block/silver_block_ctm/up_12"
+   }
+  },
+  {
+   "when": {
+    "north": "true",
+    "east": "false",
+    "south": "true",
+    "west": "true"
+   },
+   "apply": {
+    "model": "airwaves:block/silver_block_ctm/up_13"
+   }
+  },
+  {
+   "when": {
+    "north": "false",
+    "east": "true",
+    "south": "true",
+    "west": "true"
+   },
+   "apply": {
+    "model": "airwaves:block/silver_block_ctm/up_14"
+   }
+  },
+  {
+   "when": {
+    "north": "true",
+    "east": "true",
+    "south": "true",
+    "west": "true"
+   },
+   "apply": {
+    "model": "airwaves:block/silver_block_ctm/up_15"
+   }
+  },
+  {
+   "when": {
+    "south": "false",
+    "east": "false",
+    "north": "false",
+    "west": "false"
+   },
+   "apply": {
+    "model": "airwaves:block/silver_block_ctm/down_0"
+   }
+  },
+  {
+   "when": {
+    "south": "true",
+    "east": "false",
+    "north": "false",
+    "west": "false"
+   },
+   "apply": {
+    "model": "airwaves:block/silver_block_ctm/down_1"
+   }
+  },
+  {
+   "when": {
+    "south": "false",
+    "east": "true",
+    "north": "false",
+    "west": "false"
+   },
+   "apply": {
+    "model": "airwaves:block/silver_block_ctm/down_2"
+   }
+  },
+  {
+   "when": {
+    "south": "true",
+    "east": "true",
+    "north": "false",
+    "west": "false"
+   },
+   "apply": {
+    "model": "airwaves:block/silver_block_ctm/down_3"
+   }
+  },
+  {
+   "when": {
+    "south": "false",
+    "east": "false",
+    "north": "true",
+    "west": "false"
+   },
+   "apply": {
+    "model": "airwaves:block/silver_block_ctm/down_4"
+   }
+  },
+  {
+   "when": {
+    "south": "true",
+    "east": "false",
+    "north": "true",
+    "west": "false"
+   },
+   "apply": {
+    "model": "airwaves:block/silver_block_ctm/down_5"
+   }
+  },
+  {
+   "when": {
+    "south": "false",
+    "east": "true",
+    "north": "true",
+    "west": "false"
+   },
+   "apply": {
+    "model": "airwaves:block/silver_block_ctm/down_6"
+   }
+  },
+  {
+   "when": {
+    "south": "true",
+    "east": "true",
+    "north": "true",
+    "west": "false"
+   },
+   "apply": {
+    "model": "airwaves:block/silver_block_ctm/down_7"
+   }
+  },
+  {
+   "when": {
+    "south": "false",
+    "east": "false",
+    "north": "false",
+    "west": "true"
+   },
+   "apply": {
+    "model": "airwaves:block/silver_block_ctm/down_8"
+   }
+  },
+  {
+   "when": {
+    "south": "true",
+    "east": "false",
+    "north": "false",
+    "west": "true"
+   },
+   "apply": {
+    "model": "airwaves:block/silver_block_ctm/down_9"
+   }
+  },
+  {
+   "when": {
+    "south": "false",
+    "east": "true",
+    "north": "false",
+    "west": "true"
+   },
+   "apply": {
+    "model": "airwaves:block/silver_block_ctm/down_10"
+   }
+  },
+  {
+   "when": {
+    "south": "true",
+    "east": "true",
+    "north": "false",
+    "west": "true"
+   },
+   "apply": {
+    "model": "airwaves:block/silver_block_ctm/down_11"
+   }
+  },
+  {
+   "when": {
+    "south": "false",
+    "east": "false",
+    "north": "true",
+    "west": "true"
+   },
+   "apply": {
+    "model": "airwaves:block/silver_block_ctm/down_12"
+   }
+  },
+  {
+   "when": {
+    "south": "true",
+    "east": "false",
+    "north": "true",
+    "west": "true"
+   },
+   "apply": {
+    "model": "airwaves:block/silver_block_ctm/down_13"
+   }
+  },
+  {
+   "when": {
+    "south": "false",
+    "east": "true",
+    "north": "true",
+    "west": "true"
+   },
+   "apply": {
+    "model": "airwaves:block/silver_block_ctm/down_14"
+   }
+  },
+  {
+   "when": {
+    "south": "true",
+    "east": "true",
+    "north": "true",
+    "west": "true"
+   },
+   "apply": {
+    "model": "airwaves:block/silver_block_ctm/down_15"
+   }
   }
- }
+ ]
 }

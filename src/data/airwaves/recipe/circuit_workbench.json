@@ -17,7 +17,7 @@
    "item": "create:andesite_casing"
   },
   "P": {
-   "tag": "minecraft:planks"
+   "item": "create:andesite_alloy"
   }
  },
  "result": {

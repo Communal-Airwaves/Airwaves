@@ -6,7 +6,7 @@
   "icons": [
    "airwaves:field_manual",
    "airwaves:radio",
-   "airwaves:transmitter_small",
+   "airwaves:transmitter",
    "airwaves:microphone"
   ],
   "text": [
@@ -52,12 +52,11 @@
   "short": "Goggles & Ponder",
   "icons": [
    "create:goggles",
-   "airwaves:transmitter_small"
+   "airwaves:transmitter"
   ],
   "text": [
    "Wear Create's **Engineer's Goggles** and look at any Airwaves block. Transmitters and towers show their frequency, range, power and what is missing; receivers and radios show the station and the signal.",
-   "Hold **Shift** over an item for a short summary. Hold **W** over any Airwaves item to **Ponder** it: animated scenes show how to build a station, cable a microphone, set up a receiver, run lines and more.",
-   "> The **Multimeter** (in Tools) gives the same readout without goggles."
+   "Hold **Shift** over an item for a short summary. Hold **W** over any Airwaves item to **Ponder** it: animated scenes show how to build a station, cable a microphone, set up a receiver, run lines and more."
   ]
  },
  {
@@ -72,13 +71,13 @@
    "> Look at the block with **Engineer's Goggles** first: it says what is missing.",
    "## The transmitter is not on the air",
    "- Amethyst in its dome?",
-   "- A copper block right behind it, with an antenna of the **same size** on it, 4 or more tall?",
+   "- A copper block right behind it, with an antenna on it, 4 or more tall?",
    "- Power: a shaft at 16 RPM or more (not overstressed), or electricity?",
    "- No redstone signal on it?",
    "## The receiver stays dark",
-   "- Amethyst in its dome, and an antenna of its own size on top or on a copper block behind it.",
+   "- Amethyst in its dome, and an antenna on top or on a copper block behind it.",
    "## I hear nothing",
-   "Radios are silent between transmissions. Check the band and frequency match exactly (sneak-click a radio to seek). The Multimeter shows the signal quality.",
+   "Radios are silent between transmissions. Check the band and frequency match exactly (sneak-click a radio to seek). Goggles show the signal quality.",
    "## A cable will not connect",
    "Too long for its type, a connector that does not take that cable, a full connector, or two devices that need an insulator in between."
   ]
@@ -105,13 +104,11 @@
   "title": "Receivers",
   "short": "Receivers",
   "icons": [
-   "airwaves:receiver_small",
-   "airwaves:receiver_medium",
-   "airwaves:receiver_large",
-   "airwaves:receiver_giant"
+   "airwaves:receiver",
+   "airwaves:antenna"
   ],
   "text": [
-   "Receivers pick up a station and play it out loud. Four sizes, each with the antenna of its own size.",
+   "Receivers pick up a station and play it out loud. A taller antenna (up to 96 layers) hears further.",
    "- **Amethyst** in the dome (a block gives 15% more gain).",
    "- **Antenna** on top of it, or on a copper block behind it (copper adds 25%).",
    "- **No power needed:** like a crystal set, the radio waves run it.",
@@ -121,15 +118,13 @@
  },
  {
   "group": "Listening",
-  "title": "Speakers and the PA horn",
+  "title": "Speakers",
   "short": "Speakers",
   "icons": [
-   "airwaves:speaker",
-   "airwaves:horn_speaker"
+   "airwaves:speaker"
   ],
   "text": [
-   "The **Speaker** plays whatever its receiver hears. Cable several to one receiver to cover a hall; each one sounds from where it stands.",
-   "The **PA Horn** is an outdoor loudspeaker for walls and poles. It works exactly like a Speaker."
+   "The **Speaker** plays whatever its receiver hears. Cable several to one receiver to cover a hall; each one sounds from where it stands."
   ]
  },
  {
@@ -155,13 +150,11 @@
   "title": "Transmitters",
   "short": "Transmitters",
   "icons": [
-   "airwaves:transmitter_small",
-   "airwaves:transmitter_medium",
-   "airwaves:transmitter_large",
-   "airwaves:transmitter_giant"
+   "airwaves:transmitter",
+   "airwaves:antenna"
   ],
   "text": [
-   "Four sizes: Small, Medium, Large and Giant. Each only works with the antenna of the **same size**.",
+   "The Transmitter puts your station on the air. Its range comes from its **antenna** (up to 96 layers count) and its **power**: spin it faster, or feed it electricity.",
    "## What it needs",
    "1. **Amethyst** in the dome (a block gives a 10% cleaner signal). Sneak-click empty-handed to take it out.",
    "2. A **copper block** right behind it (any kind, also waxed or weathered).",
@@ -169,8 +162,7 @@
    "4. **Power:** a shaft into its left or right side, or electricity (see Power).",
    "A redstone signal puts it in standby.",
    "## Range (FM, clear weather, full power)",
-   "- Small: 600 blocks (4 tall), 1700 (10 tall), 3700 (20 tall)",
-   "- Medium 8000, Big 15000, Giant 27500",
+   "- About 1400 blocks (4 tall), 3900 (10 tall), 8500 (20 tall), 27500 (96 tall)",
    "AM reaches about 30% farther, and up to 60% more at night.",
    "@fig:range:7"
   ]
@@ -180,17 +172,11 @@
   "title": "Antennas",
   "short": "Antennas",
   "icons": [
-   "airwaves:antenna",
-   "airwaves:antenna_medium",
-   "airwaves:antenna_big",
-   "airwaves:antenna_giant"
+   "airwaves:antenna"
   ],
   "text": [
-   "Antennas are lattice masts placed one layer at a time: keep placing the same antenna on top to grow it.",
-   "- **Small:** 1x1, up to 20 tall",
-   "- **Medium:** 2x2, up to 40 tall",
-   "- **Big:** 4x4, then narrows to 2x2 (64 tall)",
-   "- **Giant:** 8x8, 4x4, then 2x2 (96 tall)",
+   "Antennas are lattice masts placed one block at a time: keep placing antennas on top to grow it. There is one Antenna for every device.",
+   "- Up to **96** layers count. Hold an Antenna and look at a mast: a ghost shows where the next one goes, and clicking anywhere on the mast puts it on top.",
    "The crown appears on the top layer. Breaking a block removes its whole layer and gives the item back. You can climb antennas like ladders.",
    "> **Taller is better:** more height means more range and a cleaner signal."
   ]
@@ -204,10 +190,10 @@
    "airwaves:antenna"
   ],
   "text": [
-   "A **Yagi Antenna** clamps on top of any antenna mast and turns it into a **beam**. It points the way you face when you place it (the red cap is the front).",
-   "- **Ahead:** the station reaches **1.9 times** as far.",
-   "- **To the sides:** about a third.",
-   "- **Right behind:** barely an eighth. That is a real blind spot.",
+   "A **Yagi Antenna** turns a mast into a **beam**. Cap the top of the mast with a **Block of Iron** (a steel mast head; Create's Industrial Iron works too) and mount the Yagi on that.",
+   "It starts out pointing the way you look. To aim it, look at the **top** of it, **right-click and drag** the value box: the arrays swing round to any bearing.",
+   "- **Ahead:** the station reaches **1.9 times** as far, in a wedge 60 degrees either side of where it points.",
+   "- **Anywhere else:** nothing. That is a real blind spot.",
    "On a receiver's mast it listens the same way: far better in front, almost deaf behind. Point two Yagis at each other for a long, private link that the stations around you do not hear.",
    "@fig:yagi:7",
    "> Engineer's Goggles on the transmitter show which way its beam points."
@@ -257,9 +243,6 @@
   "short": "Cables",
   "icons": [
    "airwaves:copper_wire",
-   "airwaves:gold_wire",
-   "airwaves:silver_wire",
-   "airwaves:fiber_cable",
    "airwaves:insulator"
   ],
   "text": [
@@ -269,12 +252,9 @@
    "2. The ghost line is **green** when it will connect, **red** when it cannot.",
    "- **Sneak-click** a connector to take its cables down (you get them back).",
    "- **Shortcut:** sneak-click a transmitter or receiver with Copper Wire to cable every free microphone or speaker within 12 blocks.",
-   "## Cable types",
-   "- **Copper:** 16 blocks, some loss",
-   "- **Gold:** 24 blocks, half the loss",
-   "- **Silver:** 32 blocks, almost no loss",
-   "- **Fiber Optic:** 64 blocks, no loss, never carries electricity",
-   "Every cable joins every other: a copper run can carry on as fiber at an insulator.",
+   "## Copper Wire",
+   "- One cable reaches **16 blocks** and loses a little quality on every block.",
+   "- To go further, hang it on **Glass Insulators** along the way.",
    "@fig:cables:8"
   ]
  },
@@ -284,11 +264,10 @@
   "short": "Insulators",
   "icons": [
    "airwaves:insulator",
-   "airwaves:copper_wire",
-   "airwaves:fiber_cable"
+   "airwaves:copper_wire"
   ],
   "text": [
-   "The **Glass Insulator** holds up to 4 cables of any type and passes the signal between them, so a line can go further than one cable reaches, or split to several places.",
+   "The **Glass Insulator** holds up to 4 cables and passes the signal between them, so a line can go further than one cable reaches, or split to several places.",
    "Put insulators on walls, fences or posts of your own to run a line along a street or up a tower.",
    "> Power Grid and Electro Energetics wires work as audio cables between Airwaves blocks too."
   ]
@@ -310,7 +289,7 @@
    "- **Towers:** a drive shaft comes out of both edges of the base. Connect your shaft, cog or motor to either end.",
    "They run at **16 RPM** or more without overstress. **64 RPM** is full power; **128 RPM** gives 1.5 times the range.",
    "## Stress per RPM",
-   "- Transmitters: 4 / 8 / 16 / 32",
+   "- Transmitter 32",
    "- Jammer 8, Dimensional Relay 16",
    "- Relay Tower 12, Big Relay Tower 24, Radio Tower 64",
    "> Don't want to bother? Set **requireRotation = false** in config/airwaves-common.toml."
@@ -321,7 +300,7 @@
   "title": "Electricity",
   "short": "Electricity",
   "icons": [
-   "airwaves:transmitter_small",
+   "airwaves:transmitter",
    "airwaves:radio_tower",
    "powergrid:wire",
    "electroenergetics:copper_wire_spool"
@@ -333,7 +312,7 @@
    "2. Wire them into your circuit like any other load: Power Grid wire clips on, Electro Energetics wire attaches to them.",
    "3. Look at the machine with goggles: it shows the **volts** and **watts** it draws.",
    "- **Towers** have theirs built in too: on the back of the equipment shelter at the base of a relay tower, and on the junction box beside the core of the Radio Tower.",
-   "- Airwaves **copper, gold and silver wire** work as Power Grid and Electro Energetics wire too: click a terminal to start, click another to finish. Silver has the least resistance and reaches furthest.",
+   "- Airwaves **Copper Wire** works as Power Grid and Electro Energetics wire too: click a terminal to start, click another to finish.",
    "- It works the other way round as well: Power Grid and Electro Energetics wire carry **audio** between Airwaves blocks.",
    "> The machine is a real load in the circuit: the watts come straight out of your generators and batteries.",
    "## Which power is used?",
@@ -414,7 +393,7 @@
   "icons": [
    "create:propeller",
    "airwaves:radio_console",
-   "airwaves:transmitter_small",
+   "airwaves:transmitter",
    "airwaves:radio"
   ],
   "text": [
@@ -428,19 +407,6 @@
    "- **Click:** seek the next station and retune everything.",
    "- **Sneak-click:** station report.",
    "- **Redstone:** master switch, all its transmitters go on standby."
-  ]
- },
- {
-  "group": "Big builds",
-  "title": "Studio extras",
-  "short": "Studio extras",
-  "icons": [
-   "airwaves:on_air_sign",
-   "airwaves:radio_console"
-  ],
-  "text": [
-   "- **On Air Sign:** lights up red while any transmitter within 12 blocks is sending a voice.",
-   "- **Radio Console:** runs every radio device within 8 blocks from one desk (see Airships)."
   ]
  },
  {
@@ -466,7 +432,7 @@
    "Parts that **touch**, or are **joined by copper** with nothing in between, work together. Some pairs make a **stage**:",
    "- **Tuned tank:** coil + capacitor",
    "- **Oscillator:** crystal + capacitor",
-   "- **Tube amp:** vacuum tube + resistor",
+   "- **Tube amp:** electron tube + resistor",
    "- **Transistor amp:** transistor + resistor",
    "- **Logic gate:** transistor + transistor",
    "- **Timer:** resistor + capacitor",
@@ -556,13 +522,11 @@
    "airwaves:silver_ore",
    "airwaves:raw_silver",
    "airwaves:silver_ingot",
-   "airwaves:silver_sheet",
-   "airwaves:polished_amethyst"
+   "airwaves:silver_sheet"
   ],
   "text": [
    "- **Silver ore:** deep underground (y 24 and below), more often the deeper you go. Smelt it, or crush it with Create for extra.",
    "- **Sheets:** press ingots with a Mechanical Press. A sheet and a stick give 4 wire.",
-   "- **Polished Amethyst:** sand amethyst shards with Create sandpaper.",
    "- **Zinc and brass** come from Create."
   ]
  },
@@ -571,7 +535,7 @@
   "title": "Components",
   "short": "Components",
   "icons": [
-   "airwaves:vacuum_tube",
+   "create:electron_tube",
    "airwaves:copper_coil",
    "airwaves:crystal_oscillator",
    "airwaves:signal_mechanism",
@@ -579,22 +543,11 @@
    "airwaves:mic_capsule"
   ],
   "text": [
-   "- **Vacuum Tube, Copper Coil, Crystal Oscillator:** crafted parts for boards.",
+   "- **Copper Coil, Crystal Oscillator** (cut from Create's polished rose quartz) and Create's own **Electron Tube** are the bigger board parts.",
    "- **Blank Circuit Board:** sequenced assembly from a smooth stone slab: copper wire, silver nugget, quartz, then press.",
    "- **Resistors, capacitors, LEDs, transistors:** crafted four at a time.",
-   "- **Signal Mechanism:** a precision mechanism with an oscillator, a tube and silver wire deployed on it.",
-   "Medium, Large and Giant devices, the towers and the Dimensional Relay are built on Create's **Mechanical Crafters**."
-  ]
- },
- {
-  "group": "Making things",
-  "title": "Multimeter",
-  "short": "Multimeter",
-  "icons": [
-   "airwaves:multimeter"
-  ],
-  "text": [
-   "Right-click anything with the **Multimeter**: shaft speed, electric charge, the cables on it, its frequency, and its range or the signal it receives."
+   "- **Signal Mechanism:** a precision mechanism with an oscillator, an electron tube and a silver sheet deployed on it.",
+   "Transmitters, receivers, the towers and the Dimensional Relay are built on Create's **Mechanical Crafters**."
   ]
  },
  {

@@ -1,19 +1,7 @@
 {
  "variants": {
-  "facing=north": {
+  "": {
    "model": "airwaves:block/yagi_antenna"
-  },
-  "facing=east": {
-   "model": "airwaves:block/yagi_antenna",
-   "y": 90
-  },
-  "facing=south": {
-   "model": "airwaves:block/yagi_antenna",
-   "y": 180
-  },
-  "facing=west": {
-   "model": "airwaves:block/yagi_antenna",
-   "y": 270
   }
  }
 }

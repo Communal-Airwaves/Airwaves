@@ -1,10 +1,7 @@
 package com.airwaves.cable;
 
 public enum CableType {
-   COPPER("copper", 16, 0.004, 0.06F, true, -3641281),
-   GOLD("gold", 24, 0.002, 0.06F, true, -999376),
-   SILVER("silver", 32, 8.0E-4, 0.06F, true, -2695704),
-   FIBER("fiber", 64, (double)0.0F, 0.05F, true, -12594960);
+   COPPER("copper", 16, 0.004, 0.06F, true, -3641281);
 
    public final String id;
    public final int maxLen;
@@ -34,6 +31,6 @@ public enum CableType {
 
    // $FF: synthetic method
    private static CableType[] $values() {
-      return new CableType[]{COPPER, GOLD, SILVER, FIBER};
+      return new CableType[]{COPPER};
    }
 }

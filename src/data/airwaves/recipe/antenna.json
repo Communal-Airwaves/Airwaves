@@ -2,9 +2,9 @@
  "type": "minecraft:crafting_shaped",
  "category": "misc",
  "pattern": [
-  "I I",
-  "IWI",
-  "I I"
+  " W ",
+  "IGI",
+  " W "
  ],
  "key": {
   "I": {
@@ -12,6 +12,9 @@
   },
   "W": {
    "item": "airwaves:copper_wire"
+  },
+  "G": {
+   "item": "create:metal_girder"
   }
  },
  "result": {

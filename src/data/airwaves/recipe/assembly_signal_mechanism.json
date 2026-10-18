@@ -34,7 +34,7 @@
      "item": "airwaves:incomplete_signal_mechanism"
     },
     {
-     "item": "airwaves:vacuum_tube"
+     "item": "create:electron_tube"
     }
    ],
    "results": [
@@ -50,7 +50,7 @@
      "item": "airwaves:incomplete_signal_mechanism"
     },
     {
-     "item": "airwaves:silver_wire"
+     "tag": "c:plates/silver"
     }
    ],
    "results": [

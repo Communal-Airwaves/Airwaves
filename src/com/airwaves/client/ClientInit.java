@@ -6,6 +6,7 @@ import com.airwaves.client.ponder.AirwavesPonderPlugin;
 import com.airwaves.item.CableItem;
 import com.airwaves.kinetic.KineticDeviceRenderer;
 import com.airwaves.logic.Cables;
+import com.airwaves.logic.ClientSinks;
 import com.airwaves.net.VoiceModePayload;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.simibubi.create.content.kinetics.base.SingleAxisRotatingVisual;
@@ -64,6 +65,7 @@ public final class ClientInit {
       modBus.addListener(ClientInit::models);
       modBus.addListener(ClientInit::setup);
       modBus.addListener(ClientInit::itemExtensions);
+      modBus.addListener((e) -> e.register(YagiRenderer.ARMS));
       AirwavesSpriteShifts.init(modBus);
       NeoForge.EVENT_BUS.addListener(ClientInit::tick);
       NeoForge.EVENT_BUS.addListener(ClientInit::login);
@@ -91,6 +93,7 @@ public final class ClientInit {
       e.registerBlockEntityRenderer((BlockEntityType)ModRegistry.CREATIVE_TX_BE.get(), (ctx) -> new CableRenderer());
       e.registerBlockEntityRenderer((BlockEntityType)ModRegistry.CREATIVE_RX_BE.get(), (ctx) -> new CableRenderer());
       e.registerBlockEntityRenderer((BlockEntityType)ModRegistry.INSULATOR_BE.get(), (ctx) -> new InsulatorRenderer());
+      e.registerBlockEntityRenderer((BlockEntityType)ModRegistry.YAGI_BE.get(), YagiRenderer::new);
       e.registerBlockEntityRenderer((BlockEntityType)ModRegistry.JAMMER_BE.get(), KineticDeviceRenderer::new);
       e.registerBlockEntityRenderer((BlockEntityType)ModRegistry.DIM_RELAY_BE.get(), KineticDeviceRenderer::new);
       e.registerBlockEntityRenderer((BlockEntityType)ModRegistry.RELAY_BE.get(), KineticDeviceRenderer::new);
@@ -255,6 +258,7 @@ public final class ClientInit {
    private static void login(ClientPlayerNetworkEvent.LoggingIn e) {
       VoiceConfig.load();
       VoiceClient.start();
+      ClientSinks.GONE = RadioSounds::stopAt;
       sendVoiceMode();
    }
 

@@ -11,7 +11,7 @@ public class MicrophoneBlock extends DeviceBlock {
    public static final MapCodec<MicrophoneBlock> CODEC = simpleCodec(MicrophoneBlock::new);
 
    public MicrophoneBlock(BlockBehaviour.Properties p) {
-      super(p, (double)4.0F, (double)0.0F, (double)4.0F, (double)12.0F, (double)16.0F, (double)13.0F);
+      super(p, (double)4.0F, (double)0.0F, (double)3.0F, (double)12.0F, (double)12.0F, (double)13.0F);
    }
 
    protected MapCodec<MicrophoneBlock> codec() {

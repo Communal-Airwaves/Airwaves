@@ -13,6 +13,7 @@ import javax.sound.sampled.AudioFormat;
 import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.SourceDataLine;
 import net.minecraft.client.Minecraft;
+import net.minecraft.core.BlockPos;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.phys.Vec3;
 
@@ -148,6 +149,11 @@ public final class AudioPlayback {
       } else {
          stopAll();
       }
+   }
+
+   public static void stopSink(BlockPos pos) {
+      String prefix = "r:" + pos.asLong() + ":";
+      SOURCES.keySet().removeIf((k) -> k.startsWith(prefix));
    }
 
    public static void stopAll() {

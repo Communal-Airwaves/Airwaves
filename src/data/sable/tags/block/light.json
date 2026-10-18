@@ -4,8 +4,6 @@
   "airwaves:speaker",
   "airwaves:radio",
   "airwaves:jammer",
-  "airwaves:transmitter_small",
-  "airwaves:receiver_small",
   "airwaves:antenna"
  ]
 }

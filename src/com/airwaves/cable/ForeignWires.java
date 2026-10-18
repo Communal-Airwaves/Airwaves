@@ -30,14 +30,8 @@ public final class ForeignWires {
             return null;
          } else if (!p.contains("wire") && !p.contains("cord")) {
             return null;
-         } else if (!p.contains("strand") && !p.contains("empty") && !p.contains("duplex") && !p.contains("string_light")) {
-            if (!p.contains("gold") && !p.contains("electrum")) {
-               return p.contains("insulated") ? CableType.SILVER : CableType.COPPER;
-            } else {
-               return CableType.GOLD;
-            }
          } else {
-            return null;
+            return !p.contains("strand") && !p.contains("empty") && !p.contains("duplex") && !p.contains("string_light") ? CableType.COPPER : null;
          }
       } else {
          return null;

@@ -1,8 +1,10 @@
 package com.airwaves;
 
 import com.airwaves.be.TransmitterBE;
+import com.airwaves.block.TransmitterBlock;
 import com.airwaves.cable.ForeignWires;
 import com.airwaves.client.ClientInit;
+import com.airwaves.compat.create.RadioMovement;
 import com.airwaves.compat.svc.SvcState;
 import com.airwaves.logic.RadioNetwork;
 import com.airwaves.logic.SoundCapture;
@@ -67,10 +69,11 @@ public class Airwaves {
 
    private static void commonSetup(FMLCommonSetupEvent e) {
       e.enqueueWork(() -> {
+         RadioMovement.register();
          SimpleRegistry<Block, DoubleSupplier> impacts = BlockStressValues.IMPACTS;
 
          for(int i = 0; i < ModRegistry.TRANSMITTERS.size(); ++i) {
-            double v = TransmitterBE.STRESS[i];
+            double v = TransmitterBE.STRESS[((TransmitterBlock)((DeferredBlock)ModRegistry.TRANSMITTERS.get(i)).get()).tier.level - 1];
             impacts.register((Block)((DeferredBlock)ModRegistry.TRANSMITTERS.get(i)).get(), (DoubleSupplier)() -> v);
          }
 

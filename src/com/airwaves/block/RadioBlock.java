@@ -28,7 +28,7 @@ public class RadioBlock extends DeviceBlock {
    public static final BooleanProperty POWERED;
 
    public RadioBlock(BlockBehaviour.Properties p) {
-      super(p, (double)2.0F, (double)0.0F, (double)3.0F, (double)15.0F, (double)15.0F, (double)12.0F);
+      super(p, (double)0.0F, (double)0.0F, (double)3.0F, (double)16.0F, (double)12.0F, (double)10.0F);
       this.registerDefaultState((BlockState)this.defaultBlockState().setValue(POWERED, true));
    }
 

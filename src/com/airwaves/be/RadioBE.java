@@ -25,7 +25,7 @@ public class RadioBE extends TunableBE implements AudioSink {
 
    public void setRemoved() {
       super.setRemoved();
-      ClientSinks.SINKS.remove(this);
+      ClientSinks.removed(this, this);
    }
 
    public double rxGain() {

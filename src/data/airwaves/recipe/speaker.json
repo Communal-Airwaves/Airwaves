@@ -2,9 +2,9 @@
  "type": "minecraft:crafting_shaped",
  "category": "misc",
  "pattern": [
-  " B ",
   "BCB",
-  "PAP"
+  "BKB",
+  " A "
  ],
  "key": {
   "B": {
@@ -13,8 +13,8 @@
   "C": {
    "item": "airwaves:speaker_cone"
   },
-  "P": {
-   "tag": "minecraft:planks"
+  "K": {
+   "item": "create:andesite_casing"
   },
   "A": {
    "item": "airwaves:amplifier_board"

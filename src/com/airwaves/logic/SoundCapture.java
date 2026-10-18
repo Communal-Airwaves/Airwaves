@@ -61,14 +61,14 @@ public final class SoundCapture {
          if (!m.isRemoved()) {
             long mk;
             TapePlayerBE var10000;
-            label84: {
+            label94: {
                mk = m.getBlockPos().asLong();
                alive.add(mk);
                if (m instanceof TapePlayerBE) {
                   TapePlayerBE tp = (TapePlayerBE)m;
                   if (tp.isRecording()) {
                      var10000 = tp;
-                     break label84;
+                     break label94;
                   }
                }
 
@@ -90,7 +90,9 @@ public final class SoundCapture {
                         if (jb.getSongPlayer().isPlaying()) {
                            JukeboxSong song = jb.getSongPlayer().getSong();
                            if (song != null) {
-                              now.put(p.asLong(), new Heard(((SoundEvent)song.soundEvent().value()).getLocation(), root));
+                              ResourceLocation sid = ((SoundEvent)song.soundEvent().value()).getLocation();
+                              Heard was = (Heard)((Map)dim.getOrDefault(mk, Map.of())).get(p.asLong());
+                              now.put(p.asLong(), new Heard(sid, root, was != null && was.sound().equals(sid) && was.root() == root ? was.since() : sl.getGameTime()));
                            }
                         }
                      }
@@ -109,8 +111,13 @@ public final class SoundCapture {
 
             for(Map.Entry<Long, Heard> e : now.entrySet()) {
                Heard b = (Heard)before.get(e.getKey());
-               if (b == null || !b.sound().equals(((Heard)e.getValue()).sound())) {
-                  send(sl, m, tape, (Heard)e.getValue(), (Long)e.getKey(), (byte)1);
+               boolean fresh = b == null || !b.sound().equals(((Heard)e.getValue()).sound());
+               if (tape != null) {
+                  if (fresh) {
+                     tape.capture(((Heard)e.getValue()).sound(), 1.0F, 1.0F, (byte)1);
+                  }
+               } else if (((Heard)e.getValue()).root() != 0L) {
+                  RadioNetwork.broadcastSound(sl, ((Heard)e.getValue()).root(), ((Heard)e.getValue()).sound(), 1.0F, 1.0F, (byte)1, (Long)e.getKey(), (int)Math.min(2147483647L, (sl.getGameTime() - ((Heard)e.getValue()).since()) * 50L));
                }
             }
 
@@ -151,6 +158,6 @@ public final class SoundCapture {
       HEARD.clear();
    }
 
-   private static record Heard(ResourceLocation sound, long root) {
+   private static record Heard(ResourceLocation sound, long root, long since) {
    }
 }

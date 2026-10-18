@@ -4,7 +4,7 @@
  "pattern": [
   "BSB",
   "KAK",
-  "PPP"
+  "RCR"
  ],
  "key": {
   "B": {
@@ -19,8 +19,11 @@
   "A": {
    "item": "airwaves:audio_board"
   },
-  "P": {
-   "tag": "c:plates/iron"
+  "R": {
+   "item": "create:cogwheel"
+  },
+  "C": {
+   "item": "create:brass_casing"
   }
  },
  "result": {

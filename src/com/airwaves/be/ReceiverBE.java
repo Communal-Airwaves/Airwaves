@@ -95,7 +95,7 @@ public class ReceiverBE extends TunableBE implements AudioSink, CableNode {
    }
 
    public void setRemoved() {
-      ClientSinks.SINKS.remove(this);
+      ClientSinks.removed(this, this);
       super.setRemoved();
    }
 
@@ -113,10 +113,10 @@ public class ReceiverBE extends TunableBE implements AudioSink, CableNode {
             boolean oldOk = this.ok;
             boolean oldGnd = this.grounded;
             int t = this.tier();
-            if (onCopper.tier() == t && onCopper.height() >= onTop.height()) {
+            if (onCopper.height() > 0 && onCopper.height() >= onTop.height()) {
                this.info = onCopper;
                this.grounded = true;
-            } else if (onTop.tier() == t) {
+            } else if (onTop.height() > 0) {
                this.info = onTop;
                this.grounded = false;
             } else {
@@ -145,7 +145,7 @@ public class ReceiverBE extends TunableBE implements AudioSink, CableNode {
       return AntennaUtil.rxGain(this.info) * (this.grounded ? (double)1.25F : (double)1.0F) * roof * (this.crystal == 2 ? 1.15 : (double)1.0F);
    }
 
-   public Direction rxBeam() {
+   public Float rxBeam() {
       return this.info.beam();
    }
 
@@ -160,7 +160,7 @@ public class ReceiverBE extends TunableBE implements AudioSink, CableNode {
       if (cr == 0) {
          tip.add(Component.literal("    no amethyst in the chamber").withStyle(ChatFormatting.GOLD));
       } else if (!this.ok) {
-         tip.add(Component.literal("    needs a " + AntennaUtil.tierName(this.tier()).toLowerCase() + " antenna").withStyle(ChatFormatting.GOLD));
+         tip.add(Component.literal("    needs an antenna").withStyle(ChatFormatting.GOLD));
       } else {
          int var10001 = this.antennaHeight;
          tip.add(Component.literal("    antenna " + var10001 + " tall" + (this.grounded ? ", grounded" : "") + (this.links.isEmpty() ? ", built-in speaker" : "")).withStyle(ChatFormatting.GRAY));

@@ -95,7 +95,7 @@ public enum BoardDesign {
             case 1 -> var10000 = (Item)ModRegistry.CAPACITOR.get();
             case 2 -> var10000 = (Item)ModRegistry.LED.get();
             case 3 -> var10000 = (Item)ModRegistry.TRANSISTOR.get();
-            case 4 -> var10000 = (Item)ModRegistry.VACUUM_TUBE.get();
+            case 4 -> var10000 = ModRegistry.electronTube();
             case 5 -> var10000 = (Item)ModRegistry.COPPER_COIL.get();
             case 6 -> var10000 = (Item)ModRegistry.CRYSTAL_OSCILLATOR.get();
             case 7 -> var10000 = (Item)ModRegistry.MEMORY_CHIP.get();

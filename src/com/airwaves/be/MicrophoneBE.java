@@ -28,7 +28,7 @@ public class MicrophoneBE extends NodeBE {
    }
 
    public Vec3 anchor(int slot) {
-      return CableNode.facing(this, (double)8.0F, (double)0.5F, (double)15.0F);
+      return CableNode.facing(this, (double)8.0F, (double)0.5F, (double)11.0F);
    }
 
    public void onLoad() {

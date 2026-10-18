@@ -4,14 +4,6 @@
   {
    "id": "airwaves:copper_wire",
    "required": false
-  },
-  {
-   "id": "airwaves:gold_wire",
-   "required": false
-  },
-  {
-   "id": "airwaves:silver_wire",
-   "required": false
   }
  ]
 }

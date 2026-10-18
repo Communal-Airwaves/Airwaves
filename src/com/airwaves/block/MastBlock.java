@@ -157,7 +157,7 @@ public abstract class MastBlock extends Block {
    }
 
    public static boolean continues(BlockState above) {
-      return above.getBlock() instanceof MastBlock || above.getBlock() instanceof YagiAntennaBlock;
+      return above.getBlock() instanceof MastBlock || above.getBlock() instanceof YagiAntennaBlock || YagiAntennaBlock.isMount(above);
    }
 
    protected boolean propagatesSkylightDown(BlockState s, BlockGetter l, BlockPos p) {

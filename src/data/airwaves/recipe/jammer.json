@@ -17,7 +17,7 @@
    "item": "airwaves:rf_board"
   },
   "T": {
-   "item": "airwaves:vacuum_tube"
+   "item": "create:electron_tube"
   },
   "K": {
    "item": "create:copper_casing"

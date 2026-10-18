@@ -9,7 +9,6 @@ import com.simibubi.create.api.equipment.goggles.IHaveGoggleInformation;
 import java.util.List;
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;
-import net.minecraft.core.Direction;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.component.DataComponentMap;
 import net.minecraft.core.component.DataComponentType;
@@ -93,7 +92,7 @@ public abstract class TunableBE extends BlockEntity implements Tuned, IHaveGoggl
       return (double)1.0F;
    }
 
-   public Direction rxBeam() {
+   public Float rxBeam() {
       return null;
    }
 

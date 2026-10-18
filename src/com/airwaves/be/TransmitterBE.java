@@ -28,7 +28,7 @@ public class TransmitterBE extends KineticTunableBE implements CableNode {
    public boolean standby;
    public boolean wired;
    public int antennaHeight;
-   public Direction beam;
+   public Float beam;
    public double range;
    public float baseQ;
    protected int crystal;
@@ -106,12 +106,12 @@ public class TransmitterBE extends KineticTunableBE implements CableNode {
             this.crystal = (Integer)st.getValue(TransmitterBlock.CRYSTAL);
             boolean ground = this.level.isLoaded(back) && this.level.getBlockState(back).is(ModRegistry.GROUND_PLANE);
             AntennaUtil.Info a = ground ? AntennaUtil.scan(this.level, back.above(), this.tier()) : AntennaUtil.Info.NONE;
-            boolean match = a.tier() == this.tier();
+            boolean match = a.height() > 0;
             this.antennaHeight = match ? a.height() : 0;
             this.beam = match ? a.beam() : null;
             boolean held = this.level.getGameTime() - this.consoleHold < 40L;
             this.standby = this.level.hasNeighborSignal(this.worldPosition) || held;
-            this.problem = this.crystal == 0 ? "no amethyst in the chamber" : (!ground ? "needs a copper block behind it" : (!match ? "needs a " + AntennaUtil.tierName(this.tier()).toLowerCase() + " antenna on the copper" : (this.antennaHeight < 4 ? "antenna too short (" + this.antennaHeight + "/4)" : (this.standby ? (held ? "standby (radio console)" : "standby (redstone)") : (!this.turning() ? "needs power" : "")))));
+            this.problem = this.crystal == 0 ? "no amethyst in the chamber" : (!ground ? "needs a copper block behind it" : (!match ? "needs an antenna on the copper" : (this.antennaHeight < 4 ? "antenna too short (" + this.antennaHeight + "/4)" : (this.standby ? (held ? "standby (radio console)" : "standby (redstone)") : (!this.turning() ? "needs power" : "")))));
             this.active = this.problem.isEmpty();
             this.range = this.active ? (a.creative() ? a.fixedRange() : AntennaUtil.range(a, this.tuning.fm()) * this.powerFactor() * this.altitudeFactor()) : (double)0.0F;
             this.baseQ = Math.min(1.0F, AntennaUtil.quality(a) * (this.crystal == 2 ? 1.1F : 1.0F) * (float)Math.sqrt((double)WeatherUtil.factor(this.level, this.radioPos().above(1 + this.antennaHeight), this.tuning.fm())));
@@ -155,7 +155,8 @@ public class TransmitterBE extends KineticTunableBE implements CableNode {
       }
 
       if (this.active && this.beam != null) {
-         tip.add(Component.literal("    Yagi beam to the " + this.beam.getName() + ": x1.9 ahead, nothing to the sides or behind").withStyle(ChatFormatting.AQUA));
+         int var10001 = Math.round(this.beam);
+         tip.add(Component.literal("    Yagi beam " + var10001 + "° (" + AntennaUtil.compass(this.beam) + "): x1.9 ahead, nothing to the sides or behind").withStyle(ChatFormatting.AQUA));
       }
 
       return true;
@@ -169,7 +170,7 @@ public class TransmitterBE extends KineticTunableBE implements CableNode {
       tag.putString("problem", this.problem);
       tag.putInt("ant", this.antennaHeight);
       tag.putBoolean("wired", this.wired);
-      tag.putInt("beam", this.beam == null ? -1 : this.beam.get2DDataValue());
+      tag.putFloat("beam", this.beam == null ? -1.0F : this.beam);
    }
 
    protected void read(CompoundTag tag, HolderLookup.Provider r, boolean clientPacket) {
@@ -181,8 +182,8 @@ public class TransmitterBE extends KineticTunableBE implements CableNode {
          this.problem = tag.getString("problem");
          this.antennaHeight = tag.getInt("ant");
          this.wired = tag.getBoolean("wired");
-         int bm = tag.contains("beam") ? tag.getInt("beam") : -1;
-         this.beam = bm < 0 ? null : Direction.from2DDataValue(bm);
+         float bm = tag.contains("beam") ? tag.getFloat("beam") : -1.0F;
+         this.beam = bm < 0.0F ? null : bm;
       }
 
    }

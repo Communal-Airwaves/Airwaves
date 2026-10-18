@@ -1,6 +1,7 @@
 package com.airwaves.logic;
 
 import com.airwaves.be.CreativeAntennaBE;
+import com.airwaves.be.YagiAntennaBE;
 import com.airwaves.block.AntennaBlock;
 import com.airwaves.block.CreativeAntennaBlock;
 import com.airwaves.block.YagiAntennaBlock;
@@ -9,14 +10,15 @@ import net.minecraft.core.Direction;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.entity.BlockEntity;
-import net.minecraft.world.level.block.state.BlockState;
 
 public final class AntennaUtil {
    public static final int MIN_TX_HEIGHT = 4;
    private static final int[] CAPS = new int[]{20, 40, 64, 96};
    private static final double[] RANGE_MULT = new double[]{(double)1.0F, 1.3, 1.7, 2.3};
    private static final float[] QUALITY_BONUS = new float[]{0.0F, 0.08F, 0.15F, 0.22F};
-   public static final String[] TIER_NAMES = new String[]{"Small", "Medium", "Big", "Giant"};
+   public static final String[] TX_NAMES = new String[]{"Low-Power", "Mid-Power", "High-Power", "Max-Power"};
+   public static final String[] RX_NAMES = new String[]{"Basic", "Sensitive", "High-Gain", "Max-Gain"};
+   public static final String[] TIER_NAMES;
    public static final double FORWARD = 1.9;
    public static final double SIDE = (double)0.0F;
    public static final double BACK = (double)0.0F;
@@ -34,10 +36,10 @@ public final class AntennaUtil {
          Info var10000 = new Info;
          int var10002 = cap(wantTier);
          int var10003 = Math.max(1, Math.min(4, wantTier));
-         BlockEntity var4 = l.getBlockEntity(base);
+         BlockEntity var6 = l.getBlockEntity(base);
          double var10004;
-         if (var4 instanceof CreativeAntennaBE) {
-            CreativeAntennaBE ca = (CreativeAntennaBE)var4;
+         if (var6 instanceof CreativeAntennaBE) {
+            CreativeAntennaBE ca = (CreativeAntennaBE)var6;
             var10004 = (double)ca.range();
          } else {
             var10004 = (double)1000.0F;
@@ -46,7 +48,13 @@ public final class AntennaUtil {
          var10000.<init>(var10002, var10003, var10004);
          return var10000;
       } else {
-         return scan(l, base);
+         Info i = scan(l, base);
+         if (i.height() <= 0) {
+            return AntennaUtil.Info.NONE;
+         } else {
+            int t = Math.max(1, Math.min(4, wantTier));
+            return new Info(Math.min(i.height(), cap(t)), t, (double)-1.0F, i.beam());
+         }
       }
    }
 
@@ -71,24 +79,8 @@ public final class AntennaUtil {
       return AntennaUtil.Info.NONE;
    }
 
-   public static Direction yagiAbove(Level l, BlockPos at, int size) {
-      Direction d = yagi(l, at);
-      if (d != null) {
-         return d;
-      } else {
-         int r = Math.max(1, size / 2);
-
-         for(int dx = -r; dx <= r; ++dx) {
-            for(int dz = -r; dz <= r; ++dz) {
-               d = yagi(l, at.offset(dx, 0, dz));
-               if (d != null) {
-                  return d;
-               }
-            }
-         }
-
-         return null;
-      }
+   public static Float yagiAbove(Level l, BlockPos at, int size) {
+      return l.isLoaded(at) && YagiAntennaBlock.isMount(l.getBlockState(at)) ? yagi(l, at.above()) : null;
    }
 
    public static double range(int h, int tier, boolean fm) {
@@ -121,21 +113,42 @@ public final class AntennaUtil {
       return a.height() <= 0 ? (double)1.0F : ((double)1.0F + 0.12 * (double)Math.min(a.height(), 30)) * ((double)1.0F + 0.2 * (double)(a.tier() - 1));
    }
 
-   public static Direction yagi(Level l, BlockPos at) {
+   public static Float yagi(Level l, BlockPos at) {
       if (!l.isLoaded(at)) {
          return null;
       } else {
-         BlockState st = l.getBlockState(at);
-         return st.getBlock() instanceof YagiAntennaBlock ? (Direction)st.getValue(YagiAntennaBlock.FACING) : null;
+         BlockEntity var3 = l.getBlockEntity(at);
+         Float var10000;
+         if (var3 instanceof YagiAntennaBE) {
+            YagiAntennaBE y = (YagiAntennaBE)var3;
+            var10000 = (float)y.bearing();
+         } else {
+            var10000 = null;
+         }
+
+         return var10000;
       }
    }
 
-   public static double pattern(Direction beam, double dx, double dz) {
+   public static double bx(float deg) {
+      return Math.sin(Math.toRadians((double)deg));
+   }
+
+   public static double bz(float deg) {
+      return -Math.cos(Math.toRadians((double)deg));
+   }
+
+   public static String compass(float deg) {
+      String[] n = new String[]{"north", "north-east", "east", "south-east", "south", "south-west", "west", "north-west"};
+      return n[Math.floorMod(Math.round(deg / 45.0F), 8)];
+   }
+
+   public static double pattern(Float beam, double dx, double dz) {
       double d = Math.sqrt(dx * dx + dz * dz);
       if (d < 1.0E-6) {
          return (double)1.0F;
       } else {
-         double cos = (dx * (double)beam.getStepX() + dz * (double)beam.getStepZ()) / d;
+         double cos = (dx * bx(beam) + dz * bz(beam)) / d;
          if (cos <= (double)0.5F) {
             return (double)0.0F;
          } else {
@@ -149,15 +162,19 @@ public final class AntennaUtil {
       return tier <= 0 ? "none" : TIER_NAMES[tier - 1];
    }
 
-   public static record Info(int height, int tier, double fixedRange, Direction beam) {
+   static {
+      TIER_NAMES = TX_NAMES;
+   }
+
+   public static record Info(int height, int tier, double fixedRange, Float beam) {
       public static final Info NONE = new Info(0, 0);
 
       public Info(int height, int tier) {
-         this(height, tier, (double)-1.0F, (Direction)null);
+         this(height, tier, (double)-1.0F, (Float)null);
       }
 
       public Info(int height, int tier, double fixedRange) {
-         this(height, tier, fixedRange, (Direction)null);
+         this(height, tier, fixedRange, (Float)null);
       }
 
       public boolean creative() {
