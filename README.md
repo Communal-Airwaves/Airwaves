@@ -1,5 +1,7 @@
 # Communal Airwaves
 
+Discord Server: https://discord.gg/rp6fK7F92Z
+
 What is this mod? 
 
 This fork (so to speak) aims to de-AI the original mod, fix bugs, change features, and more! Also being open source, for crying out loud.
