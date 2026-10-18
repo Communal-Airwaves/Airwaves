@@ -8,11 +8,11 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.ModContainer;
 
-@Mod(CommunalAirwaves.MODID)
-public class CommunalAirwaves {
+@Mod(Airwaves.MODID)
+public class Airwaves {
     public static final String MODID = "airwaves";
     public static final Logger LOGGER = LogUtils.getLogger();
 
-    public CommunalAirwaves(IEventBus modEventBus, ModContainer modContainer) {
+    public Airwaves(IEventBus modEventBus, ModContainer modContainer) {
     }
 }
