@@ -1,22 +1,19 @@
+modLoader="javafml"
 
-modLoader="javafml" #mandatory
-
-loaderVersion="${loader_version_range}" #mandatory
+loaderVersion="${loader_version_range}"
 
 license="${mod_license}"
 
-[[mods]] #mandatory
+[[mods]]
 
-modId="${mod_id}" #mandatory
+modId="${mod_id}"
+version="${mod_version}"
+displayName="${mod_name}"
+authors="Radioheads of Create"
 
-version="${mod_version}" #mandatory
-
-displayName="${mod_name}" #mandatory
-
-authors="Wolfieboy09"
-
+# TODO: Change this
 description='''
-A full radio system for Minecraft... mostly
+An entire radio system for Minecraft
 '''
 
 [[mixins]]
@@ -25,10 +22,10 @@ config="${mod_id}.mixins.json"
 #[[accessTransformers]]
 #file="META-INF/accesstransformer.cfg"
 
-[[dependencies.${mod_id}]] #optional
-    modId="neoforge" #mandatory
-    type="required" #mandatory
-    versionRange="[${neo_version},)" #mandatory
+[[dependencies.${mod_id}]]
+    modId="neoforge"
+    type="required"
+    versionRange="[${neo_version},)"
     ordering="NONE"
     side="BOTH"
 
@@ -36,5 +33,12 @@ config="${mod_id}.mixins.json"
     modId="minecraft"
     type="required"
     versionRange="${minecraft_version_range}"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.${mod_id}]]
+    modId="create"
+    type="required"
+    versionRange="[6.0.10,6.1.0)"
     ordering="NONE"
     side="BOTH"
