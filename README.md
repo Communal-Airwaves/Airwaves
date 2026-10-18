@@ -1,4 +1,4 @@
-# Communal Airwaves
+# Airwaves
 
 Discord Server: https://discord.gg/rp6fK7F92Z
 
