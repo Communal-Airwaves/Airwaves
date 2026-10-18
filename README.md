@@ -8,7 +8,6 @@ This fork (so to speak) aims to de-AI the original mod, fix bugs, change feature
 
 What this aims to change:
 - No more AI
-- Dropping the Create dependency
-- Dropping the Sable dependency (it can work fine without it)
+- Dropping the Sable dependency (support will be added, just not required)
 
   We shall make it better!
