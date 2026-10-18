@@ -1,4 +1,4 @@
-package dev.wolfieboy09.airwaves;
+package com.communal.airwaves;
 
 import org.slf4j.Logger;
 
