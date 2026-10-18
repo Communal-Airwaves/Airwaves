@@ -1,4 +1,4 @@
-package com.communal.airwaves;
+package dev.radioheads.airwaves;
 
 import org.slf4j.Logger;
 
