@@ -1,7 +1,7 @@
-package dev.radioheads.airwaves.api.registry.circuitry.board;
+package dev.radioheads.airwaves.api.registry.board;
 
-import dev.radioheads.airwaves.api.registry.circuitry.board.step.BoardStep;
-import dev.radioheads.airwaves.api.registry.circuitry.board.step.BoardStepMode;
+import dev.radioheads.airwaves.api.registry.board.step.BoardStep;
+import dev.radioheads.airwaves.api.registry.board.step.BoardStepMode;
 
 import java.util.Optional;
 

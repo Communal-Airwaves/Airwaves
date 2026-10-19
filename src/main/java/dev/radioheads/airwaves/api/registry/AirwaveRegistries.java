@@ -1,13 +1,13 @@
 package dev.radioheads.airwaves.api.registry;
 
 import dev.radioheads.airwaves.Airwaves;
-import dev.radioheads.airwaves.api.registry.circuitry.board.BoardDesign;
-import dev.radioheads.airwaves.api.registry.circuitry.board.BoardRule;
-import dev.radioheads.airwaves.api.registry.circuitry.board.BoardSource;
-import dev.radioheads.airwaves.api.registry.circuitry.board.BoardStage;
-import dev.radioheads.airwaves.api.registry.circuitry.board.step.BoardStep;
-import dev.radioheads.airwaves.api.registry.circuitry.board.step.BoardStepMode;
-import dev.radioheads.airwaves.api.registry.circuitry.part.BoardPart;
+import dev.radioheads.airwaves.api.registry.board.BoardDesign;
+import dev.radioheads.airwaves.api.registry.board.BoardRule;
+import dev.radioheads.airwaves.api.registry.board.BoardSource;
+import dev.radioheads.airwaves.api.registry.board.BoardStage;
+import dev.radioheads.airwaves.api.registry.board.BoardPart;
+import dev.radioheads.airwaves.api.registry.board.step.BoardStep;
+import dev.radioheads.airwaves.api.registry.board.step.BoardStepMode;
 import net.minecraft.core.Registry;
 import net.minecraft.resources.ResourceKey;
 import net.neoforged.bus.api.SubscribeEvent;

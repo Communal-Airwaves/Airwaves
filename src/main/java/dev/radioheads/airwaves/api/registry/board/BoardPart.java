@@ -1,4 +1,4 @@
-package dev.radioheads.airwaves.api.registry.circuitry.part;
+package dev.radioheads.airwaves.api.registry.board;
 
 import net.minecraft.world.item.Item;
 

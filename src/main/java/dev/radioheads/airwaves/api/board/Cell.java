@@ -1,6 +1,6 @@
-package dev.radioheads.airwaves.api.registry.circuitry.board;
+package dev.radioheads.airwaves.api.board;
 
-import dev.radioheads.airwaves.api.registry.circuitry.part.BoardPart;
+import dev.radioheads.airwaves.api.registry.board.BoardPart;
 
 public sealed interface Cell permits Cell.Empty, Cell.Trace, Cell.Placed {
     record Empty() implements Cell {

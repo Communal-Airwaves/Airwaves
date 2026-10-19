@@ -1,4 +1,4 @@
-package dev.radioheads.airwaves.api.registry.circuitry.board;
+package dev.radioheads.airwaves.api.registry.board;
 
 import net.minecraft.network.chat.Component;
 
