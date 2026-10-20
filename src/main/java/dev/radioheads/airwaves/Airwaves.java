@@ -33,6 +33,8 @@ public class Airwaves {
         AirwaveBlocks.init();
         AirwaveBlockEntities.init();
         AirwaveRadioBands.init();
+        AirwaveModulations.init();
+        AirwaveTiers.init();
     }
 
     @Contract("_ -> new")

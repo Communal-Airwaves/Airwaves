@@ -3,6 +3,7 @@ package dev.radioheads.airwaves.api.radio;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 import dev.radioheads.airwaves.api.registry.AirwaveRegistries;
+import dev.radioheads.airwaves.registry.AirwaveModulations;
 import net.minecraft.core.Holder;
 import net.minecraft.resources.RegistryFixedCodec;
 import net.minecraft.resources.ResourceLocation;
@@ -17,7 +18,8 @@ public record RadioBand(
         String unit,
         Optional<Double> defaultFrequency,
         Optional<List<Holder<RadioBand>>> interferesWith,
-        Optional<String> pathTypeOverride
+        Optional<String> pathTypeOverride,
+        Holder<Modulation> modulation
 ) {
     public static final Codec<RadioBand> CODEC = RecordCodecBuilder.create(inst -> inst.group(
             Codec.DOUBLE.fieldOf("min").forGetter(RadioBand::min),
@@ -28,7 +30,10 @@ public record RadioBand(
                     .listOf()
                     .optionalFieldOf("interferes")
                     .forGetter(RadioBand::interferesWith),
-            Codec.STRING.optionalFieldOf("path_type").forGetter(RadioBand::pathTypeOverride)
+            Codec.STRING.optionalFieldOf("path_type").forGetter(RadioBand::pathTypeOverride),
+            RegistryFixedCodec.create(AirwaveRegistries.MODULATION)
+                    .optionalFieldOf("modulation", AirwaveModulations.FM)
+                    .forGetter(RadioBand::modulation)
     ).apply(inst, RadioBand::new));
 
     public RadioBand {
@@ -46,27 +51,31 @@ public record RadioBand(
     }
 
     public RadioBand(double min, double max, String unit) {
-        this(min, max, unit, Optional.empty(), Optional.empty(), Optional.empty());
+        this(min, max, unit, Optional.empty(), Optional.empty(), Optional.empty(), AirwaveModulations.FM);
     }
 
     public RadioBand(double min, double max, String unit, double defaultFrequency) {
-        this(min, max, unit, Optional.of(defaultFrequency), Optional.empty(), Optional.empty());
+        this(min, max, unit, Optional.of(defaultFrequency), Optional.empty(), Optional.empty(), AirwaveModulations.FM);
     }
 
     public RadioBand(double min, double max, String unit, List<Holder<RadioBand>> interferesWith) {
-        this(min, max, unit, Optional.empty(), Optional.of(List.copyOf(interferesWith)), Optional.empty());
+        this(min, max, unit, Optional.empty(), Optional.of(List.copyOf(interferesWith)), Optional.empty(), AirwaveModulations.FM);
     }
 
     public RadioBand(double min, double max, String unit, double defaultFrequency, List<Holder<RadioBand>> interferesWith) {
-        this(min, max, unit, Optional.of(defaultFrequency), Optional.of(List.copyOf(interferesWith)), Optional.empty());
+        this(min, max, unit, Optional.of(defaultFrequency), Optional.of(List.copyOf(interferesWith)), Optional.empty(), AirwaveModulations.FM);
     }
 
     public RadioBand withPathType(String pathType) {
-        return new RadioBand(min, max, unit, defaultFrequency, interferesWith, Optional.of(pathType));
+        return new RadioBand(min, max, unit, defaultFrequency, interferesWith, Optional.of(pathType), modulation);
     }
 
     public RadioBand withInterference(List<Holder<RadioBand>> bands) {
-        return new RadioBand(min, max, unit, defaultFrequency, Optional.of(List.copyOf(bands)), pathTypeOverride);
+        return new RadioBand(min, max, unit, defaultFrequency, Optional.of(List.copyOf(bands)), pathTypeOverride, modulation);
+    }
+
+    public RadioBand withModulation(Holder<Modulation> modulation) {
+        return new RadioBand(min, max, unit, defaultFrequency, interferesWith, pathTypeOverride, modulation);
     }
 
     public String pathType(ResourceLocation id) {
