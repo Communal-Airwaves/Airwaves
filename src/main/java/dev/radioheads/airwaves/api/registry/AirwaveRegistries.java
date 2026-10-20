@@ -34,13 +34,13 @@ public class AirwaveRegistries {
 
     public static final Registry<BoardDesign> BOARD_DESIGN_REGISTRY = makeSyncedRegistry(BOARD);
     public static final Registry<BoardPart> BOARD_PART_REGISTRY = makeSyncedRegistry(BOARD_PART);
+    public static final Registry<RadioBand> RADIO_BAND_REGISTRY = makeSyncedRegistry(RADIO_BAND);
 
     public static final Registry<BoardStage> BOARD_STAGE_REGISTRY = makeRegistry(BOARD_STAGE);
     public static final Registry<BoardRule> BOARD_RULE_REGISTRY = makeRegistry(BOARD_RULE);
     public static final Registry<BoardSource> BOARD_SOURCE_REGISTRY = makeRegistry(BOARD_SOURCE);
     public static final Registry<BoardStep> BOARD_STEP_REGISTRY = makeRegistry(BOARD_STEP);
     public static final Registry<BoardStepMode> BOARD_STEP_MODE_REGISTRY = makeRegistry(BOARD_STEP_MODE);
-    public static final Registry<RadioBand> RADIO_BAND_REGISTRY = makeSyncedRegistry(RADIO_BAND);
 
     private static <T> ResourceKey<Registry<T>> createRegistryKey(String name) {
         return ResourceKey.createRegistryKey(Airwaves.asResource(name));
