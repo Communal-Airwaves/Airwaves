@@ -35,6 +35,7 @@ public class Airwaves {
         AirwaveRadioBands.init();
         AirwaveModulations.init();
         AirwaveTiers.init();
+        AirwaveLang.init();
     }
 
     @Contract("_ -> new")
