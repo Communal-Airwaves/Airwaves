@@ -1,0 +1,17 @@
+{
+  "airwaves.compass.east": "ʇsɐƎ",
+  "airwaves.compass.north": "ɥʇɹoN",
+  "airwaves.compass.north_east": "ʇsɐƎ-ɥʇɹoN",
+  "airwaves.compass.north_west": "ʇsǝM-ɥʇɹoN",
+  "airwaves.compass.south": "ɥʇnoS",
+  "airwaves.compass.south_east": "ʇsɐƎ-ɥʇnoS",
+  "airwaves.compass.south_west": "ʇsǝM-ɥʇnoS",
+  "airwaves.compass.west": "ʇsǝM",
+  "airwaves.direction.target": "ʇǝbɹɐ⟘",
+  "airwaves.directon.display": "%s °%s",
+  "airwaves.tier.creative": "ǝʌıʇɐǝɹƆ",
+  "airwaves.tier.high_power": "ɹǝʍoԀ-ɥbıH",
+  "airwaves.tier.low_power": "ɹǝʍoԀ-ʍoꞀ",
+  "airwaves.tier.max_power": "ɹǝʍoԀ-xɐW",
+  "airwaves.tier.mid_power": "ɹǝʍoԀ-pıW"
+}
