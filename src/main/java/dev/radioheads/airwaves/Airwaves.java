@@ -3,7 +3,7 @@ package dev.radioheads.airwaves;
 import com.simibubi.create.foundation.item.ItemDescription;
 import com.simibubi.create.foundation.item.KineticStats;
 import com.simibubi.create.foundation.item.TooltipModifier;
-import dev.radioheads.airwaves.registry.AirwaveRegistrate;
+import dev.radioheads.airwaves.registry.*;
 import net.createmod.catnip.lang.FontHelper;
 import net.minecraft.resources.ResourceLocation;
 import org.jetbrains.annotations.Contract;
@@ -28,6 +28,11 @@ public class Airwaves {
 
     public Airwaves(IEventBus modEventBus, ModContainer modContainer) {
         REGISTRATE.registerEventListeners(modEventBus);
+
+        AirwaveItems.init();
+        AirwaveBlocks.init();
+        AirwaveBlockEntities.init();
+        AirwaveRadioBands.init();
     }
 
     @Contract("_ -> new")
