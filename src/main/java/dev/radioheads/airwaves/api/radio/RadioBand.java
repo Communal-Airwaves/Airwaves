@@ -2,36 +2,100 @@ package dev.radioheads.airwaves.api.radio;
 
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
+import dev.radioheads.airwaves.api.registry.AirwaveRegistries;
+import net.minecraft.core.Holder;
+import net.minecraft.resources.RegistryFixedCodec;
 import net.minecraft.resources.ResourceLocation;
 
+import java.util.List;
 import java.util.Locale;
 import java.util.Optional;
 
-public record RadioBand(double min, double max, double defaultFrequency, String unit, Optional<String> pathTypeOverride) {
-    //TODO: Is defaultFrequency really needed?
+public record RadioBand(
+        double min,
+        double max,
+        String unit,
+        Optional<Double> defaultFrequency,
+        Optional<List<Holder<RadioBand>>> interferesWith,
+        Optional<String> pathTypeOverride
+) {
     public static final Codec<RadioBand> CODEC = RecordCodecBuilder.create(inst -> inst.group(
             Codec.DOUBLE.fieldOf("min").forGetter(RadioBand::min),
             Codec.DOUBLE.fieldOf("max").forGetter(RadioBand::max),
-            Codec.DOUBLE.fieldOf("default_frequency").forGetter(RadioBand::defaultFrequency),
             Codec.STRING.fieldOf("unit").forGetter(RadioBand::unit),
+            Codec.DOUBLE.optionalFieldOf("defaultFrequency").forGetter(RadioBand::defaultFrequency),
+            RegistryFixedCodec.create(AirwaveRegistries.RADIO_BAND)
+                    .listOf()
+                    .optionalFieldOf("interferes")
+                    .forGetter(RadioBand::interferesWith),
             Codec.STRING.optionalFieldOf("path_type").forGetter(RadioBand::pathTypeOverride)
     ).apply(inst, RadioBand::new));
 
-    public RadioBand(double min, double max, double defaultFrequency, String unit) {
-        this(min, max, defaultFrequency, unit, Optional.empty());
+    public RadioBand {
+        if (!Double.isFinite(min) || !Double.isFinite(max) || min > max) {
+            throw new IllegalArgumentException("Invalid radio band range: " + min + "–" + max);
+        }
+
+        defaultFrequency.ifPresent(frequency -> {
+            if (!Double.isFinite(frequency) || frequency < min || frequency > max) {
+                throw new IllegalArgumentException("Default frequency must be finite and within the band range");
+            }
+        });
+
+        interferesWith = interferesWith.map(List::copyOf);
+    }
+
+    public RadioBand(double min, double max, String unit) {
+        this(min, max, unit, Optional.empty(), Optional.empty(), Optional.empty());
+    }
+
+    public RadioBand(double min, double max, String unit, double defaultFrequency) {
+        this(min, max, unit, Optional.of(defaultFrequency), Optional.empty(), Optional.empty());
+    }
+
+    public RadioBand(double min, double max, String unit, List<Holder<RadioBand>> interferesWith) {
+        this(min, max, unit, Optional.empty(), Optional.of(List.copyOf(interferesWith)), Optional.empty());
+    }
+
+    public RadioBand(double min, double max, String unit, double defaultFrequency, List<Holder<RadioBand>> interferesWith) {
+        this(min, max, unit, Optional.of(defaultFrequency), Optional.of(List.copyOf(interferesWith)), Optional.empty());
     }
 
     public RadioBand withPathType(String pathType) {
-        return new RadioBand(min, max, defaultFrequency, unit, Optional.of(pathType));
+        return new RadioBand(min, max, unit, defaultFrequency, interferesWith, Optional.of(pathType));
+    }
+
+    public RadioBand withInterference(List<Holder<RadioBand>> bands) {
+        return new RadioBand(min, max, unit, defaultFrequency, Optional.of(List.copyOf(bands)), pathTypeOverride);
     }
 
     public String pathType(ResourceLocation id) {
         return pathTypeOverride.orElseGet(() -> id.getPath().toUpperCase(Locale.ROOT));
     }
 
+    /**
+     * Checks whether this band declares the given band as an interferer.
+     */
+    public boolean conflictsWith(Holder<RadioBand> band) {
+        return interferesWith
+                .map(bands -> bands.contains(band))
+                .orElse(false);
+    }
+
+    /**
+     * Checks whether either band declares the other as an interferer.
+     */
+    public static boolean conflictsWithEither(Holder<RadioBand> first, Holder<RadioBand> second) {
+        return first.value().conflictsWith(second)
+                || second.value().conflictsWith(first);
+    }
+
     public double clamp(double frequency) {
-        double f = Double.isFinite(frequency) ? frequency : defaultFrequency;
+        double fallback = defaultFrequency.orElse(min);
+        double f = Double.isFinite(frequency) ? frequency : fallback;
+
         f = Math.clamp(f, min, max);
+
         return Math.round(f * 100.0D) / 100.0D;
     }
 

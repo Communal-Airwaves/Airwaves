@@ -46,14 +46,14 @@ public class AirwaveRegistries {
         return ResourceKey.createRegistryKey(Airwaves.asResource(name));
     }
 
-    private static <T> Registry<T> makeSyncedRegistry(ResourceKey<Registry<T>> registryKey) {
-        var registry = new RegistryBuilder<>(registryKey).sync(true).create();
+    private static <T> Registry<T> makeRegistry(ResourceKey<Registry<T>> registryKey) {
+        var registry = new RegistryBuilder<>(registryKey).create();
         FOR_INIT.add(registry);
         return registry;
     }
 
-    private static <T> Registry<T> makeRegistry(ResourceKey<Registry<T>> registryKey) {
-        var registry = new RegistryBuilder<>(registryKey).create();
+    private static <T> Registry<T> makeSyncedRegistry(ResourceKey<Registry<T>> registryKey) {
+        var registry = new RegistryBuilder<>(registryKey).sync(true).create();
         FOR_INIT.add(registry);
         return registry;
     }
