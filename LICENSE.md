@@ -1,4 +1,21 @@
-Copyright (c) 2026, Airwaves, MIT NON-AI
+# License Overview
+## Assets License (All Rights Reserved)
+
+All Rights Reserved
+
+Copyright (c) The Radioheads Team / The Radioheads of Create
+
+This license applies to any files under the following directories:
+
+- ./src/main/resources/assets/
+
+---
+
+## Code License (MIT NON-AI)
+
+All other files are licensed under the MIT NON-AI License:
+
+Copyright (c) The Radioheads Team / The Radioheads of Create
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"),
 to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense,
