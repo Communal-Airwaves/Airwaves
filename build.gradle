@@ -21,6 +21,21 @@ sourceSets.main.resources {
 repositories {
     maven { url = "https://maven.createmod.net" }
     maven { url = "https://maven.ithundxr.dev/snapshots" }
+    maven { url = "https://maven.theillusivec4.top/" }
+    maven { url = "https://maven.ryanhcode.dev/releases" }
+    maven { url = 'https://maven.maxhenkel.de/repository/public' }
+
+    exclusiveContent {
+        forRepository {
+            maven {
+                name = "Modrinth"
+                url = "https://api.modrinth.com/maven"
+            }
+        }
+        filter {
+            includeGroup "maven.modrinth"
+        }
+    }
 }
 
 base {
@@ -78,11 +93,24 @@ configurations {
 }
 
 dependencies {
+    jarJar(api("dev.ryanhcode.sable-companion:sable-companion-common-${minecraft_version}:${sable_companion_version}") {
+        version {
+            prefer(sable_companion_version as String)
+        }
+    })
+
     implementation("com.simibubi.create:create-${minecraft_version}:${create_version}:slim") { transitive = false }
     implementation("net.createmod.ponder:ponder-neoforge:${ponder_version}+mc${minecraft_version}")
     compileOnly("dev.engine-room.flywheel:flywheel-neoforge-api-${minecraft_version}:${flywheel_version}")
     runtimeOnly("dev.engine-room.flywheel:flywheel-neoforge-${minecraft_version}:${flywheel_version}")
     implementation("com.tterrag.registrate:Registrate:${registrate_version}")
+
+    compileOnly("top.theillusivec4.curios:curios-neoforge:${curios_version}:api")
+    runtimeOnly("top.theillusivec4.curios:curios-neoforge:${curios_version}")
+
+    implementation "de.maxhenkel.voicechat:voicechat-api:${voicechat_api_version}"
+
+    runtimeOnly "maven.modrinth:9eGKb6K1:neoforge-1.21.1-${voicechat_api_version}"
 }
 var generateModMetadata = tasks.register("generateModMetadata", ProcessResources) {
     var replaceProperties = [
@@ -94,6 +122,9 @@ var generateModMetadata = tasks.register("generateModMetadata", ProcessResources
             mod_name               : mod_name,
             mod_license            : mod_license,
             mod_version            : mod_version,
+            curios_version         : curios_version,
+            sable_version          : sable_version,
+            svc_version            : voicechat_api_version
     ]
     inputs.properties replaceProperties
     expand replaceProperties

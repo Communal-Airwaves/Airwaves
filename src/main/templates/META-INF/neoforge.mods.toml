@@ -42,3 +42,24 @@ config="${mod_id}.mixins.json"
     versionRange="[6.0.10,6.1.0)"
     ordering="NONE"
     side="BOTH"
+
+[[dependencies.${mod_id}]]
+    modId="voicechat"
+    type="required"
+    versionRange="[1.21.1-${svc_version},)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.${mod_id}]]
+    modId="curios"
+    type="optional"
+    versionRange="[${curios_version},)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.${mod_id}]]
+    modId="sable"
+    type="optional"
+    versionRange="[${sable_version},)"
+    ordering="NONE"
+    side="BOTH"
