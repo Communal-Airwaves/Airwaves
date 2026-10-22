@@ -48,4 +48,8 @@ public record Tuning(double frequency, Holder<RadioBand> band) {
                 .orElseThrow(() -> new IllegalStateException("Radio band is not registered"));
         return band.value().display(frequency, id);
     }
+
+    public Tuning copy() {
+        return new Tuning(frequency, band);
+    }
 }
