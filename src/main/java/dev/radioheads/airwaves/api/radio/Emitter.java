@@ -27,11 +27,6 @@ public record Emitter(
         this(root, pos, topY, tuning, range, baseQ, name, Optional.empty());
     }
 
-    //TODO: Create AntennaUtil
-//    public double rangeTo(BlockPos at) {
-//        return this.beam == null ? this.range : this.range * AntennaUtil.pattern(this.beam, (double)(at.getX() - this.pos.getX()), (double)(at.getZ() - this.pos.getZ()));
-//    }
-
     public boolean creative() {
         return this.range >= 1.0E8D;
     }
