@@ -72,6 +72,8 @@ public final class AirwaveLang extends Lang {
         add("directon.display", "%s° %s");
         add("direction.target", "Target");
 
+        add("container.tuning_table", "Tuning Table");
+
         List<String> tiers = List.of("low_power", "mid_power", "high_power", "max_power", "creative");
 
         tiers.forEach(tier -> add("tier." + tier, snakeCaseToTitleCase(tier)));

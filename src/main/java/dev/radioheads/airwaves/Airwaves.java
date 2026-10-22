@@ -36,6 +36,9 @@ public class Airwaves {
         AirwaveModulations.init();
         AirwaveTiers.init();
         AirwaveLang.init();
+        AirwaveMenuTypes.MENU.register(modEventBus);
+
+        AirwaveDataComponent.DATA_COMPONENTS.register(modEventBus);
     }
 
     @Contract("_ -> new")

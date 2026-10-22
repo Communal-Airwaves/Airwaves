@@ -7,11 +7,13 @@
   "airwaves.compass.south_east": "South-East",
   "airwaves.compass.south_west": "South-West",
   "airwaves.compass.west": "West",
+  "airwaves.container.tuning_table": "Tuning Table",
   "airwaves.direction.target": "Target",
   "airwaves.directon.display": "%s° %s",
   "airwaves.tier.creative": "Creative",
   "airwaves.tier.high_power": "High-Power",
   "airwaves.tier.low_power": "Low-Power",
   "airwaves.tier.max_power": "Max-Power",
-  "airwaves.tier.mid_power": "Mid-Power"
+  "airwaves.tier.mid_power": "Mid-Power",
+  "block.airwaves.tuning_table": "Tuning Table"
 }
