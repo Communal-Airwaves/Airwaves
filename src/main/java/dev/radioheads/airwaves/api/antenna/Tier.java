@@ -26,6 +26,6 @@ public record Tier(
 
     public Component displayName() {
         ResourceLocation id = AirwaveRegistries.TIER_REGISTRY.getKey(this);
-        return Component.translatable("airwaves.tier." + id.getNamespace() + "." + id.getPath());
+        return Component.translatable("airwaves.tier." + id.getPath());
     }
 }
