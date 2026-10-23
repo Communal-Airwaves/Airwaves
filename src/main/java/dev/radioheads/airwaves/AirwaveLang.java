@@ -69,7 +69,7 @@ public final class AirwaveLang extends Lang {
             add("compass." + point.name().toLowerCase(Locale.ROOT), snakeCaseToTitleCase(point.name().toLowerCase(Locale.ROOT)));
         }
 
-        add("directon.display", "%s° %s");
+        add("direction.display", "%s° %s");
         add("direction.target", "Target");
 
         add("container.tuning_table", "Tuning Table");
