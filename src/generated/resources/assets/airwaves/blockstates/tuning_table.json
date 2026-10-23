@@ -1,48 +1,48 @@
 {
   "variants": {
     "facing=east,part=center": {
-      "model": "airwaves:block/tuning_table_center",
+      "model": "airwaves:block/tuning_table/center",
       "y": 270
     },
     "facing=east,part=left": {
-      "model": "airwaves:block/tuning_table_left",
+      "model": "airwaves:block/tuning_table/left",
       "y": 270
     },
     "facing=east,part=right": {
-      "model": "airwaves:block/tuning_table_right",
+      "model": "airwaves:block/tuning_table/right",
       "y": 270
     },
     "facing=north,part=center": {
-      "model": "airwaves:block/tuning_table_center",
+      "model": "airwaves:block/tuning_table/center",
       "y": 180
     },
     "facing=north,part=left": {
-      "model": "airwaves:block/tuning_table_left",
+      "model": "airwaves:block/tuning_table/left",
       "y": 180
     },
     "facing=north,part=right": {
-      "model": "airwaves:block/tuning_table_right",
+      "model": "airwaves:block/tuning_table/right",
       "y": 180
     },
     "facing=south,part=center": {
-      "model": "airwaves:block/tuning_table_center"
+      "model": "airwaves:block/tuning_table/center"
     },
     "facing=south,part=left": {
-      "model": "airwaves:block/tuning_table_left"
+      "model": "airwaves:block/tuning_table/left"
     },
     "facing=south,part=right": {
-      "model": "airwaves:block/tuning_table_right"
+      "model": "airwaves:block/tuning_table/right"
     },
     "facing=west,part=center": {
-      "model": "airwaves:block/tuning_table_center",
+      "model": "airwaves:block/tuning_table/center",
       "y": 90
     },
     "facing=west,part=left": {
-      "model": "airwaves:block/tuning_table_left",
+      "model": "airwaves:block/tuning_table/left",
       "y": 90
     },
     "facing=west,part=right": {
-      "model": "airwaves:block/tuning_table_right",
+      "model": "airwaves:block/tuning_table/right",
       "y": 90
     }
   }

@@ -25,7 +25,7 @@ public final class AirwaveBlocks {
 
                         return new ConfiguredModel[] {
                                 new ConfiguredModel(
-                                        prov.models().getExistingFile(prov.modLoc("block/tuning_table_" + part.getSerializedName())),
+                                        prov.models().getExistingFile(prov.modLoc("block/tuning_table/" + part.getSerializedName())),
                                         0,
                                         facing.get2DDataValue() * 90,
                                         false
@@ -33,7 +33,7 @@ public final class AirwaveBlocks {
                         };
                     }))
                     .item()
-                    .model((ctx, prov) -> prov.withExistingParent(ctx.getName(), prov.modLoc("block/tuning_table_center")))
+                    .model((ctx, prov) -> prov.withExistingParent(ctx.getName(), prov.modLoc("block/tuning_table/center")))
                     .build()
                     .register();
 
