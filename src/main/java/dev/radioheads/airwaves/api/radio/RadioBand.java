@@ -17,7 +17,6 @@ public record RadioBand(
         double max,
         String unit,
         Optional<Double> defaultFrequency,
-        Optional<List<Holder<RadioBand>>> interferesWith,
         Optional<String> pathTypeOverride,
         Holder<Modulation> modulation
 ) {
@@ -26,10 +25,6 @@ public record RadioBand(
             Codec.DOUBLE.fieldOf("max").forGetter(RadioBand::max),
             Codec.STRING.fieldOf("unit").forGetter(RadioBand::unit),
             Codec.DOUBLE.optionalFieldOf("defaultFrequency").forGetter(RadioBand::defaultFrequency),
-            RegistryFixedCodec.create(AirwaveRegistries.RADIO_BAND)
-                    .listOf()
-                    .optionalFieldOf("interferes")
-                    .forGetter(RadioBand::interferesWith),
             Codec.STRING.optionalFieldOf("path_type").forGetter(RadioBand::pathTypeOverride),
             RegistryFixedCodec.create(AirwaveRegistries.MODULATION)
                     .optionalFieldOf("modulation", AirwaveModulations.FM)
@@ -46,57 +41,26 @@ public record RadioBand(
                 throw new IllegalArgumentException("Default frequency must be finite and within the band range");
             }
         });
-
-        interferesWith = interferesWith.map(List::copyOf);
     }
 
     public RadioBand(double min, double max, String unit) {
-        this(min, max, unit, Optional.empty(), Optional.empty(), Optional.empty(), AirwaveModulations.FM);
+        this(min, max, unit, Optional.empty(), Optional.empty(), AirwaveModulations.FM);
     }
 
     public RadioBand(double min, double max, String unit, double defaultFrequency) {
-        this(min, max, unit, Optional.of(defaultFrequency), Optional.empty(), Optional.empty(), AirwaveModulations.FM);
-    }
-
-    public RadioBand(double min, double max, String unit, List<Holder<RadioBand>> interferesWith) {
-        this(min, max, unit, Optional.empty(), Optional.of(List.copyOf(interferesWith)), Optional.empty(), AirwaveModulations.FM);
-    }
-
-    public RadioBand(double min, double max, String unit, double defaultFrequency, List<Holder<RadioBand>> interferesWith) {
-        this(min, max, unit, Optional.of(defaultFrequency), Optional.of(List.copyOf(interferesWith)), Optional.empty(), AirwaveModulations.FM);
+        this(min, max, unit, Optional.of(defaultFrequency), Optional.empty(), AirwaveModulations.FM);
     }
 
     public RadioBand withPathType(String pathType) {
-        return new RadioBand(min, max, unit, defaultFrequency, interferesWith, Optional.of(pathType), modulation);
-    }
-
-    public RadioBand withInterference(List<Holder<RadioBand>> bands) {
-        return new RadioBand(min, max, unit, defaultFrequency, Optional.of(List.copyOf(bands)), pathTypeOverride, modulation);
+        return new RadioBand(min, max, unit, defaultFrequency, Optional.of(pathType), modulation);
     }
 
     public RadioBand withModulation(Holder<Modulation> modulation) {
-        return new RadioBand(min, max, unit, defaultFrequency, interferesWith, pathTypeOverride, modulation);
+        return new RadioBand(min, max, unit, defaultFrequency, pathTypeOverride, modulation);
     }
 
     public String pathType(ResourceLocation id) {
         return pathTypeOverride.orElseGet(() -> id.getPath().toUpperCase(Locale.ROOT));
-    }
-
-    /**
-     * Checks whether this band declares the given band as an interferer.
-     */
-    public boolean conflictsWith(Holder<RadioBand> band) {
-        return interferesWith
-                .map(bands -> bands.contains(band))
-                .orElse(false);
-    }
-
-    /**
-     * Checks whether either band declares the other as an interferer.
-     */
-    public static boolean conflictsWithEither(Holder<RadioBand> first, Holder<RadioBand> second) {
-        return first.value().conflictsWith(second)
-                || second.value().conflictsWith(first);
     }
 
     public double clamp(double frequency) {
