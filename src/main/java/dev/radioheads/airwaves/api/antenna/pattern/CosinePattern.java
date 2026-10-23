@@ -1,5 +1,6 @@
-package dev.radioheads.airwaves.api.antenna;
+package dev.radioheads.airwaves.api.antenna.pattern;
 
+import dev.radioheads.airwaves.api.antenna.AntennaDirection;
 import dev.radioheads.airwaves.api.antenna.model.DirectionPattern;
 
 public record CosinePattern(double peakGain, double halfAngleDeg) implements DirectionPattern {
