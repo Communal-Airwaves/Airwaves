@@ -35,6 +35,7 @@ public class Airwaves {
         AirwaveRadioBands.init();
         AirwaveModulations.init();
         AirwaveTiers.init();
+        AirwaveAntennaTypes.init();
         AirwaveLang.init();
         AirwaveMenuTypes.MENU.register(modEventBus);
 

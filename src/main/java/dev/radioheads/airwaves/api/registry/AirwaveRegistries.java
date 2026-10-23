@@ -1,6 +1,7 @@
 package dev.radioheads.airwaves.api.registry;
 
 import dev.radioheads.airwaves.Airwaves;
+import dev.radioheads.airwaves.api.antenna.AntennaType;
 import dev.radioheads.airwaves.api.antenna.Tier;
 import dev.radioheads.airwaves.api.radio.Modulation;
 import dev.radioheads.airwaves.api.radio.RadioBand;
@@ -35,6 +36,7 @@ public class AirwaveRegistries {
     public static final ResourceKey<Registry<RadioBand>> RADIO_BAND = createRegistryKey("radio_band");
     public static final ResourceKey<Registry<Modulation>> MODULATION = createRegistryKey("modulation");
     public static final ResourceKey<Registry<Tier>> TIER = createRegistryKey("tier");
+    public static final ResourceKey<Registry<AntennaType>> ANTENNA_TYPE = createRegistryKey("antenna_type");
 
     public static final Registry<BoardDesign> BOARD_DESIGN_REGISTRY = makeSyncedRegistry(BOARD);
     public static final Registry<BoardPart> BOARD_PART_REGISTRY = makeSyncedRegistry(BOARD_PART);
@@ -47,6 +49,7 @@ public class AirwaveRegistries {
     public static final Registry<BoardStep> BOARD_STEP_REGISTRY = makeRegistry(BOARD_STEP);
     public static final Registry<BoardStepMode> BOARD_STEP_MODE_REGISTRY = makeRegistry(BOARD_STEP_MODE);
     public static final Registry<Tier> TIER_REGISTRY = makeRegistry(TIER);
+    public static final Registry<AntennaType> ANTENNA_TYPE_REGISTRY = makeRegistry(ANTENNA_TYPE);
 
     private static <T> ResourceKey<Registry<T>> createRegistryKey(String name) {
         return ResourceKey.createRegistryKey(Airwaves.asResource(name));
