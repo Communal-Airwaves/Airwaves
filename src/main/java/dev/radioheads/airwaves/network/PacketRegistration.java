@@ -1,6 +1,7 @@
 package dev.radioheads.airwaves.network;
 
 import dev.radioheads.airwaves.Airwaves;
+import dev.radioheads.airwaves.network.payload.RadioLinkPayload;
 import dev.radioheads.airwaves.network.payload.TunePayload;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
@@ -14,5 +15,6 @@ public class PacketRegistration {
         PayloadRegistrar registrar = event.registrar("1");
 
         registrar.playToServer(TunePayload.TYPE, TunePayload.CODEC, TunePayload::onTune);
+        registrar.playToClient(RadioLinkPayload.TYPE, RadioLinkPayload.CODEC, RadioLinkPayload::onReceive);
     }
 }
