@@ -24,28 +24,12 @@ public abstract class MultiblockBlock<P extends Enum<P> & StringRepresentable> e
         this.registerDefaultState(this.defaultBlockState().setValue(getPartProperty(), getOriginPart()));
     }
 
-    /**
-     * The property storing which part of the structure this block is.
-     * Must return a constant (e.g. a static field): it is called during construction.
-     */
     protected abstract EnumProperty<P> getPartProperty();
 
-    /**
-     * The part that the block the player places is. Its layout offset must be {@link BlockPos#ZERO}.
-     * Must return a constant: it is called during construction.
-     */
     protected abstract P getOriginPart();
 
-    /**
-     * Offset of every part from the origin, in the unrotated frame.
-     * The origin part maps to {@link BlockPos#ZERO}.
-     */
     protected abstract Map<P, BlockPos> getLayout();
 
-    /**
-     * Converts a layout offset into world space for the given state.
-     * Subclasses override this to apply rotation or other transforms.
-     */
     protected BlockPos transformOffset(BlockPos offset, BlockState state) {
         return offset;
     }
