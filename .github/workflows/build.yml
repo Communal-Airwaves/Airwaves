@@ -12,6 +12,7 @@ on:
 
 concurrency:
   group: build-${{ github.ref }}
+  cancel-in-progress: false
 
 jobs:
   build:
@@ -38,6 +39,8 @@ jobs:
 
       - name: Set up Gradle
         uses: gradle/actions/setup-gradle@v4
+        with:
+          cache-cleanup: never
 
       - name: Bump shared build number
         id: buildnum
