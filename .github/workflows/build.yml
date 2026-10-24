@@ -17,6 +17,7 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    environment: workflows
     permissions:
       contents: read
     steps:
@@ -46,7 +47,7 @@ jobs:
           CURRENT: ${{ vars.BUILD_NUMBER }}
         run: |
           next=$(( ${CURRENT:-0} + 1 ))
-          gh variable set BUILD_NUMBER --repo "$REPO" --body "$next"
+          gh variable set BUILD_NUMBER --repo "$REPO" --env workflows --body "$next"
           echo "build_number=$next" >> "$GITHUB_OUTPUT"
 
       - name: Build jar
