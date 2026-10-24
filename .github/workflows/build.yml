@@ -10,14 +10,10 @@ on:
       - 'gradle/**'
   workflow_dispatch:
 
-concurrency:
-  group: build-${{ github.ref }}
-
 jobs:
   build:
     runs-on: ubuntu-latest
     environment: workflows
-    timeout-minutes: 30
     permissions:
       contents: read
     steps:
@@ -30,28 +26,16 @@ jobs:
           java-version: "21"
           cache: gradle
 
-      - name: Validate Gradle wrapper
-        uses: gradle/actions/wrapper-validation@v4
-
-      - name: Grant execute permission for gradlew
-        run: chmod +x gradlew
-
       - name: Set up Gradle
         uses: gradle/actions/setup-gradle@v4
-        with:
-          cache-cleanup: never
 
       - name: Bump shared build number
         id: buildnum
         env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          GH_TOKEN: ${{ secrets.VARS_PAT }}
           REPO: ${{ github.repository }}
           CURRENT: ${{ vars.BUILD_NUMBER }}
         run: |
-          if [ -z "$GH_TOKEN" ]; then
-            echo "::error::VARS_PAT is missing or not available to this job" >&2
-            exit 1
-          fi
           next=$(( ${CURRENT:-0} + 1 ))
           gh variable set BUILD_NUMBER --repo "$REPO" --env workflows --body "$next"
           echo "build_number=$next" >> "$GITHUB_OUTPUT"
@@ -59,17 +43,15 @@ jobs:
       - name: Build jar
         env:
           MOD_BUILD_NUMBER: ${{ steps.buildnum.outputs.build_number }}
-        run: ./gradlew build
+        run: |
+          chmod +x gradlew
+          ./gradlew build
 
       - name: Send jars to Discord
         env:
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
           BRANCH: ${{ github.ref_name }}
         run: |
-          if [ -z "$DISCORD_WEBHOOK" ]; then
-            echo "DISCORD_WEBHOOK is not set, skipping Discord upload"
-            exit 0
-          fi
           shopt -s nullglob
           args=(-fsS -F "payload_json={\"content\":\"New build on ${BRANCH}\"}")
           i=0
@@ -81,8 +63,4 @@ jobs:
             args+=(-F "files[$i]=@$f;filename=$name")
             i=$((i + 1))
           done
-          if [ "$i" -eq 0 ]; then
-            echo "No jars found in build/libs" >&2
-            exit 1
-          fi
           curl "${args[@]}" "$DISCORD_WEBHOOK"
