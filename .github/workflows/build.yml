@@ -42,10 +42,14 @@ jobs:
       - name: Bump shared build number
         id: buildnum
         env:
-          GH_TOKEN: ${{ secrets.token }}
+          GH_TOKEN: ${{ secrets.VARS_PAT }}
           REPO: ${{ github.repository }}
           CURRENT: ${{ vars.BUILD_NUMBER }}
         run: |
+          if [ -z "$GH_TOKEN" ]; then
+            echo "::error::VARS_PAT is missing or not available to this job" >&2
+            exit 1
+          fi
           next=$(( ${CURRENT:-0} + 1 ))
           gh variable set BUILD_NUMBER --repo "$REPO" --env workflows --body "$next"
           echo "build_number=$next" >> "$GITHUB_OUTPUT"
