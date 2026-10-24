@@ -42,7 +42,7 @@ jobs:
       - name: Bump shared build number
         id: buildnum
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.token }}
           REPO: ${{ github.repository }}
           CURRENT: ${{ vars.BUILD_NUMBER }}
         run: |
